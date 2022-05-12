@@ -104,7 +104,7 @@
   </Definition>
 
   <Definition xsi:type="MyObjectBuilder_EntityBannerComponentDefinition">
-    <Id Type="MyObjectBuilder_OwnershipBannerComponent" Subtype="ClaimBlockBanner" />
+    <Id Type="MyObjectBuilder_OwnershipBannerComponent" Subtype="RKClaimBlockBanner" />
     <Material>ShieldMaterial</Material>
     <Type>Player</Type>
   </Definition>
@@ -116,7 +116,7 @@
     <Component Type="ClaimBlockComponent" Subtype="RKClaimBlockTier1" />
     <Component Type="EntityOwnershipComponent" />
     <Component Type="ClaimBlockRespawnComponent" />
-    <Component Type="OwnershipBannerComponent" Subtype="ClaimBlockBanner" />
+    <Component Type="OwnershipBannerComponent" Subtype="RKClaimBlockBanner" />
   </Definition>
 
   <Definition xsi:type="MyObjectBuilder_ClaimBlockComponentDefinition">
@@ -142,12 +142,14 @@
   
   <Definition xsi:type="MyObjectBuilder_AreaUpkeepSystemDefinition" Merge="Append">
     <Id Type="MyObjectBuilder_AreaUpkeepSystemDefinition" Subtype="Default" />
-	<MaxPayableTimeUnits>35791</MaxPayableTimeUnits>
+	<MaxPayableTimeUnits>35691</MaxPayableTimeUnits>
 	<NotifyAtPercentage>0.006</NotifyAtPercentage>
     <PointsPerResource>
       <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Dirt" Value="1" />
       <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="Skull" Value="5" />
       <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="HandTorchItem" Value="5" />
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="ImpaledSkull" Value="5" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Weight" Value="5" />
     </PointsPerResource>
   </Definition>
   
