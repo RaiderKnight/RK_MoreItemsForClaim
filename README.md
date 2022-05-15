@@ -7,8 +7,7 @@
 <p>This mod adds two more claim blocks to the game.</p>
 <p>Extends the maximum claim time to 25 days.</p>
 <p>You can also pay your taxes with:</p>
-<ul><li>dirt, hand torches and skulls.</li>
-  <li>Dirt</li>
+<ul><li>Dirt</li>
   <li>Hand torches</li>
   <li>Impaled skulls</li>
   <li>Skulls</li>
