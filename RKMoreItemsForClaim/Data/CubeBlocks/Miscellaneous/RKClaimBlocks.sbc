@@ -4,7 +4,7 @@
   <Definition xsi:type="MyObjectBuilder_BuildableBlockDefinition">
     <Id Type="Block" Subtype="RKClaimBlockStone" />
     <Rotation>YAxis</Rotation>
-    <DisplayName>Unlimited ClaimBlock</DisplayName>
+    <DisplayName>More Item ClaimBlock</DisplayName>
     <Public>true</Public>
     <Icon>Textures\GUI\Icons\Cubes\Blocks\RKClaimBlock.dds</Icon>
     <GridDataDefinitionId Type="GridDataComponent" Subtype="LargeGridDataBase" />
@@ -52,7 +52,7 @@
   <Definition xsi:type="MyObjectBuilder_BuildableBlockDefinition">
     <Id Type="Block" Subtype="RKClaimBlockWood" />
     <Rotation>YAxis</Rotation>
-    <DisplayName>Unlimited ClaimBlockWood</DisplayName>
+    <DisplayName>More Item ClaimBlockWood</DisplayName>
     <Public>true</Public>
     <Icon>Textures\GUI\Icons\Cubes\Blocks\RKClaimBlockWood.dds</Icon>
     <GridDataDefinitionId Type="GridDataComponent" Subtype="LargeGridDataBase" />
