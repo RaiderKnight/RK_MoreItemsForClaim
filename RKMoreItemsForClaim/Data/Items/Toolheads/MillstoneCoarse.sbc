@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_ToolheadItemDefinition">
+    <Id Type="ToolheadItem" Subtype="MillstoneCoarse" />
+    <DisplayName>DisplayName_Item_MillstoneCoarse</DisplayName>
+    <Description>Description_Item_MillstoneCoarse</Description>
+    <Icon>Textures\GUI\Icons\Cubes\Mechanical\MillstoneSubpartCoarse.dds</Icon>
+    <Size>
+      <X>0.25</X>
+      <Y>0.25</Y>
+      <Z>0.25</Z>
+    </Size>
+    <Model>Models\Cubes\large\Mechanical\Millstone_subpart.mwm</Model>
+    <PhysicalMaterial>StoneHeavy</PhysicalMaterial>
+    <MaxStackAmount>1</MaxStackAmount>
+    <Health>52</Health>
+    <Mass>150</Mass>
+    <MaxDurability>100</MaxDurability>
+    <CraftingCategory>MillstoneCoarse</CraftingCategory>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="MillstoneCoarse" />
+    <Icon>Textures\GUI\Icons\Cubes\Mechanical\MillstoneSubpartCoarse.dds</Icon>
+    <DisplayName>DisplayName_Item_MillstoneCoarse</DisplayName>
+    <Category>Woodcrafting</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="StoneLarge" Amount="4" />
+      <Item Type="Block" Subtype="TimberRound10" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="ToolheadItem" Subtype="MillstoneCoarse" />
+    </Results>
+    <CraftingTime Seconds="10" />
+  </Definition>
+</Definitions>

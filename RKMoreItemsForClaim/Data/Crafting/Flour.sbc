@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="FlourWheat" />
+    <DisplayName>DisplayName_Item_WheatFlourSack</DisplayName>
+	  <Description>Description_Item_WheatFlourSack</Description>
+    <Icon>Textures\GUI\Icons\Materials\FlourBag.dds</Icon>
+    <Category>Milling</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="StrawsWheat" Amount="8" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="FlourWheat" />
+    </Results>
+    <CraftingTime Seconds="10" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="FlourWheatMechanical" />
+    <DisplayName>DisplayName_Item_WheatFlourSack</DisplayName>
+    <Description>Description_Item_WheatFlourSack</Description>
+    <Icon>Textures\GUI\Icons\Materials\FlourBag.dds</Icon>
+    <Category>MillstoneCoarse</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="StrawsWheat" Amount="5" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="FlourWheat" />
+    </Results>
+    <CraftingTime Seconds="4" />
+  </Definition>
+</Definitions>

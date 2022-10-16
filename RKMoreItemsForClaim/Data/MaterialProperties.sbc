@@ -1,0 +1,1575 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- Material: Arrow -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Arrow" />
+    <ContactEffect Material="Stone" SoundCue="ImpArrowRock" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Wood" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Metal" SoundCue="ImpArrowMetal" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Flesh" SoundCue="ImpArrowFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpArrowRock" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Cloth" SoundCue="ImpArrowFlesh" />
+    <ContactEffect Material="Paper" SoundCue="ImpArrowFlesh" />
+    <ContactEffect Material="Food" SoundCue="ImpArrowFlesh" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpArrowFlesh" />
+    <ContactEffect Material="Generic" SoundCue="ImpArrowFlesh" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpArrowRock" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpArrowRock" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpArrowRock" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpArrowGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Axe" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Mace" SoundCue="ImpArrowMetal" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpArrowMetal" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowMetal" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Soil" SoundCue="ImpArrowSoil" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpArrowGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpArrowSoil" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpArrowSoil" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpArrowSoil" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpArrowRock" ParticleEffect="ParticleToolMining" />
+  </Definition>
+  <!-- Material: Axe -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition" Copy="Append">
+    <Id Type="DestructionEffectsDefinition" Subtype="Axe" />
+    <CopyFrom Type="DestructionEffectsDefinition" Subtype="Metal" />
+    <ContactEffect Material="Stone" SoundCue="ImpAxeStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Wood" SoundCue="ImpAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Flesh" SoundCue="ImpAxeFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpAxeStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Cloth" SoundCue="ImpAxeFlesh" />
+    <ContactEffect Material="Paper" SoundCue="ImpAxeFlesh" />
+    <ContactEffect Material="Food" SoundCue="ImpAxeFlesh" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpAxeFlesh" />
+    <ContactEffect Material="Generic" SoundCue="ImpAxeFlesh" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpAxeStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpAxeStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpAxeStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpMetalWoodShield" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpAxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Grass" SoundCue="ImpAxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpAxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Snow" SoundCue="ImpAxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Clay" SoundCue="ImpAxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Gravel" SoundCue="ImpAxeStone" ParticleEffect="ParticleImpStoneMetal" />
+  </Definition>
+  <!-- Material: AxeStone -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="AxeStone" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Wood" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Metal" SoundCue="ImpStoneAxeMetal" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Flesh" SoundCue="ImpStoneAxeFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Cloth" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="Paper" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="Food" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="Generic" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Axe" SoundCue="ImpStoneAxeMetal" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpStoneAxeMetal" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Hammer" SoundCue="ImpStoneAxeMetal" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="Grass" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="Sand" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="Snow" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="Clay" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="Gravel" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+  </Definition>
+  <!-- Material: Ceramic -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Ceramic" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherCeramic" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneLightCeramic" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherCeramic" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperCeramic" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageCeramic" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinCeramic" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericCeramic" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightCeramic" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightCeramic" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneLightCeramic" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpStoneLightGrass" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightCeramic" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowRock" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Soil" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpStoneLightGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpStoneLightStone" />
+  </Definition>
+  <!-- Material: Clay -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Clay" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalSand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperSand" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageSand" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinSand" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericSand" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeShortFallImpact" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeTallFallImpact" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="ShovelWood" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowSoil" ParticleEffect="ParticleImpSand" />
+  </Definition>
+  <!-- Material: Cloth -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Cloth" />
+    <ContactEffect Material="Stone" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Wood" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpLeatherCeramic" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperWood" />
+    <ContactEffect Material="Food" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericWood" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpLeatherCeramic" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpLeatherGrass" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeFlesh" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerFlesh" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubFlesh" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalFleshBlunt" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalFleshSlash" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowFlesh" />
+    <ContactEffect Material="Soil" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpLeatherGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpLeatherStone" />
+  </Definition>
+  <!-- Material: ClubStudded -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="ClubStudded" />
+    <ContactEffect Material="Stone" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Wood" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Flesh" SoundCue="ImpWoodFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Cloth" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Paper" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Food" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Generic" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Axe" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpMetalWoodShield" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Grass" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Snow" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Clay" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Gravel" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+  </Definition>
+  <!-- Material: ClubWood -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="ClubWood" />
+    <ContactEffect Material="Stone" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Wood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Flesh" SoundCue="ImpWoodFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Cloth" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Paper" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Food" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Generic" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Axe" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Plow" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodWoodShield" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Grass" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Snow" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Clay" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Gravel" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+  </Definition>
+  <!-- Material: Flesh -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Flesh" />
+    <ContactEffect Material="Stone" SoundCue="ImpMetalFleshBlunt" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalFleshBlunt" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpLeatherCeramic" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpLeatherCeramic" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpLeatherGrass" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpWoodFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpWoodFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalFleshSlash" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpWoodFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Soil" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpLeatherGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpLeatherStone" />
+  </Definition>
+  <!-- Material: FloorWood -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition" Copy="Append">
+    <Id Type="DestructionEffectsDefinition" Subtype="FloorWood" />
+    <CopyFrom Type="DestructionEffectsDefinition" Subtype="WoodHeavy" />
+  </Definition>
+  <!-- Material: Food -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Food" />
+    <ContactEffect Material="Stone" SoundCue="ImpCabbageStone" />
+    <ContactEffect Material="Wood" SoundCue="ImpCabbageWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpCabbageStone" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpCabbageCeramic" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageWood" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpCabbageStone" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpCabbageStone" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpCabbageWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpCabbageWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpCabbageCeramic" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpCabbageGrass" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeFlesh" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerFlesh" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubFlesh" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalFleshBlunt" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalFleshSlash" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowFlesh" />
+    <ContactEffect Material="Soil" SoundCue="ImpCabbageSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpCabbageGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpCabbageSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpCabbageSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpCabbageSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpCabbageStone" />
+  </Definition>
+  <!-- Material: Generic -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Generic" />
+    <ContactEffect Material="Stone" SoundCue="ImpGenericStone" />
+    <ContactEffect Material="Wood" SoundCue="ImpGenericWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpGenericStone" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpGenericCeramic" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperSand" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericStone" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpGenericStone" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpGenericStone" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpGenericWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpGenericWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpGenericCeramic" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpGenericGrass" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeFlesh" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerFlesh" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubFlesh" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalFleshBlunt" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalFleshSlash" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowFlesh" />
+    <ContactEffect Material="Soil" SoundCue="ImpGenericSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpGenericGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpGenericSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpGenericSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpGenericSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpGenericStone" />
+  </Definition>
+  <!-- Material: Grass -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Grass" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherGrass" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneLightGrass" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherGrass" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperGrass" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageGrass" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinGrass" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericGrass" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightGrass" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightGrass" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeShortFallImpact" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeTallFallImpact" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="ShovelWood" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Plow" SoundCue="ToolPlowing" ParticleEffect="ParticleToolPlowing" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightGrass" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowGrass" ParticleEffect="ParticleImpGrass" />
+  </Definition>
+  <!-- Material: Gravel -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Gravel" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneHeavyStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodHeavyStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneLightStone" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperStone" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageStone" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinStone" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericStone" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightStone" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavyStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodHeavyStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="ShovelWood" SoundCue="ToolShovelHardSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ToolShovelHardSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowRock" ParticleEffect="ParticleToolMining" />
+  </Definition>
+  <!-- Material: Hammer -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Hammer" />
+    <ContactEffect Material="Stone" SoundCue="ImpHammerStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="Wood" SoundCue="ImpHammerWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Flesh" SoundCue="ImpHammerFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpHammerStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="Cloth" SoundCue="ImpHammerFlesh" />
+    <ContactEffect Material="Paper" SoundCue="ImpHammerFlesh" />
+    <ContactEffect Material="Food" SoundCue="ImpHammerFlesh" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpHammerFlesh" />
+    <ContactEffect Material="Generic" SoundCue="ImpHammerFlesh" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpHammerStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpHammerStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpHammerWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpHammerWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpHammerStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpHammerWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpHammerWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpHammerWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Axe" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Hammer" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeMetal" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpMetalWoodShield" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpHammerGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Grass" SoundCue="ImpHammerGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpHammerGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Snow" SoundCue="ImpHammerGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Clay" SoundCue="ImpHammerGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Gravel" SoundCue="ImpHammerStone" ParticleEffect="ParticleImpStoneHeavy" />
+  </Definition>
+  <!-- Material: HammerCombat -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition" Copy="Append">
+    <Id Type="DestructionEffectsDefinition" Subtype="HammerCombat" />
+    <CopyFrom Type="DestructionEffectsDefinition" Subtype="Hammer" />
+  </Definition>
+  <!-- Material: HammerWood -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="HammerWood" />
+    <ContactEffect Material="Stone" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Wood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Flesh" SoundCue="ImpClubFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Cloth" SoundCue="ImpClubFlesh" />
+    <ContactEffect Material="Paper" SoundCue="ImpClubFlesh" />
+    <ContactEffect Material="Food" SoundCue="ImpClubFlesh" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpClubFlesh" />
+    <ContactEffect Material="Generic" SoundCue="ImpClubFlesh" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Axe" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodWoodShield" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Grass" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Snow" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Clay" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Gravel" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+  </Definition>
+  <!-- Material: LandscapeStake -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition" Copy="Append">
+    <Id Type="DestructionEffectsDefinition" Subtype="LandscapeStake" />
+    <CopyFrom Type="DestructionEffectsDefinition" Subtype="WoodLight" />
+    <ContactEffect Material="Soil" SoundCue="ToolLandscapeStake" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Grass" SoundCue="ToolLandscapeStake" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ToolLandscapeStake" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Snow" SoundCue="ToolLandscapeStake" ParticleEffect="ParticleImpSnow" />
+    <ContactEffect Material="Clay" SoundCue="ToolLandscapeStake" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Gravel" SoundCue="ToolLandscapeStake" ParticleEffect="ParticleImpStoneLight" />
+  </Definition>
+  <!-- Material: Mace -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Mace" />
+    <ContactEffect Material="Stone" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Wood" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Flesh" SoundCue="ImpMetalFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Cloth" SoundCue="ImpMetalFleshBlunt" />
+    <ContactEffect Material="Paper" SoundCue="ImpMetalFleshBlunt" />
+    <ContactEffect Material="Food" SoundCue="ImpMetalFleshBlunt" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpMetalFleshBlunt" />
+    <ContactEffect Material="Generic" SoundCue="ImpMetalFleshBlunt" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Axe" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Hammer" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpMetalWoodShield" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowMetal" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Soil" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Grass" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Snow" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Clay" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Gravel" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+  </Definition>
+  <!-- Material: Metal -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Metal" />
+    <ContactEffect Material="Stone" SoundCue="ImpMetalStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="Wood" SoundCue="ImpMetalWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Flesh" SoundCue="ImpMetalFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpMetalCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperStone" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageStone" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinStone" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericStone" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpMetalStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpMetalStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpMetalWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpMetalWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpMetalCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpMetalGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="Axe" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Hammer" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeMetal" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowMetal" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Soil" SoundCue="ImpMetalSand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpMetalGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpMetalSand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpMetalSand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpMetalSand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpMetalStone" ParticleEffect="ParticleImpStoneHeavy" />
+  </Definition>
+  <!-- Material: None -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="None" />
+  </Definition>
+  <!-- Material: Paper -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Paper" />
+    <ContactEffect Material="Stone" SoundCue="ImpPaperStone" />
+    <ContactEffect Material="Wood" SoundCue="ImpPaperWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpPaperStone" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpPaperCeramic" />
+    <ContactEffect Material="Cloth" SoundCue="ImpPaperWood" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperSand" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericSand" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpPaperStone" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpPaperStone" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpPaperWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpPaperWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpPaperCeramic" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpPaperGrass" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeFlesh" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerFlesh" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubFlesh" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalFleshBlunt" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalFleshSlash" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowFlesh" />
+    <ContactEffect Material="Soil" SoundCue="ImpPaperSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpPaperGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpPaperSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpPaperSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpPaperSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpPaperStone" />
+  </Definition>
+  <!-- Material: Pickaxe -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Pickaxe" />
+    <ContactEffect Material="Stone" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Wood" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Flesh" SoundCue="ImpPickaxeFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Cloth" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Paper" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Food" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Generic" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Axe" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Hammer" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeMetal" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpMetalWoodShield" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpPickaxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Grass" SoundCue="ImpPickaxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpPickaxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Snow" SoundCue="ImpPickaxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Clay" SoundCue="ImpPickaxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Gravel" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+  </Definition>
+  <!-- Material: Plow -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Plow" />
+    <ContactEffect Material="Stone" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Wood" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Flesh" SoundCue="ImpPickaxeFlesh" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Cloth" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Paper" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Food" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Generic" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Axe" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Plow" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodWoodShield" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ToolPlowing" ParticleEffect="ParticleToolPlowing" />
+    <ContactEffect Material="Grass" SoundCue="ToolPlowing" ParticleEffect="ParticleToolPlowing" />
+  </Definition>
+  <!-- Material: ProjectileStone -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition" Copy="Append">
+    <Id Type="DestructionEffectsDefinition" Subtype="ProjectileStone" />
+    <CopyFrom Type="DestructionEffectsDefinition" Subtype="StoneHeavy" />
+  </Definition>
+  <!-- Material: Pumpkin -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Pumpkin" />
+    <ContactEffect Material="Stone" SoundCue="ImpPumpkinStone" />
+    <ContactEffect Material="Wood" SoundCue="ImpPumpkinWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpPumpkinStone" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpPumpkinCeramic" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinStone" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpPumpkinStone" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpPumpkinStone" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpPumpkinWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpPumpkinWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpPumpkinCeramic" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpPumpkinGrass" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeFlesh" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerFlesh" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubFlesh" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeFlesh" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpPumpkinWood" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalFleshBlunt" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalFleshSlash" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowFlesh" />
+    <ContactEffect Material="Soil" SoundCue="ImpPumpkinSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpPumpkinGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpPumpkinSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpPumpkinSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpPumpkinSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpPumpkinStone" />
+  </Definition>
+  <!-- Material: RoofHay -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="RoofHay" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodLightGrass" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherGrass" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneLightGrass" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherGrass" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperGrass" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageGrass" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinGrass" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericGrass" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightGrass" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightGrass" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodLightGrass" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightGrass" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Soil" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpWoodHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpWoodHeavyStone" ParticleEffect="ParticleImpStoneLight" />
+  </Definition>
+  <!-- Material: RoofTile -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="RoofTile" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherCeramic" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneLightCeramic" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherCeramic" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperCeramic" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageCeramic" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinCeramic" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericCeramic" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightCeramic" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightCeramic" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpStoneHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightCeramic" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowRock" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Soil" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpStoneHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpStoneHeavyStone" ParticleEffect="ParticleImpStoneHeavy" />
+  </Definition>
+  <!-- Material: RoofWood -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition" Copy="Append">
+    <Id Type="DestructionEffectsDefinition" Subtype="RoofWood" />
+    <CopyFrom Type="DestructionEffectsDefinition" Subtype="WoodHeavy" />
+  </Definition>
+  <!-- Material: Sand -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Sand" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalSand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperSand" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageSand" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinSand" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericSand" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeShortFallImpact" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeTallFallImpact" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="ShovelWood" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowSoil" ParticleEffect="ParticleImpSand" />
+  </Definition>
+  <!-- Material: Seedbag -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Seedbag" />
+    <ContactEffect Material="Soil" SoundCue="PlayGatherPlant" ParticleEffect="ParticleToolSeeding" />
+    <ContactEffect Material="Grass" SoundCue="PlayGatherPlant" ParticleEffect="ParticleToolSeeding" />
+    <ContactEffect Material="Gravel" SoundCue="PlayGatherPlant" ParticleEffect="ParticleToolSeeding" />
+    <ContactEffect Material="Clay" SoundCue="PlayGatherPlant" ParticleEffect="ParticleToolSeeding" />
+    <ContactEffect Material="Sand" SoundCue="PlayGatherPlant" ParticleEffect="ParticleToolSeeding" />
+    <ContactEffect Material="Snow" SoundCue="PlayGatherPlant" ParticleEffect="ParticleToolSeeding" />
+  </Definition>
+  <!-- Material: ShieldWood -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="ShieldWood" />
+    <ContactEffect Material="Stone" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpWoodLightCeramic" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinWood" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericWood" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpWoodLightCeramic" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodLightGrass" />
+    <ContactEffect Material="Axe" SoundCue="ImpMetalWoodShield" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpMetalWoodShield" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpMetalWoodShield" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpWoodWoodShield" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpWoodWoodShield" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpWoodWoodShield" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Plow" SoundCue="ImpWoodWoodShield" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalWoodShield" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalWoodShield" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodWoodShield" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalWoodShield" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpWoodLightGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpWoodLightStone" />
+  </Definition>
+  <!-- Material: ShovelFill -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="ShovelFill" />
+    <ContactEffect Material="Soil" SoundCue="ToolShovelSoftSoilThrow" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Grass" SoundCue="ToolShovelSoftSoilThrow" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Sand" SoundCue="ToolShovelSoftSoilThrow" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Snow" SoundCue="ToolShovelSoftSoilThrow" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Clay" SoundCue="ToolShovelSoftSoilThrow" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Gravel" SoundCue="ToolShovelHardSoilThrow" ParticleEffect="ParticleToolDigging" />
+  </Definition>
+  <!-- Material: ShovelMetal -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="ShovelMetal" />
+    <ContactEffect Material="Stone" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Wood" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Flesh" SoundCue="ImpWoodFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Cloth" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Paper" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Food" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Generic" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Axe" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodWoodShield" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Grass" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Sand" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Snow" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Clay" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Gravel" SoundCue="ToolShovelHardSoil" ParticleEffect="ParticleToolDigging" />
+  </Definition>
+  <!-- Material: ShovelWood -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="ShovelWood" />
+    <ContactEffect Material="Stone" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Wood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Flesh" SoundCue="ImpWoodFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Cloth" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Paper" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Food" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="Generic" SoundCue="ImpWoodFleshBlunt" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Axe" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodWoodShield" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpWoodWoodParry" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Grass" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Sand" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Snow" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Clay" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Gravel" SoundCue="ToolShovelHardSoil" ParticleEffect="ParticleToolDigging" />
+  </Definition>
+  <!-- Material: Snow -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Snow" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalSand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperSand" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageSand" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinSand" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericSand" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeShortFallImpact" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeTallFallImpact" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="ShovelWood" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowSoil" ParticleEffect="ParticleImpSand" />
+  </Definition>
+  <!-- Material: Soil -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Soil" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalSand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherSand" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperSand" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageSand" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinSand" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericSand" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeShortFallImpact" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeTallFallImpact" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeFlesh" />
+    <ContactEffect Material="ShovelWood" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ToolShovelSoftSoil" ParticleEffect="ParticleToolDigging" />
+    <ContactEffect Material="Plow" SoundCue="ToolPlowing" ParticleEffect="ParticleToolPlowing" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpClubGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowSoil" ParticleEffect="ParticleImpSand" />
+  </Definition>
+  <!-- Material: Stone -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Stone" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneHeavyStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="Wood" SoundCue="ImpStoneHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="Flesh" SoundCue="ImpMetalFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperStone" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageStone" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinStone" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericStone" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightStone" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpStoneHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowRock" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Soil" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpStoneHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpStoneHeavyStone" ParticleEffect="ParticleImpStoneHeavy" />
+  </Definition>
+  <!-- Material: StoneHeavy -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="StoneHeavy" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneHeavyStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="Wood" SoundCue="ImpStoneHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperStone" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageStone" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinStone" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericStone" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightStone" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodHeavyStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowRock" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Soil" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpStoneHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpStoneHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpStoneHeavyStone" ParticleEffect="ParticleImpStoneHeavy" />
+  </Definition>
+  <!-- Material: StoneLight -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="StoneLight" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneLightStone" />
+    <ContactEffect Material="Wood" SoundCue="ImpStoneLightWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneLightCeramic" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherStone" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperStone" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageStone" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinStone" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericStone" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightStone" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodHeavyStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerStone" ParticleEffect="ParticleImpStoneHeavy" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeStone" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpClubStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowRock" ParticleEffect="ParticleToolMining" />
+    <ContactEffect Material="Soil" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpStoneLightGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpStoneLightSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpStoneLightStone" />
+  </Definition>
+  <!-- Material: StoneSoft -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition" Copy="Append">
+    <Id Type="DestructionEffectsDefinition" Subtype="StoneSoft" />
+    <CopyFrom Type="DestructionEffectsDefinition" Subtype="StoneHeavy" />
+  </Definition>
+  <!-- Material: Sword -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Sword" />
+    <ContactEffect Material="Stone" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Wood" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Flesh" SoundCue="ImpMetalFleshSlash" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="Cloth" SoundCue="ImpMetalFleshSlash" />
+    <ContactEffect Material="Paper" SoundCue="ImpMetalFleshSlash" />
+    <ContactEffect Material="Food" SoundCue="ImpMetalFleshSlash" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpMetalFleshSlash" />
+    <ContactEffect Material="Generic" SoundCue="ImpMetalFleshSlash" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Axe" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Hammer" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpMetalWoodShield" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Mace" SoundCue="ImpMetalMetalParry" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Sword" SoundCue="ImpMetalMetalParrySword" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpMetalWoodParry" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpMetalMetalParryMace" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowMetal" ParticleEffect="ParticleImpMetal" />
+    <ContactEffect Material="Soil" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Grass" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Snow" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Clay" SoundCue="ImpSwordGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Gravel" SoundCue="ImpSwordStone" ParticleEffect="ParticleImpStoneMetal" />
+  </Definition>
+  <!-- Material: TreeShort -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="TreeShort" />
+    <ContactEffect Material="Stone" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="Wood" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Flesh" SoundCue="ImpWoodFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneLightWood" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightWood" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpTreeShortFallImpact" />
+    <ContactEffect Material="Grass" SoundCue="ImpTreeShortFallImpact" />
+    <ContactEffect Material="Sand" SoundCue="ImpTreeShortFallImpact" />
+    <ContactEffect Material="Snow" SoundCue="ImpTreeShortFallImpact" />
+    <ContactEffect Material="Clay" SoundCue="ImpTreeShortFallImpact" />
+    <ContactEffect Material="Gravel" SoundCue="ImpTreeStone" />
+  </Definition>
+  <!-- Material: TreeTall -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="TreeTall" />
+    <ContactEffect Material="Stone" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="Wood" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Flesh" SoundCue="ImpWoodFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpStoneLightWood" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightWood" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpTreeStone" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpTreeTallFallImpact" />
+    <ContactEffect Material="Grass" SoundCue="ImpTreeTallFallImpact" />
+    <ContactEffect Material="Sand" SoundCue="ImpTreeTallFallImpact" />
+    <ContactEffect Material="Snow" SoundCue="ImpTreeTallFallImpact" />
+    <ContactEffect Material="Clay" SoundCue="ImpTreeTallFallImpact" />
+    <ContactEffect Material="Gravel" SoundCue="ImpTreeStone" />
+  </Definition>
+  <!-- Material: WallClay -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition" Copy="Append">
+    <Id Type="DestructionEffectsDefinition" Subtype="WallClay" />
+    <CopyFrom Type="DestructionEffectsDefinition" Subtype="WoodHeavy" />
+  </Definition>
+  <!-- Material: Wood -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="Wood" />
+    <ContactEffect Material="Stone" SoundCue="ImpStoneHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Flesh" SoundCue="ImpWoodFleshBlunt" ParticleEffect="ParticleImpFlesh" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpWoodHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperWood" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageWood" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinWood" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericWood" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightWood" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpWoodHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodLightGrass" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpWoodHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpWoodHeavyStone" ParticleEffect="ParticleImpStoneLight" />
+  </Definition>
+  <!-- Material: WoodHard -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition" Copy="Append">
+    <Id Type="DestructionEffectsDefinition" Subtype="WoodHard" />
+    <CopyFrom Type="DestructionEffectsDefinition" Subtype="WoodHeavy" />
+  </Definition>
+  <!-- Material: WoodHeavy -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="WoodHeavy" />
+    <ContactEffect Material="Stone" SoundCue="ImpWoodHeavyStone" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpWoodHeavyCeramic" ParticleEffect="ParticleImpStoneLight" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperWood" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageWood" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinWood" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericWood" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightWood" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpWoodHeavyGrass" ParticleEffect="ParticleImpGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpWoodHeavySand" ParticleEffect="ParticleImpSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpWoodHeavyStone" ParticleEffect="ParticleImpStoneLight" />
+  </Definition>
+  <!-- Material: WoodSoft -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition" Copy="Append">
+    <Id Type="DestructionEffectsDefinition" Subtype="WoodSoft" />
+    <CopyFrom Type="DestructionEffectsDefinition" Subtype="WoodHeavy" />
+  </Definition>
+  <!-- Material: WoodLight -->
+  <Definition xsi:type="MyObjectBuilder_DestructionEffectsDefinition">
+    <Id Type="DestructionEffectsDefinition" Subtype="WoodLight" />
+    <ContactEffect Material="Stone" SoundCue="ImpWoodLightStone" />
+    <ContactEffect Material="Wood" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="Metal" SoundCue="ImpMetalWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="Flesh" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="Ceramic" SoundCue="ImpWoodLightCeramic" />
+    <ContactEffect Material="Cloth" SoundCue="ImpLeatherWood" />
+    <ContactEffect Material="Paper" SoundCue="ImpPaperWood" />
+    <ContactEffect Material="Food" SoundCue="ImpCabbageWood" />
+    <ContactEffect Material="Pumpkin" SoundCue="ImpPumpkinWood" />
+    <ContactEffect Material="Generic" SoundCue="ImpGenericWood" />
+    <ContactEffect Material="StoneLight" SoundCue="ImpStoneLightWood" />
+    <ContactEffect Material="StoneHeavy" SoundCue="ImpStoneHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="WoodLight" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="WoodHeavy" SoundCue="ImpWoodHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="RoofTile" SoundCue="ImpStoneHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="RoofHay" SoundCue="ImpWoodHeavyWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="TreeShort" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="TreeTall" SoundCue="ImpTreeWood" />
+    <ContactEffect Material="Axe" SoundCue="ImpAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Pickaxe" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Hammer" SoundCue="ImpHammerWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="HammerWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="AxeStone" SoundCue="ImpStoneAxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShovelWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ShovelMetal" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Plow" SoundCue="ImpPickaxeWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ShieldWood" SoundCue="ImpWoodLightWood" />
+    <ContactEffect Material="Mace" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Sword" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="ClubWood" SoundCue="ImpClubWood" ParticleEffect="ParticleImpWood" />
+    <ContactEffect Material="ClubStudded" SoundCue="ImpSwordWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Arrow" SoundCue="ImpArrowWood" ParticleEffect="ParticleToolWoodCutting" />
+    <ContactEffect Material="Soil" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="Grass" SoundCue="ImpWoodLightGrass" />
+    <ContactEffect Material="Sand" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="Snow" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="Clay" SoundCue="ImpWoodLightSand" />
+    <ContactEffect Material="Gravel" SoundCue="ImpWoodLightStone" />
+  </Definition>
+</Definitions>

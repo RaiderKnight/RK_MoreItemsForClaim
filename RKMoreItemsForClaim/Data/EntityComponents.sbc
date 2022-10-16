@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+    <Id Type="Inventory" Subtype="CraftingInventory" />
+    <DisplayName>DisplayName_InventoryName_Crafting</DisplayName>
+    <MaxItemCount>7</MaxItemCount>
+    <MultiplierEnabled>false</MultiplierEnabled>
+    <ShownInGUI>false</ShownInGUI>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+    <Id Type="Inventory" Subtype="InputInventory" />
+    <DisplayName>DisplayName_InventoryName_Crafting</DisplayName>
+    <MaxItemCount>21</MaxItemCount>
+    <MultiplierEnabled>false</MultiplierEnabled>
+    <ShownInGUI>false</ShownInGUI>
+    <OpenEvent>OpenInventory</OpenEvent>
+    <CloseEvent>CloseInventory</CloseEvent>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+    <Id Type="Inventory" Subtype="OutputInventory" />
+    <DisplayName>DisplayName_InventoryName_Crafting</DisplayName>
+    <MaxItemCount>21</MaxItemCount>
+    <MultiplierEnabled>false</MultiplierEnabled>
+    <ShownInGUI>false</ShownInGUI>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+    <Id Type="Inventory" Subtype="ProcessingInventory" />
+    <DisplayName>DisplayName_InventoryName_Processing</DisplayName>
+    <MaxItemCount>14</MaxItemCount>
+    <MultiplierEnabled>false</MultiplierEnabled>
+    <ShownInGUI>false</ShownInGUI>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+    <Id Type="Inventory" Subtype="ProductInventory" />
+    <DisplayName>DisplayName_InventoryName_Production</DisplayName>
+    <MaxItemCount>14</MaxItemCount>
+    <MultiplierEnabled>false</MultiplierEnabled>
+    <ShownInGUI>false</ShownInGUI>
+  </Definition>
+	
+  <Definition xsi:type="MyObjectBuilder_PhysicsBodyComponentDefinition">
+    <Id Type="PhysicsBodyComponent" Subtype="FracturedPiece" />
+    <RigidBodyFlags>RBF_DEBRIS</RigidBodyFlags>
+    <CollisionLayer>FracturePieceLayer</CollisionLayer>
+    <MassPropertiesComputation>Box</MassPropertiesComputation>
+    <AngularDamping>2</AngularDamping>
+    <CreateFromCollisionObject>true</CreateFromCollisionObject>
+    <ForceActivate>true</ForceActivate>
+    <UpdateFlags>Gravity</UpdateFlags>
+    <SerializePhysics>true</SerializePhysics>
+		<PhysicalMaterial>Stone</PhysicalMaterial>
+    <SuppressWarning>true</SuppressWarning><!-- Suppresses warning in log for invalid model. This is correct for Fracture Pieces. -->
+  </Definition>
+	
+  <Definition xsi:type="MyObjectBuilder_PhysicsBodyComponentDefinition">
+    <Id Type="PhysicsBodyComponent" Subtype="FracturedPieceStatic" />
+    <RigidBodyFlags>RBF_STATIC</RigidBodyFlags>
+    <CollisionLayer>FracturePieceLayer</CollisionLayer>
+    <MassPropertiesComputation>Box</MassPropertiesComputation>
+    <CreateFromCollisionObject>true</CreateFromCollisionObject>
+    <ForceActivate>true</ForceActivate>
+    <SerializePhysics>true</SerializePhysics>
+		<PhysicalMaterial>Stone</PhysicalMaterial>
+    <SuppressWarning>true</SuppressWarning><!-- Suppresses warning in log for invalid model. This is correct for Fracture Pieces. -->
+  </Definition>
+	
+  <Definition xsi:type="MyObjectBuilder_PhysicsBodyComponentDefinition">
+    <Id Type="PhysicsBodyComponent" Subtype="Tree" />
+    <RigidBodyFlags>RBF_DEFAULT</RigidBodyFlags>
+    <CollisionLayer>FloatingObjectCollisionLayer</CollisionLayer>
+    <MassPropertiesComputation>Box</MassPropertiesComputation>
+		<LinearDamping>0.4</LinearDamping>
+    <AngularDamping>0.3</AngularDamping>
+    <CreateFromCollisionObject>true</CreateFromCollisionObject>
+    <ForceActivate>true</ForceActivate>
+    <UpdateFlags>Gravity</UpdateFlags>
+    <SerializePhysics>true</SerializePhysics>
+		<PhysicalMaterial>Wood</PhysicalMaterial>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_FloatingObjectDecayComponentDefinition">
+    <Id Type="FloatingObjectDecayComponent" Subtype="Default" />
+    <DecayTime Minutes="5" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_SimpleDecayComponentDefinition">
+    <Id Type="SimpleDecayComponent" Subtype="FracturedPiece" />
+    <DecayTime Seconds="3" />
+    <DecayDuration Seconds="1" />
+    <Serialize>true</Serialize>
+  </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_SimpleDecayComponentDefinition">
+    <Id Type="SimpleDecayComponent" Subtype="FracturedPieceImmediate" />
+    <DecayTime Seconds="0" />
+    <DecayDuration Seconds="1" />
+    <Serialize>true</Serialize>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_SimpleDecayComponentDefinition">
+    <Id Type="FracturePieceDecayComponent" Subtype="Default" />
+    <DecayTime Seconds="30" />
+    <Serialize>true</Serialize>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CubeGridDecayComponentDefinition">
+    <Id Type="CubeGridDecayComponent" Subtype="Default" />
+    <DisableOnClient>true</DisableOnClient>
+    <DecayTime Seconds="20" />
+    <ExplosionDelay Seconds="60" />
+    <ExplosionForce>5000</ExplosionForce>
+    <ExplosionRadius>5</ExplosionRadius>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EntityInteractionComponentDefinition">
+    <Id Type="FloatingObjectInteractionComponent" Subtype="Default" />
+    <!--<WorldInteractionDefId Type="MyObjectBuilder_WorldInteractionDefinition" Subtype="PickUp"/>-->
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EntityInteractionComponentDefinition">
+    <Id Type="CubeGridInteractionComponent" Subtype="Default" />
+    <!--<WorldInteractionDefId Type="MyObjectBuilder_WorldInteractionDefinition" Subtype="Construct"/>
+      <WorldInteractionDefId Type="MyObjectBuilder_WorldInteractionDefinition" Subtype="Deconstruct"/>
+      <WorldInteractionDefId Type="MyObjectBuilder_WorldInteractionDefinition" Subtype="Repair"/>-->
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EntityInteractionComponentDefinition">
+    <Id Type="CubeBlockInteractionComponent" Subtype="Default" />
+    <!--<WorldInteractionDefId Type="MyObjectBuilder_WorldInteractionDefinition" Subtype="Construct"/>
+      <WorldInteractionDefId Type="MyObjectBuilder_WorldInteractionDefinition" Subtype="Deconstruct"/>
+      <WorldInteractionDefId Type="MyObjectBuilder_WorldInteractionDefinition" Subtype="Repair"/>-->
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_MechanicalPowerSystemDefinition">
+    <Id Type="MechanicalPowerSystem" Subtype="CubeGridLarge" />
+    <TransmissionFrictionMultiplier>1.08</TransmissionFrictionMultiplier>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_ModelComponentDefinition">
+    <Id Type="ModelComponent" Subtype="SpawnAreaMarker" />
+    <Model>Models\BotFlags\BotFlag.mwm</Model>
+    <DisplayName>DisplayName_AreaMarkers_MiningMarker</DisplayName>
+    <Icon>Textures\GUI\Icons\Cubes\Mining.dds</Icon>
+    <!--<Size>
+      <X>0.3</X>
+      <Y>0.3</Y>
+      <Z>0.3</Z>
+    </Size>-->
+    <Volume>4</Volume>
+  </Definition>
+</Definitions>

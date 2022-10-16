@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Ores -->
+  
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="OreIron" />
+    <Tag>Ore</Tag>
+    <Tag>OreIron</Tag>
+    <DisplayName>DisplayName_Item_OreIron</DisplayName>
+    <Description>Description_Item_OreIron</Description>
+    <Icon>Textures\GUI\Icons\Materials\IronOre.dds</Icon> 
+    <Size>
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </Size>
+    <Model>Models\Environment\Rocks\IronOre.mwm</Model>
+    <PhysicalMaterial>StoneLight</PhysicalMaterial>
+    <MaxStackAmount>25</MaxStackAmount>
+    <Health>70</Health>
+    <Mass>20</Mass>
+  </Definition>
+    
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="OreCopper" />
+    <Tag>Ore</Tag>
+    <Tag>OreCopper</Tag>
+    <DisplayName>DisplayName_Item_OreCopper</DisplayName>
+    <Description>Description_Item_OreCopper</Description>
+    <Icon>Textures\GUI\Icons\Materials\OreCopper.dds</Icon>
+    <Size>
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </Size>
+    <Model>Models\Environment\Rocks\CopperOre.mwm</Model>
+    <PhysicalMaterial>StoneLight</PhysicalMaterial>
+    <MaxStackAmount>25</MaxStackAmount>
+    <Health>70</Health>
+    <Mass>20</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="OreTin" />
+    <Tag>Ore</Tag>
+    <Tag>OreTin</Tag>
+    <DisplayName>DisplayName_Item_OreTin</DisplayName>
+    <Description>Description_Item_OreTin</Description>
+    <Icon>Textures\GUI\Icons\Materials\OreTin.dds</Icon>
+    <Size>
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </Size>
+    <Model>Models\Environment\Rocks\TinOre.mwm</Model>
+    <PhysicalMaterial>StoneLight</PhysicalMaterial>
+    <MaxStackAmount>25</MaxStackAmount>
+    <Health>70</Health>
+    <Mass>20</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="OreSilver" />
+    <Tag>Ore</Tag>
+    <Tag>OreSilver</Tag>
+    <DisplayName>DisplayName_Item_OreSilver</DisplayName>
+    <Description>Description_Item_OreSilver</Description>
+    <Icon>Textures\GUI\Icons\Materials\OreSilver.dds</Icon>
+    <Size>
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </Size>
+    <Model>Models\Environment\Rocks\SilverOre.mwm</Model>
+    <PhysicalMaterial>StoneLight</PhysicalMaterial>
+    <MaxStackAmount>25</MaxStackAmount>
+    <Health>70</Health>
+    <Mass>20</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="OreGold" />
+    <Tag>Ore</Tag>
+    <Tag>OreGold</Tag>
+    <DisplayName>DisplayName_Item_OreGold</DisplayName>
+    <Description>Description_Item_OreGold</Description>
+    <Icon>Textures\GUI\Icons\Materials\OreGold.dds</Icon>
+    <Size>
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </Size>
+    <Model>Models\Environment\Rocks\GoldOre.mwm</Model>
+    <PhysicalMaterial>StoneLight</PhysicalMaterial>
+    <MaxStackAmount>25</MaxStackAmount>
+    <Health>70</Health>
+    <Mass>30</Mass>
+  </Definition>
+  
+  <!-- Soil resources -->
+    
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="Dirt" />
+    <Public>true</Public>
+    <DisplayName>DisplayName_Item_Dirt</DisplayName>
+    <Icon>Textures\GUI\Icons\Materials\Dirt.dds</Icon>
+    <Size>
+      <X>0.2</X>
+      <Y>0.2</Y>
+      <Z>0.2</Z>
+    </Size>
+    <Model>Models\Components\DirtBag.mwm</Model>
+    <PhysicalMaterial>Generic</PhysicalMaterial>
+    <MaxStackAmount>100</MaxStackAmount>
+    <Health>10</Health>
+    <Mass>0.1</Mass>
+  </Definition>
+
+  <!--<Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="Sand" />
+    <Public>true</Public>
+    <DisplayName>DisplayName_Item_Sand</DisplayName>
+    <Description>Description_Item_Sand</Description>
+    <Icon>Textures\GUI\Icons\Materials\SandBag.dds</Icon>
+    <Size>
+      <X>0.2</X>
+      <Y>0.2</Y>
+      <Z>0.2</Z>
+    </Size>
+    <Model>Models\Components\SandBag.mwm</Model>
+    <PhysicalMaterial>Cloth</PhysicalMaterial>
+    <MaxStackAmount>100</MaxStackAmount>
+    <Health>10</Health>
+  </Definition>-->
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="Clay" />
+    <DisplayName>DisplayName_Item_Clay</DisplayName>
+    <Description>Description_Item_Clay</Description>
+    <Icon>Textures\GUI\Icons\Materials\Clay.dds</Icon>
+    <Size>
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </Size>
+    <Model>Models\Components\Clay.mwm</Model>
+    <PhysicalMaterial>Pumpkin</PhysicalMaterial>
+    <MaxStackAmount>50</MaxStackAmount>
+    <Health>70</Health>
+    <Mass>0.1</Mass>
+  </Definition>
+
+  <!-- Other raw resources -->
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="Antlers" />
+    <DisplayName>DisplayName_Item_Antlers</DisplayName>
+    <Description>Description_Item_Antlers</Description>
+    <Icon>Textures\GUI\Icons\Materials\Antlers.dds</Icon>
+    <Size>
+      <X>0.25</X>
+      <Y>0.25</Y>
+      <Z>0.25</Z>
+    </Size>
+    <Model>Models\Components\Antlers.mwm</Model>
+    <PhysicalMaterial>Generic</PhysicalMaterial>
+    <MaxStackAmount>15</MaxStackAmount>
+    <Health>20</Health>
+    <Mass>1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="Sticks" />
+    <Public>true</Public>
+    <Tag>ScrapWood</Tag>
+    <DisplayName>DisplayName_Item_WoodenSticks</DisplayName>
+    <Description>Description_Item_WoodenSticks</Description>
+    <Icon>Textures\GUI\Icons\Materials\WoodenStick.dds</Icon>
+    <Model>Models\Components\WoodenStick.mwm</Model>
+    <PhysicalMaterial>WoodLight</PhysicalMaterial>
+    <Size>
+      <X>0.7</X>
+      <Y>0.1</Y>
+      <Z>1</Z>
+    </Size>
+    <MaxStackAmount>50</MaxStackAmount>
+    <Health>10</Health>
+    <Mass>0.1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="ScrapWood" />
+    <Public>true</Public>
+    <Tag>ScrapWood</Tag>
+    <DisplayName>DisplayName_Block_ScrapWood</DisplayName>
+    <Icon>Textures\GUI\Icons\Materials\ScrapWood.dds</Icon>
+    <Model>Models\Cubes\Small\ScrapWood.mwm</Model>
+    <PhysicalMaterial>WoodLight</PhysicalMaterial>
+    <Size>
+      <X>0.25</X>
+      <Y>0.63</Y>
+      <Z>0.12</Z>
+    </Size>
+    <MaxStackAmount>50</MaxStackAmount>
+    <Health>10</Health>
+    <Mass>0.1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="BranchesConiferous" />
+    <Public>true</Public>
+    <Tag>ScrapWood</Tag>
+    <Tag>PlantMatter</Tag>
+    <DisplayName>DisplayName_Item_ScrapWoodBranches</DisplayName>
+    <Description>Description_Item_ScrapWoodBranches</Description>
+    <Icon>Textures\GUI\Icons\Materials\ScrapWoodBranches.dds</Icon>
+    <Model>Models\Cubes\Small\ScrapWoodBranches.mwm</Model>
+    <PhysicalMaterial>WoodLight</PhysicalMaterial>
+    <Size>
+      <X>0.7</X>
+      <Y>0.1</Y>
+      <Z>1</Z>
+    </Size>
+    <MaxStackAmount>50</MaxStackAmount>
+    <Health>10</Health>
+    <Mass>0.1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="BranchesBroadleaf" />
+    <Public>true</Public>
+    <Tag>ScrapWood</Tag>
+    <Tag>PlantMatter</Tag>
+    <DisplayName>DisplayName_Item_BranchesBroadleaf</DisplayName>
+    <Description>Description_Item_BranchesBroadleaf</Description>
+    <Icon>Textures\GUI\Icons\Materials\OakTreeBranches.png</Icon>
+    <Model>Models\Cubes\Small\OakTreeBranches.mwm</Model>
+    <PhysicalMaterial>WoodLight</PhysicalMaterial>
+    <Size>
+      <X>0.7</X>
+      <Y>0.1</Y>
+      <Z>1</Z>
+    </Size>
+    <MaxStackAmount>50</MaxStackAmount>
+    <Health>10</Health>
+    <Mass>0.1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="BranchesPalmtree" />
+    <Public>true</Public>
+    <Tag>ScrapWood</Tag>
+    <Tag>PlantMatter</Tag>
+    <DisplayName>DisplayName_Item_BranchesPalmtree</DisplayName>
+    <Description>Description_Item_BranchesPalmtree</Description>
+    <Icon>Textures\GUI\Icons\Materials\PalmtreeBranches.dds</Icon>
+    <Model>Models\Cubes\Small\PalmtreeBranches.mwm</Model>
+    <PhysicalMaterial>WoodLight</PhysicalMaterial>
+    <Size>
+      <X>0.7</X>
+      <Y>0.1</Y>
+      <Z>1</Z>
+    </Size>
+    <MaxStackAmount>50</MaxStackAmount>
+    <Health>10</Health>
+    <Mass>0.1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="Log" />
+    <Public>true</Public>
+    <Tag>Log</Tag>
+    <DisplayName>DisplayName_Item_LogPineTree</DisplayName>
+    <Description>Description_Item_Log</Description>
+    <Icon>Textures\GUI\Icons\Materials\Log250cm.dds</Icon>
+    <Model>Models\Cubes\Small\LogSpruce250cm.mwm</Model>
+    <PhysicalMaterial>WoodHeavy</PhysicalMaterial>
+    <Size>
+      <X>2.5</X>
+      <Y>0.2</Y>
+      <Z>0.2</Z>
+    </Size>
+    <MaxStackAmount>1</MaxStackAmount>
+    <Health>100</Health>
+    <Mass>10</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="LogOakQuarter" />
+    <Public>true</Public>
+    <Tag>Log</Tag>
+    <DisplayName>DisplayName_Item_LogOakQuarter</DisplayName>
+    <Description>Description_Item_Log</Description>
+    <Icon>Textures\GUI\Icons\Materials\LogOak.png</Icon>
+    <Model>Models\Cubes\Small\LogOakQuarter250cm.mwm</Model>
+    <PhysicalMaterial>WoodHeavy</PhysicalMaterial>
+    <Size>
+      <X>2.5</X>
+      <Y>0.2</Y>
+      <Z>0.2</Z>
+    </Size>
+    <MaxStackAmount>1</MaxStackAmount>
+    <Health>10</Health>
+    <Mass>10</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="LogOakHalf" />
+    <Public>true</Public>
+    <Tag>Log</Tag>
+    <DisplayName>DisplayName_Item_LogOakHalf</DisplayName>
+    <Description>Description_Item_Log</Description>
+    <Icon>Textures\GUI\Icons\Materials\LogOak.png</Icon>
+    <Model>Models\Cubes\Small\LogOakHalf250cm.mwm</Model>
+    <PhysicalMaterial>WoodHeavy</PhysicalMaterial>
+    <Size>
+      <X>2.5</X>
+      <Y>0.2</Y>
+      <Z>0.2</Z>
+    </Size>
+    <MaxStackAmount>1</MaxStackAmount>
+    <Health>100</Health>
+    <Mass>10</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="LogOakBranch" />
+    <Public>true</Public>
+    <Tag>Log</Tag>
+    <DisplayName>DisplayName_Item_LogOakBranch</DisplayName>
+    <Description>Description_Item_Log</Description>
+    <Icon>Textures\GUI\Icons\Materials\LogOak.png</Icon>
+    <Model>Models\Cubes\Small\LogOak250cm.mwm</Model>
+    <PhysicalMaterial>WoodHeavy</PhysicalMaterial>
+    <Size>
+      <X>2.5</X>
+      <Y>0.2</Y>
+      <Z>0.2</Z>
+    </Size>
+    <MaxStackAmount>1</MaxStackAmount>
+    <Health>100</Health>
+    <Mass>10</Mass>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="LogPalmtree" />
+    <Public>true</Public>
+    <Tag>Log</Tag>
+    <DisplayName>DisplayName_Item_LogPalmtree</DisplayName>
+    <Description>Description_Item_Log</Description>
+    <Icon>Textures\GUI\Icons\Materials\LogPalm250cm.dds</Icon>
+    <Model>Models\Cubes\Small\LogPalm250cm.mwm</Model>
+    <PhysicalMaterial>WoodHeavy</PhysicalMaterial>
+    <Size>
+      <X>2.5</X>
+      <Y>0.2</Y>
+      <Z>0.2</Z>
+    </Size>
+    <MaxStackAmount>1</MaxStackAmount>
+    <Health>100</Health>
+    <Mass>10</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="StrawsFlax" />
+    <Public>true</Public>
+    <Tag>Harvest</Tag>
+    <Tag>PlantMatter</Tag>
+    <DisplayName>DisplayName_Item_FlaxStraws</DisplayName>
+    <Description>Description_Item_FlaxStraws</Description>
+    <Icon>Textures\GUI\Icons\Materials\FlaxBundle.dds</Icon>
+    <Model>Models\Components\FlaxBundle.mwm</Model>
+    <PhysicalMaterial>Generic</PhysicalMaterial>
+    <Size>
+      <X>0.7</X>
+      <Y>0.1</Y>
+      <Z>1</Z>
+    </Size>
+    <MaxStackAmount>25</MaxStackAmount>
+    <Health>10</Health>
+    <Mass>1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="StrawsWheat" />
+    <Public>true</Public>
+    <Tag>Harvest</Tag>
+    <Tag>PlantMatter</Tag>
+    <DisplayName>DisplayName_Item_WheatStraws</DisplayName>
+    <Description>Description_Item_WheatStraws</Description>
+    <Icon>Textures\GUI\Icons\Materials\WheatStraws.dds</Icon>
+    <Model>Models\Components\WheatStraws.mwm</Model>
+    <PhysicalMaterial>Generic</PhysicalMaterial>
+    <Size>
+      <X>0.7</X>
+      <Y>0.1</Y>
+      <Z>1</Z>
+    </Size>
+    <MaxStackAmount>25</MaxStackAmount>
+    <Health>10</Health>
+    <Mass>1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="StoneSmall" />
+    <Public>true</Public>
+    <DisplayName>DisplayName_Item_StoneSmall</DisplayName>
+    <Description>Description_Item_StoneSmall</Description>
+    <Icon>Textures\GUI\Icons\Materials\StoneSmall.dds</Icon>
+    <Size>
+      <X>0.2</X>
+      <Y>0.2</Y>
+      <Z>0.2</Z>
+    </Size>
+    <!--<Model>Models\Cubes\Small\StoneOreSmall.mwm</Model>-->
+    <Model>Models\Environment\Rocks\StoneOreSmall_1.mwm</Model>
+    <Model>Models\Environment\Rocks\StoneOreSmall_2.mwm</Model>
+    <Model>Models\Environment\Rocks\StoneOreSmall_3.mwm</Model>
+    <Model>Models\Environment\Rocks\StoneOreSmall_4.mwm</Model>
+
+    <PhysicalMaterial>StoneLight</PhysicalMaterial>
+    <MaxStackAmount>25</MaxStackAmount>
+    <Health>10</Health>
+    <Mass>0.5</Mass>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="StoneLarge" />
+    <DisplayName>DisplayName_Item_LargeStone</DisplayName>
+    <Description>Description_Item_LargeStone</Description>
+    <Icon>Textures\GUI\Icons\Materials\StoneLarge.dds</Icon>
+    <Size>
+      <X>0.25</X>
+      <Y>0.25</Y>
+      <Z>0.25</Z>
+    </Size>
+    <!--<Model>Models\Cubes\Small\StoneOreMid.mwm</Model>-->
+    <Model>Models\Environment\Rocks\StoneOreLarge_1.mwm</Model>
+    <Model>Models\Environment\Rocks\StoneOreLarge_2.mwm</Model>
+    <Model>Models\Environment\Rocks\StoneOreLarge_3.mwm</Model>
+    <Model>Models\Environment\Rocks\StoneOreLarge_4.mwm</Model>
+    <Model>Models\Environment\Rocks\StoneOreLarge_5.mwm</Model>
+    <Model>Models\Environment\Rocks\StoneOreLarge_6.mwm</Model>
+    <Model>Models\Environment\Rocks\StoneOreLarge_7.mwm</Model>
+    <Model>Models\Environment\Rocks\StoneOreLarge_8.mwm</Model>
+    <PhysicalMaterial>StoneHeavy</PhysicalMaterial>
+    <MaxStackAmount>5</MaxStackAmount>
+    <Health>52</Health>
+    <Mass>50</Mass>
+  </Definition>
+  
+</Definitions>

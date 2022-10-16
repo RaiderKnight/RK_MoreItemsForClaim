@@ -4,7 +4,7 @@
   <Definition xsi:type="MyObjectBuilder_BuildableBlockDefinition">
     <Id Type="Block" Subtype="RKClaimBlockStone" />
     <Rotation>YAxis</Rotation>
-    <DisplayName>More Item ClaimBlock</DisplayName>
+    <DisplayName>Unlimited ClaimBlock</DisplayName>
     <Public>true</Public>
     <Icon>Textures\GUI\Icons\Cubes\Blocks\RKClaimBlock.dds</Icon>
     <GridDataDefinitionId Type="GridDataComponent" Subtype="LargeGridDataBase" />
@@ -52,7 +52,7 @@
   <Definition xsi:type="MyObjectBuilder_BuildableBlockDefinition">
     <Id Type="Block" Subtype="RKClaimBlockWood" />
     <Rotation>YAxis</Rotation>
-    <DisplayName>More Item ClaimBlockWood</DisplayName>
+    <DisplayName>Unlimited ClaimBlockWood</DisplayName>
     <Public>true</Public>
     <Icon>Textures\GUI\Icons\Cubes\Blocks\RKClaimBlockWood.dds</Icon>
     <GridDataDefinitionId Type="GridDataComponent" Subtype="LargeGridDataBase" />
@@ -104,7 +104,7 @@
   </Definition>
 
   <Definition xsi:type="MyObjectBuilder_EntityBannerComponentDefinition">
-    <Id Type="MyObjectBuilder_OwnershipBannerComponent" Subtype="RKClaimBlockBanner" />
+    <Id Type="MyObjectBuilder_OwnershipBannerComponent" Subtype="ClaimBlockBanner" />
     <Material>ShieldMaterial</Material>
     <Type>Player</Type>
   </Definition>
@@ -116,7 +116,7 @@
     <Component Type="ClaimBlockComponent" Subtype="RKClaimBlockTier1" />
     <Component Type="EntityOwnershipComponent" />
     <Component Type="ClaimBlockRespawnComponent" />
-    <Component Type="OwnershipBannerComponent" Subtype="RKClaimBlockBanner" />
+    <Component Type="OwnershipBannerComponent" Subtype="ClaimBlockBanner" />
   </Definition>
 
   <Definition xsi:type="MyObjectBuilder_ClaimBlockComponentDefinition">
@@ -140,18 +140,21 @@
     <Component Type="OwnershipBannerComponent" Subtype="RKClaimBlockWood" />
   </Definition>
   
-  <Definition xsi:type="MyObjectBuilder_AreaUpkeepSystemDefinition" Merge="Append">
+  <!-- <Definition xsi:type="MyObjectBuilder_AreaUpkeepSystemDefinition" Merge="Append">
     <Id Type="MyObjectBuilder_AreaUpkeepSystemDefinition" Subtype="Default" />
-	<MaxPayableTimeUnits>35691</MaxPayableTimeUnits>
+	<MaxPayableTimeUnits>35791</MaxPayableTimeUnits>
 	<NotifyAtPercentage>0.006</NotifyAtPercentage>
     <PointsPerResource>
       <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Dirt" Value="1" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Sand" Value="1" />
       <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="Skull" Value="5" />
       <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="HandTorchItem" Value="5" />
-      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="ImpaledSkull" Value="5" />
-      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Weight" Value="5" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="CarvedPumpkin" Value="1" />
+	  <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="SeedBagPumpkin" Value="10" />
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="SeedBagCabbage" Value="10" />
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="SeedBagFlax" Value="10" />
     </PointsPerResource>
-  </Definition>
+  </Definition> -->
   
   <Definition xsi:type="MyObjectBuilder_EntityRespawnComponentDefinition">
     <Id Type="ClaimBlockRespawnComponent" />

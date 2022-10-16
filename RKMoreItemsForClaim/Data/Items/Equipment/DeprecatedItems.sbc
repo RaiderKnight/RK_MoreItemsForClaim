@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Deprecated Broken Items, not removed for compatibility-->
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="SwordIronBroken" />
+    <Public>true</Public>
+    <DisplayName>DisplayName_Item_SwordIronBroken</DisplayName>
+    <Description>Description_Item_SwordIronBroken</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SwordIron.dds</Icon>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\Broken.dds</Icon>
+    <Model>Models\Weapons\Sword.mwm</Model>
+    <PhysicalMaterial>Hammer</PhysicalMaterial>
+    <Mass>5</Mass>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <MaxStackAmount>5</MaxStackAmount>
+    <Health>50</Health>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="SwordBronzeBroken" />
+    <Public>true</Public>
+    <DisplayName>DisplayName_Item_SwordBronzeBroken</DisplayName>
+    <Description>Description_Item_SwordBronzeBroken</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SwordBronze.dds</Icon>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\Broken.dds</Icon>
+    <Model>Models\Weapons\SwordBronze.mwm</Model>
+    <PhysicalMaterial>Sword</PhysicalMaterial>
+    <Mass>5</Mass>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <MaxStackAmount>5</MaxStackAmount>
+    <Health>50</Health>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="SwordSteelBroken" />
+    <Public>true</Public>
+    <Visible>false</Visible>
+    <DisplayName>DisplayName_Item_SwordSteelBroken</DisplayName>
+    <Description>Description_Item_SwordSteelBroken</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SwordSteel.dds</Icon>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\Broken.dds</Icon>
+    <Model>Models\Weapons\SwordSteel.mwm</Model>
+    <PhysicalMaterial>Hammer</PhysicalMaterial>
+    <Mass>5</Mass>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <MaxStackAmount>5</MaxStackAmount>
+    <Health>50</Health>
+  </Definition>
+  
+  <!-- Melting recipes for those items -->
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="MeltSwordIronDeprecated" />
+    <DisplayName>DisplayName_SwordSmelting</DisplayName>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SwordIron.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\Broken.dds</Icon>
+    <Category>Melting</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="SwordIronBroken" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="4" Type="InventoryItem" Subtype="IngotIron" />
+    </Results>
+    <CraftingTime Seconds="10" />
+    <HiddenWithoutPrereqs>true</HiddenWithoutPrereqs>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="MeltSwordBronzeDeprecated" />
+    <DisplayName>DisplayName_SwordBronzeSmelting</DisplayName>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SwordBronze.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\Broken.dds</Icon>
+    <Category>Melting</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="SwordBronzeBroken" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="4" Type="InventoryItem" Subtype="IngotBronze" />
+    </Results>
+    <CraftingTime Seconds="10" />
+    <HiddenWithoutPrereqs>true</HiddenWithoutPrereqs>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="MeltSwordSteelDeprecated" />
+    <DisplayName>DisplayName_SwordSteelSmelting</DisplayName>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SwordSteel.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\Broken.dds</Icon>
+    <Category>Melting</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="SwordSteelBroken" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="4" Type="InventoryItem" Subtype="IngotSteel" />
+    </Results>
+    <CraftingTime Seconds="10" />
+    <HiddenWithoutPrereqs>true</HiddenWithoutPrereqs>
+  </Definition>
+
+</Definitions>

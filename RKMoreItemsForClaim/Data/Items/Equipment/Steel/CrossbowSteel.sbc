@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- Crossbow -->
+
+  <Definition xsi:type="MyObjectBuilder_HandItemDefinition">
+    <Id Type="HandItem" Subtype="CrossbowSteel" />
+
+    <!-- Display -->
+    <DisplayName>DisplayName_Weapon_CrossbowSteel</DisplayName>
+    <Description>Description_Weapon_CrossbowSteel</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\CrossbowSteel.dds</Icon>
+	  <Tag>WeaponRanged</Tag>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Weapons\CrossbowSteel.mwm</Model>
+
+    <PhysicalMaterial>Metal</PhysicalMaterial>
+    <Mass>5</Mass>
+    <ItemBreakEvent>ToolBreakMetal</ItemBreakEvent>
+    <!-- TODO -->
+
+    <MaxStackAmount>1</MaxStackAmount>
+
+    <!-- Equipment -->
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid" />
+
+    <MaxDurability>600</MaxDurability>
+
+    <BrokenItem Type="MyObjectBuilder_InventoryItem" Subtype="CrossbowSteelBroken" />
+    <Position>
+	  <Slot>GhostHand</Slot>
+      <Slot>MainHand</Slot>
+      <Slot>OffHand</Slot>
+    </Position>
+	
+    <Animation>crossbow</Animation>
+    <EquippedTransformFps>
+      <Position>
+        <X>0.15</X>
+        <Y>-0.2</Y>
+        <Z>-0.25</Z>
+      </Position>
+      <Orientation>
+        <X>0</X>
+        <Y>0.7071</Y>
+        <Z>0.7071</Z>
+        <W>0</W>
+      </Orientation>
+    </EquippedTransformFps>
+    <DummyMapping Name="crossbow_dumb_right" AnimationVariable="#crossbowright" />
+    <DummyMapping Name="crossbow_dumb_left" AnimationVariable="#crossbowleft" />
+    <DummyMapping Name="crossbow_dumb_rightF" AnimationVariable="#crossbowrightF" />
+    <DummyMapping Name="crossbow_dumb_leftF" AnimationVariable="#crossbowleftF" />
+    <DummyMapping Name="crossbow_dumb_right02" AnimationVariable="#crossbowright02" />
+    <DummyMapping Name="crossbow_dumb_left02" AnimationVariable="#crossbowleft02" />
+    <DummyMapping Name="crossbow_dumb_right02F" AnimationVariable="#crossbowright02F" />
+    <DummyMapping Name="crossbow_dumb_left02F" AnimationVariable="#crossbowleft02F" />
+
+    <AllowEmotes>false</AllowEmotes>
+    
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>CombatMode</StanceName>
+      <BehaviorId Type="RangedWeaponBehaviorDefinition" Subtype="CrossbowSteel" />
+    </StanceToBehavior>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="CrossbowSteelBroken" />
+    <Public>true</Public>
+    <DisplayName>DisplayName_Item_CrossbowSteelBroken</DisplayName>
+    <Description>Description_Item_CrossbowSteelBroken</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\CrossbowSteel.dds</Icon>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\Broken.dds</Icon>
+    <Model>Models\Weapons\CrossbowSteel.mwm</Model>
+    <PhysicalMaterial>Metal</PhysicalMaterial>
+    <Mass>5</Mass>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <MaxStackAmount>5</MaxStackAmount>
+    <Health>50</Health>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_RangedWeaponBehaviorDefinition">
+    <Id Type="RangedWeaponBehaviorDefinition" Subtype="CrossbowSteel" />
+    <Projectile Type="ProjectileItem" Subtype="CrossbowBolt" />
+
+    <ReloadCost Stat="Stamina" Cost="20" />
+
+    <ShootTime>0</ShootTime>
+		<TimeBeforeReload>266</TimeBeforeReload>
+    <ReloadTime>4000</ReloadTime>
+    <ShootVelocity>70</ShootVelocity>
+
+    <ShootSoundName>ToolCrossbShot</ShootSoundName>
+    <ReloadSoundName>ToolCrossbReload</ReloadSoundName>
+    <ShootAnimation>shoot</ShootAnimation>
+    <ModelReadyToShoot>Models\Weapons\CrossbowSteel_loaded.mwm</ModelReadyToShoot>
+    
+    <IronsightEffect Type="CompositeEntityEffect" Subtype="Ironsight" />
+    <ReloadEffect Type="CompositeEntityEffect" Subtype="CrossbowReload" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="CrossbowSteel" />
+    <DisplayName>DisplayName_Weapon_CrossbowSteel</DisplayName>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\CrossbowSteel.dds</Icon>
+    <Category>AdvancedWeapons</Category>
+    <Prerequisites>
+      <Item Tag="Timber" Amount="2" />
+      <Item Tag="IngotSteel" Amount="2" />
+      <Item Type="InventoryItem" Subtype="PartsMetal" Amount="2" />
+      <Item Type="InventoryItem" Subtype="JarClayWithLinseedOil" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="HandItem" Subtype="CrossbowSteel" />
+    </Results>
+    <CraftingTime Seconds="15" />
+  </Definition>
+	
+  <Definition xsi:type="MyObjectBuilder_ContainerDefinition">
+    <Id Type="HandItem" Subtype="CrossbowSteel" />
+
+		<Component Type="ModelComponent" />
+		<Component Type="RenderComponentRigged" />
+    <Component Type="AnimationControllerComponent" Subtype="ME_crossbow" />
+  </Definition>
+</Definitions>

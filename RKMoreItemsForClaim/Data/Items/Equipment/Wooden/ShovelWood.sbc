@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_HandItemDefinition">
+    <Id Type="HandItem" Subtype="ShovelWood" />
+
+    <!-- Display -->
+    <DisplayName>DisplayName_Tool_WoodenShovel</DisplayName>
+    <Description>Description_Tool_WoodenShovel</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\WoodenShovel.dds</Icon>
+	  <Tag>Shovel</Tag>
+    <Tag>ToolLong</Tag>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Weapons\WoodenShovel.mwm</Model>
+
+    <PhysicalMaterial>WoodLight</PhysicalMaterial>
+    <Mass>5</Mass>
+
+    <Animation>shovel</Animation>
+
+    <DummyMapping Name="shovel_dumb_left" AnimationVariable="#shovelleft" />
+    <DummyMapping Name="shovel_dumb_left_female" AnimationVariable="#shovelleftfemale" />
+
+    <MaxStackAmount>1</MaxStackAmount>
+
+    <!-- Equipment -->
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid" />
+
+    <MaxDurability>100</MaxDurability>
+
+    <Position>
+      <Slot>MainHand</Slot>
+      <Slot>OffHand</Slot>
+    </Position>
+
+    <!-- extra transform on IK dummy in 1st person -->
+    <EquippedTransform>
+      <!-- tool rotation offset from hand -->
+      <Orientation>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>1</W>
+      </Orientation>
+    </EquippedTransform>
+    <EquippedTransformFps>
+      <!-- hand IK target offset -->
+      <Position>
+        <X>0.533</X>
+        <Y>-1.0</Y>
+        <Z>-0.339</Z>
+      </Position>
+      <Orientation>
+        <X>0.2288072</X>
+        <Y>0.6835734</Y>
+        <Z>-0.240634</Z>
+        <W>0.6499768</W>
+      </Orientation>
+    </EquippedTransformFps>
+
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="DiggerToolBehaviorDefinition" Subtype="ShovelWood" />
+    </StanceToBehavior>
+    <StanceToBehavior>
+      <StanceName>CombatMode</StanceName>
+      <BehaviorId Type="MeleeWeaponBehaviorDefinition" Subtype="ShovelWood" />
+    </StanceToBehavior>
+    
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_DiggerToolBehaviorDefinition">
+    <Id Type="DiggerToolBehaviorDefinition" Subtype="ShovelWood" />
+	  <Cost Stat="Stamina" Cost="2.5" />
+    <ToolheadMaterial>ShovelWood</ToolheadMaterial>
+    <ToolheadMaterialFill>ShovelFill</ToolheadMaterialFill>
+
+    <YieldMultiplier>1.0</YieldMultiplier>
+    <TargetingDistance>3</TargetingDistance>
+    <MiningRadius>0.4</MiningRadius>
+    <Mining Type="MyObjectBuilder_VoxelMiningDefinition" Subtype="Shovel" />
+
+    <SourceItem Type="InventoryItem" Subtype="Dirt" />
+    <FillMaterial>Soil</FillMaterial>
+    <FillRadius>0.5</FillRadius>
+    <FillVolume>64</FillVolume>
+
+    <PrimaryEffect>
+      <HitTime>.6</HitTime>
+      <AnimationTime>1.2</AnimationTime>
+      <Animation>Digging</Animation>
+    </PrimaryEffect>
+
+    <SecondaryEffect>
+      <HitTime>.6</HitTime>
+      <AnimationTime>1.2</AnimationTime>
+      <Animation>Filling</Animation>
+    </SecondaryEffect>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_MeleeWeaponBehaviorDefinition">
+    <Id Type="MeleeWeaponBehaviorDefinition" Subtype="ShovelWood" />
+
+    <LeftSwing>
+      <Range>2.0</Range>
+      <StartArc>-70</StartArc>
+      <EndArc>20</EndArc>
+
+      <Animation>Attack</Animation>
+      <SwingSound>ToolSwishHeavy</SwingSound>
+
+      <LightAttack MinimumDamage="10" AttackMultipleTargets="true">
+        <StatCost Stat="Stamina" Cost="14" />
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Back">
+          <Effect Type="CompositeEntityEffect" Subtype="Backstab" Chance="1.0" />
+        </AppliedEffect>
+      </LightAttack>
+
+      <ChargedAttack MinimumDamage="10" MaximumDamage="13" AttackMultipleTargets="true">
+        <StatCost Stat="Stamina" Cost="18" />
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Back">
+          <Effect Type="CompositeEntityEffect" Subtype="Backstab" Chance="1.0" />
+        </AppliedEffect>
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Left">
+          <Effect Type="CompositeEntityEffect" Subtype="ArmWoundLeft" Chance="0.3" />
+        </AppliedEffect>
+      </ChargedAttack>
+    </LeftSwing>
+
+    <RightSwing>
+      <Range>2.0</Range>
+      <StartArc>70</StartArc>
+      <EndArc>-20</EndArc>
+
+      <Animation>Attack</Animation>
+      <SwingSound>ToolSwishHeavy</SwingSound>
+
+      <LightAttack MinimumDamage="10" AttackMultipleTargets="true">
+        <StatCost Stat="Stamina" Cost="14" />
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Back">
+          <Effect Type="CompositeEntityEffect" Subtype="Backstab" Chance="1.0" />
+        </AppliedEffect>
+      </LightAttack>
+
+      <ChargedAttack MinimumDamage="10" MaximumDamage="13" AttackMultipleTargets="true">
+        <StatCost Stat="Stamina" Cost="18" />
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Back">
+          <Effect Type="CompositeEntityEffect" Subtype="Backstab" Chance="1.0" />
+        </AppliedEffect>
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Right">
+          <Effect Type="CompositeEntityEffect" Subtype="ArmWoundRight" Chance="0.3" />
+        </AppliedEffect>
+      </ChargedAttack>
+    </RightSwing>
+
+    <ForwardSwing>
+      <Range>2.0</Range>
+      <StartArc>70</StartArc>
+      <EndArc>-20</EndArc>
+
+      <Animation>Attack</Animation>
+      <SwingSound>ToolSwishHeavy</SwingSound>
+
+      <LightAttack MinimumDamage="10" AttackMultipleTargets="true">
+        <StatCost Stat="Stamina" Cost="14" />
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Back">
+          <Effect Type="CompositeEntityEffect" Subtype="Backstab" Chance="1.0" />
+        </AppliedEffect>
+      </LightAttack>
+
+      <ChargedAttack MinimumDamage="10" MaximumDamage="13" AttackMultipleTargets="true">
+        <StatCost Stat="Stamina" Cost="18" />
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Back">
+          <Effect Type="CompositeEntityEffect" Subtype="Backstab" Chance="1.0" />
+        </AppliedEffect>
+        <AppliedEffect Affectee="Target" ContactType="Hit">
+          <Effect Type="CompositeEntityEffect" Subtype="Stun" Chance="0.2" />
+        </AppliedEffect>
+      </ChargedAttack>
+    </ForwardSwing>
+
+    <CanBlock>true</CanBlock>
+    <HardnessLimited>true</HardnessLimited>
+    <WeaponMaterial>ClubWood</WeaponMaterial>
+
+    <ChargeEffect Type="CompositeEntityEffect" Subtype="Charging" />
+
+    <BlockAnimation>block_idle</BlockAnimation>
+    <BlockRaiseTime>.03</BlockRaiseTime>
+    <BlockStatCost Stat="Stamina" Cost="10" />
+    <BlockEffect Type="CompositeEntityEffect" Subtype="Blocking" />
+
+    <ImmediateLocking>false</ImmediateLocking>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="ShovelWood" />
+    <DisplayName>DisplayName_Tool_WoodenShovel</DisplayName>
+    <Description>Description_Tool_WoodenShovel</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\WoodenShovel.dds</Icon>
+    <Category>Tools</Category>
+    <Prerequisites>
+      <Item Tag="ScrapWood" Amount="4" />
+      <Item Tag="Timber" Amount="2" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="HandItem" Subtype="ShovelWood" />
+    </Results>
+    <CraftingTime Seconds="5" />
+  </Definition>
+</Definitions>

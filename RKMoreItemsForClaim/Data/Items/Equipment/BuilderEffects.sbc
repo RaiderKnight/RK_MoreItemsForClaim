@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <Definition xsi:type="MyObjectBuilder_ComponentEventBusProxyDefinition">
+    <Id Type="MyObjectBuilder_ComponentEventBusProxy" Subtype="BuilderToolEvents" />
+    <Event>BlockConstructedWood</Event>
+    <Event>BlockConstructedStone</Event>
+    <Event>BlockDeconstructedWood</Event>
+    <Event>BlockDeconstructedStone</Event>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_EntityFXComponentDefinition">
+    <Id Type="MyObjectBuilder_EntityFXComponent" Subtype="BuilderToolFx" />
+    <Effects>
+      <Effect StartEvent="BlockConstructedWood" Bone="ME_RigPelvis">
+        <EffectId Type="MyObjectBuilder_EffectDefinition" Subtype="WoodenBlockConstructedEffect" />
+      </Effect>
+      <Effect StartEvent="BlockConstructedStone" Bone="ME_RigPelvis">
+        <EffectId Type="MyObjectBuilder_EffectDefinition" Subtype="StoneBlockConstructedEffect" />
+      </Effect>
+      <Effect StartEvent="BlockDeconstructedWood" Bone="ME_RigPelvis">
+        <EffectId Type="MyObjectBuilder_EffectDefinition" Subtype="WoodenBlockDeconstructedEffect" />
+      </Effect>
+      <Effect StartEvent="BlockDeconstructedStone" Bone="ME_RigPelvis">
+        <EffectId Type="MyObjectBuilder_EffectDefinition" Subtype="StoneBlockDeconstructedEffect" />
+      </Effect>
+    </Effects>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_EffectDefinition">
+    <Id Type="MyObjectBuilder_EffectDefinition" Subtype="WoodenBlockConstructedEffect" />
+    <CueId>BlockConstructed</CueId>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EffectDefinition">
+    <Id Type="MyObjectBuilder_EffectDefinition" Subtype="StoneBlockConstructedEffect" />
+    <CueId>BlockConstructed</CueId>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EffectDefinition">
+    <Id Type="MyObjectBuilder_EffectDefinition" Subtype="WoodenBlockDeconstructedEffect" />
+    <CueId>BlockDeconstructed</CueId>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EffectDefinition">
+    <Id Type="MyObjectBuilder_EffectDefinition" Subtype="StoneBlockDeconstructedEffect" />
+    <CueId>BlockDeconstructed</CueId>
+  </Definition>
+  
+</Definitions>

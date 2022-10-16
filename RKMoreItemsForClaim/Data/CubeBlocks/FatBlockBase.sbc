@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_ContainerDefinition">
+    <Id Type="EntityBase" Subtype="BaseFatBlock" />
+    <Component Type="UseObjectsComponent" Subtype="Default" />
+    <Component Type="MultiplayerComponent" />
+    <Component Type="BlockRenderComponent" />
+    <Component Type="BlockModelComponent" />
+    <Component Type="BuildableBlockComponent" Subtype="Default" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_UseObjectsComponentDefinition">
+    <Id Type="UseObjectsComponent" Subtype="Default" />
+    <LoadFromModel>true</LoadFromModel>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_BuildableBlockComponentDefinition">
+    <Id Type="BuildableBlockComponent" Subtype="Default" />
+    <DestroyedEvent>Death</DestroyedEvent>
+    <DeconstructedEvent>Deconstruct</DeconstructedEvent>
+    <BecomeFunctionalEvent>BecomeFunctional</BecomeFunctionalEvent>
+    <BecomeNonFunctionalEvent>BecomeNonFunctional</BecomeNonFunctionalEvent>
+  </Definition>
+</Definitions>

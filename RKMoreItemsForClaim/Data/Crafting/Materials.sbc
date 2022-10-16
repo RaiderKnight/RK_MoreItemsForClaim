@@ -1,0 +1,606 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Ingots -->
+  
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotIron" />
+    <Icon>Textures\GUI\Icons\Materials\IronOre.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_IronOreToIngots</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Tag="OreIron" Amount="5" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="IngotIron" />
+    </Results>
+    <CraftingTime Seconds="5" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotIronFromDust" />
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\Materials\IronOre.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_IronDustToIngots</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="DustIron" Amount="5" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="IngotIron" />
+    </Results>
+    <CraftingTime Seconds="3" />
+    <HiddenWithoutPrereqs>true</HiddenWithoutPrereqs>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotCopper" />
+    <Icon>Textures\GUI\Icons\Materials\OreCopper.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_CopperOreToIngots</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Tag="OreCopper" Amount="5" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="IngotCopper" />
+    </Results>
+    <CraftingTime Seconds="5" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotCopperFromDust" />
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\Materials\OreCopper.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_CopperDustToIngots</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="DustCopper" Amount="5" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="IngotCopper" />
+    </Results>
+    <CraftingTime Seconds="3" />
+    <HiddenWithoutPrereqs>true</HiddenWithoutPrereqs>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotTin" />
+    <Icon>Textures\GUI\Icons\Materials\OreTin.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_TinOreToIngots</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Tag="OreTin" Amount="5" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="IngotTin" />
+    </Results>
+    <CraftingTime Seconds="5" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotTinFromDust" />
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\Materials\OreTin.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_TinDustToIngots</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="DustTin" Amount="5" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="IngotTin" />
+    </Results>
+    <CraftingTime Seconds="3" />
+    <HiddenWithoutPrereqs>true</HiddenWithoutPrereqs>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotSilver" />
+    <Icon>Textures\GUI\Icons\Materials\OreSilver.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_SilverOreToIngots</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Tag="OreSilver" Amount="5" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="IngotSilver" />
+    </Results>
+    <CraftingTime Seconds="5" />
+    <HiddenWithoutPrereqs>true</HiddenWithoutPrereqs>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotSilverFromDust" />
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\Materials\OreSilver.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_SilverDustToIngots</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="DustSilver" Amount="5" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="IngotSilver" />
+    </Results>
+    <CraftingTime Seconds="3" />
+    <HiddenWithoutPrereqs>true</HiddenWithoutPrereqs>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotGold" />
+    <Icon>Textures\GUI\Icons\Materials\OreGold.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_GoldOreToIngots</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Tag="OreGold" Amount="5" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="IngotGold" />
+    </Results>
+    <CraftingTime Seconds="5" />
+    <HiddenWithoutPrereqs>true</HiddenWithoutPrereqs>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotGoldFromDust" />
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\Materials\OreGold.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_GoldDustToIngots</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="DustGold" Amount="5" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="IngotGold" />
+    </Results>
+    <CraftingTime Seconds="3" />
+    <HiddenWithoutPrereqs>true</HiddenWithoutPrereqs>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotSteel" />
+    <Icon>Textures\GUI\Icons\Materials\IngotSteel.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_IngotSteel</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Tag="IngotIron" Amount="2" />
+      <Item Type="InventoryItem" Subtype="Charcoal" Amount="3" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="IngotSteel" />
+    </Results>
+    <CraftingTime Seconds="8" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotSteelFromDust" />
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\Materials\IngotSteel.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_IngotSteelFromDust</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="DustIron" Amount="10" />
+      <Item Type="InventoryItem" Subtype="Charcoal" Amount="3" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="IngotSteel" />
+    </Results>
+    <CraftingTime Seconds="5" />
+    <HiddenWithoutPrereqs>true</HiddenWithoutPrereqs>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotBronze" />
+    <Icon>Textures\GUI\Icons\Materials\IngotBronze.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_BronzeIngot</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Tag="IngotCopper" Amount="1" />
+      <Item Tag="IngotTin" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="2" Type="InventoryItem" Subtype="IngotBronze" />
+    </Results>
+    <CraftingTime Seconds="5" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IngotBronzeFromDust" />
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\Materials\IngotBronze.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>DisplayName_Crafting_BronzeIngotFromDust</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="DustCopper" Amount="2" />
+      <Item Type="InventoryItem" Subtype="DustTin" Amount="2" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="2" Type="InventoryItem" Subtype="IngotBronze" />
+    </Results>
+    <CraftingTime Seconds="3" />
+    <HiddenWithoutPrereqs>true</HiddenWithoutPrereqs>
+  </Definition>
+  
+  <!-- The rest of recipes -->
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="LargeStoneToSmallStones" />
+    <Icon>Textures\GUI\Icons\Materials\StoneSmall.dds</Icon>
+    <DisplayName>DisplayName_LargeStoneToSmallStones</DisplayName>
+    <Category>StoneMasonry</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="StoneLarge" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="5" Type="InventoryItem" Subtype="StoneSmall" />
+    </Results>
+    <CraftingTime Seconds="1" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="LogToWoodenSticks" />
+    <Icon>Textures\GUI\Icons\Materials\WoodenStick.dds</Icon>
+    <DisplayName>DisplayName_LogToWoodenSticks</DisplayName>
+    <Category>Personal</Category>
+    <Prerequisites>
+      <Item Tag="Log" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="15" Type="InventoryItem" Subtype="Sticks" />
+    </Results>
+    <CraftingTime Seconds="4" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="LogToWoodenSticks_CraftingTable" />
+    <Icon>Textures\GUI\Icons\Materials\WoodenStick.dds</Icon>
+    <DisplayName>DisplayName_LogToWoodenSticks</DisplayName>
+    <Category>Woodcrafting</Category>
+    <Prerequisites>
+      <Item Tag="Log" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="15" Type="InventoryItem" Subtype="Sticks" />
+    </Results>
+    <CraftingTime Seconds="2" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="LogToTimber10" />
+    <Icon>Textures\GUI\Icons\Cubes\Timber10.dds</Icon>
+    <DisplayName>DisplayName_LogToTimber</DisplayName>
+    <Category>Personal</Category>
+    <Prerequisites>
+      <Item Tag="Log" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="6" Type="Block" Subtype="Timber10" />
+    </Results>
+    <CraftingTime Seconds="7" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="LogToTimber10_CraftingTable" />
+    <Icon>Textures\GUI\Icons\Cubes\Timber10.dds</Icon>
+    <DisplayName>DisplayName_LogToTimber</DisplayName>
+    <Category>Woodcrafting</Category>
+    <Prerequisites>
+      <Item Tag="Log" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="8" Type="Block" Subtype="Timber10" />
+    </Results>
+    <CraftingTime Seconds="3" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="LogToTimberRound10" />
+    <Icon>Textures\GUI\Icons\Cubes\TimberRound.dds</Icon>
+    <DisplayName>DisplayName_LogToRoundTimber</DisplayName>
+    <Category>Personal</Category>
+    <Prerequisites>
+      <Item Tag="Log" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="6" Type="Block" Subtype="TimberRound10" />
+    </Results>
+    <CraftingTime Seconds="7" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="LogToTimberRound10_CraftingTable" />
+    <Icon>Textures\GUI\Icons\Cubes\TimberRound.dds</Icon>
+    <DisplayName>DisplayName_LogToRoundTimber</DisplayName>
+    <Category>Woodcrafting</Category>
+    <Prerequisites>
+      <Item Tag="Log" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="8" Type="Block" Subtype="TimberRound10" />
+    </Results>
+    <CraftingTime Seconds="3" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="LogToTimberDiagonal10" />
+    <Icon>Textures\GUI\Icons\Cubes\TimberDiagonal1_10_10.dds</Icon>
+    <DisplayName>DisplayName_Block_LogToTimberDiagonal</DisplayName>
+    <Category>Personal</Category>
+    <Prerequisites>
+      <Item Tag="Log" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="6" Type="Block" Subtype="TimberDiagonal10" />
+    </Results>
+    <CraftingTime Seconds="7" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="LogToTimberDiagonal10_CraftingTable" />
+    <Icon>Textures\GUI\Icons\Cubes\TimberDiagonal1_10_10.dds</Icon>
+    <DisplayName>DisplayName_Block_LogToTimberDiagonal</DisplayName>
+    <Category>Woodcrafting</Category>
+    <Prerequisites>
+      <Item Tag="Log" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="8" Type="Block" Subtype="TimberDiagonal10" />
+    </Results>
+    <CraftingTime Seconds="3" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IronIngotToMetalParts" />
+    <Icon>Textures\GUI\Icons\Materials\MetalParts.dds</Icon>
+    <DisplayName>DisplayName_IronIngotToMetalParts</DisplayName>
+    <Category>MetalWorks</Category>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Tag="Ingot" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="10" Type="InventoryItem" Subtype="PartsMetal" />
+    </Results>
+    <CraftingTime Seconds="1" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="StringLinen" />
+    <Icon>Textures\GUI\Icons\Materials\LinenString.dds</Icon>
+    <DisplayName>DisplayName_Item_LinenString</DisplayName>
+    <Description>Description_Item_LinenString</Description>
+    <Category>Weaving</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="StrawsFlax" Amount="2" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="StringLinen" />
+    </Results>
+    <CraftingTime Seconds="2" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="PersonalFlag" />
+    <Icon>Textures\GUI\Icons\Cubes\Flag10x10.dds</Icon>
+    <DisplayName>DisplayName_Block_FlagPersonal</DisplayName>
+    <Description>Description_Crafting_FlagPersonal</Description>
+    <Category>Weaving</Category>
+    <Prerequisites>
+      <Item Tag="ScrapWood" Amount="1" />
+      <Item Type="InventoryItem" Subtype="Cloth" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="Block" Subtype="FlagPersonal10x10" />
+    </Results>
+    <CraftingTime Seconds="5" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="FactionFlag" />
+    <Icon>Textures\GUI\Icons\Cubes\FlagRed10x10.dds</Icon>
+    <DisplayName>DisplayName_Block_FlagFaction</DisplayName>
+    <Description>Description_Crafting_FlagFaction</Description>
+    <Category>Weaving</Category>
+    <Prerequisites>
+      <Item Tag="ScrapWood" Amount="1" />
+      <Item Type="InventoryItem" Subtype="Cloth" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="Block" Subtype="FlagHouse10x10" />
+    </Results>
+    <CraftingTime Seconds="5" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="Vellum" />
+    <Icon>Textures\GUI\Icons\Schematics\ScrollBackground_1.dds</Icon>
+    <Icon>Textures\GUI\Icons\Schematics\ScrollBackground_2.dds</Icon>
+    <DisplayName>DisplayName_Recipe_Vellum</DisplayName>
+	<Description>Description_Recipe_Vellum</Description>
+    <Category>Schematics</Category>
+    <Prerequisites>
+      <Item Type="Block" Subtype="LeatherTanned" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="30" Type="InventoryItem" Subtype="Vellum" />
+    </Results>
+    <CraftingTime Seconds="5" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="Paper" />
+    <Icon>Textures\GUI\Icons\Schematics\ScrollBackground_1.dds</Icon>
+    <Icon>Textures\GUI\Icons\Schematics\ScrollBackground_2.dds</Icon>
+    <DisplayName>DisplayName_Recipe_Paper</DisplayName>
+	<Description>Description_Recipe_Paper</Description>
+    <Category>Schematics</Category>
+    <Prerequisites>
+      <Item Tag="ScrapWood" Amount="15" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="Vellum" />
+    </Results>
+    <CraftingTime Seconds="5" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="JarClay" />
+    <Icon>Textures\GUI\Icons\Materials\JarClay.dds</Icon>
+    <DisplayName>DisplayName_Item_JarClay</DisplayName>
+    <Category>ClayWorks</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="Clay" Amount="10" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="JarClay" />
+    </Results>
+    <CraftingTime Seconds="10" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="JarClayWithLinseedOil" />
+    <Icon>Textures\GUI\Icons\Materials\JarClayWithLinseedOil.dds</Icon>
+    <DisplayName>DisplayName_Crafting_JarClayWithLinseedOil</DisplayName>
+    <Category>Milling</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="JarClay" Amount="1" />
+      <Item Type="SeedBagHandItem" Subtype="SeedBagFlax" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="JarClayWithLinseedOil" />
+    </Results>
+    <CraftingTime Seconds="15" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="JarClayWithLinseedOilMechanical" />
+    <DisplayName>DisplayName_Crafting_JarClayWithLinseedOil</DisplayName>
+    <Description>Description_Item_JarClayWithLinseedOil</Description>
+    <Icon>Textures\GUI\Icons\Materials\JarClayWithLinseedOil.dds</Icon>
+    <Category>MillstoneSmooth</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="JarClay" Amount="2" />
+      <Item Type="SeedBagHandItem" Subtype="SeedBagFlax" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="2" Type="InventoryItem" Subtype="JarClayWithLinseedOil" />
+    </Results>
+    <CraftingTime Seconds="3" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="Ink" />
+    <Icon>Textures\GUI\Icons\Materials\Ink.dds</Icon>
+    <DisplayName>DisplayName_Crafting_Ink</DisplayName>
+    <Category>Schematics</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="JarClayWithLinseedOil" Amount="1" />
+      <Item Type="InventoryItem" Subtype="Charcoal" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="10" Type="InventoryItem" Subtype="Ink" />
+      <Item Amount="1" Type="InventoryItem" Subtype="JarClay" />
+    </Results>
+    <CraftingTime Seconds="5" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="InkBasic" />
+    <Icon>Textures\GUI\Icons\Materials\Ink.dds</Icon>
+    <DisplayName>DisplayName_Crafting_Ink</DisplayName>
+    <Category>Schematics</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="StrawsFlax" Amount="1" />
+      <Item Type="InventoryItem" Subtype="Charcoal" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="Ink" />
+    </Results>
+    <CraftingTime Seconds="10" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="Cloth" />
+    <Icon>Textures\GUI\Icons\Materials\Cloth.dds</Icon>
+    <DisplayName>DisplayName_Item_Cloth</DisplayName>
+    <Description>Description_Item_Cloth</Description>
+    <Category>Weaving</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="StringLinen" Amount="4" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="Cloth" />
+    </Results>
+    <CraftingTime Seconds="5" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="Charcoal" />
+    <Icon>Textures\GUI\Icons\Materials\Charcoal.dds</Icon>
+    <DisplayName>DisplayName_Crafting_Charcoal</DisplayName>
+    <Category>Melting</Category>
+    <Prerequisites>
+      <Item Tag="Log" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="3" Type="InventoryItem" Subtype="Charcoal" />
+    </Results>
+    <CraftingTime Seconds="7" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="StripsLeather" />
+    <Icon>Textures\GUI\Icons\Materials\StripsLeather.dds</Icon>
+    <DisplayName>DisplayName_Item_StripsLeather</DisplayName>
+    <Description>Description_Item_StripsLeather</Description>
+    <Category>Personal</Category>
+    <Prerequisites>
+      <Item Type="Block" Subtype="LeatherTanned" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="10" Type="InventoryItem" Subtype="StripsLeather" />
+    </Results>
+    <CraftingTime Seconds="3" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="RoofTileStack" />
+    <Icon>Textures\GUI\Icons\Materials\RoofingTiles.dds</Icon>
+    <DisplayName>DisplayName_Item_RoofTileStack</DisplayName>
+    <Category>ClayWorks</Category>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="Clay" Amount="10" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="5" Type="InventoryItem" Subtype="RoofTileStack" />
+    </Results>
+    <CraftingTime Seconds="5" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="Thatch" />
+    <DisplayName>DisplayName_Item_Thatch</DisplayName>
+    <Icon>Textures\GUI\Icons\Components\Thatch.dds</Icon>
+    <Category>Personal</Category>
+    <Prerequisites>
+      <Item Tag="PlantMatter" Amount="2" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="2" Type="InventoryItem" Subtype="Thatch" />
+    </Results>
+    <CraftingTime Seconds="1" />
+  </Definition>
+
+</Definitions>

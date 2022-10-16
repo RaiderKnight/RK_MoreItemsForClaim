@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--
+  Raw foods are meant to only give a small boost to the food stat, no buffs.
+  This helps new players avoid early-game death, because they don't have to forage too long.
+  But it also means the basic food is not interesting to more advanced players as they don't provide buffs.
+  -->
+
+  <Definition xsi:type="MyObjectBuilder_ConsumableItemDefinition">
+    <Id Type="ConsumableItem" Subtype="Berries" />
+    <Tag>Berry</Tag>
+    <Tag>Fruit</Tag>
+    <Public>true</Public>
+    <DisplayName>DisplayName_Consumables_Berries</DisplayName>
+    <Description>Description_Consumables_Berries</Description>
+    <Icon>Textures\GUI\Icons\Consumables\Berries.dds</Icon>
+    <Size>
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </Size>
+    <Model>Models\Consumables\Berries.mwm</Model>
+    <PhysicalMaterial>Food</PhysicalMaterial>
+    <MaxStackAmount>30</MaxStackAmount>
+    <Stats>
+      <Stat Name="Food" Value="3" Clamped="true" />
+      <Stat Name="Vigor" Value="-0.1" />
+    </Stats>
+    <UseSound>PlayEat</UseSound>
+    <Mass>1</Mass>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_ConsumableItemDefinition">
+    <Id Type="ConsumableItem" Subtype="FruitsOpuntia" />
+    <Public>true</Public>
+    <Tag>Fruit</Tag>
+    <DisplayName>DisplayName_Consumables_FruitsOpuntia</DisplayName>
+    <Description>Description_Consumables_FruitsOpuntia</Description>
+    <Icon>Textures\GUI\Icons\Consumables\FruitsOpuntia.dds</Icon>
+    <Size>
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </Size>
+    <Model>Models\Consumables\FruitsOpuntia.mwm</Model>
+    <PhysicalMaterial>Food</PhysicalMaterial>
+    <MaxStackAmount>30</MaxStackAmount>
+    <Stats>
+      <Stat Name="Food" Value="3" Clamped="true" />
+      <Stat Name="Vigor" Value="-0.1" />
+    </Stats>
+    <UseSound>PlayEat</UseSound>
+    <Mass>1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_ConsumableItemDefinition">
+    <Id Type="ConsumableItem" Subtype="Cabbage" />
+    <Public>true</Public>
+    <Tag>ProjectileCatapult</Tag>
+    <Tag>Harvest</Tag>
+    <Tag>Vegetable</Tag>
+    <DisplayName>DisplayName_Consumables_Cabbage</DisplayName>
+    <Description>Description_Consumables_Cabbage</Description>
+    <Icon>Textures\GUI\Icons\Consumables\CabbageHead.dds</Icon>
+    <Size>
+      <X>0.5</X>
+      <Y>0.5</Y>
+      <Z>0.5</Z>
+    </Size>
+    <Model>Models\Consumables\CabbageHead.mwm</Model>
+    <PhysicalMaterial>Food</PhysicalMaterial>
+    <MaxStackAmount>15</MaxStackAmount>
+    <Stats>
+      <Stat Name="Food" Value="8" Clamped="true" />
+      <Stat Name="Vigor" Value="-0.2" />
+    </Stats>
+    <UseSound>PlayEat</UseSound>
+    <Mass>1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_ConsumableItemDefinition">
+    <Id Type="ConsumableItem" Subtype="Pumpkin" />
+    <Public>true</Public>
+    <Tag>Fruit</Tag>
+    <Tag>ProjectileCatapult</Tag>
+    <Tag>Harvest</Tag>
+    <DisplayName>DisplayName_Consumables_Pumpkin</DisplayName>
+    <Description>Description_Consumables_Pumpkin</Description>
+    <Icon>Textures\GUI\Icons\Consumables\Pumpkin.dds</Icon>
+    <Size>
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </Size>
+    <Model>Models\Environment\Bushes\Pumpkin.mwm</Model>
+    <PhysicalMaterial>Pumpkin</PhysicalMaterial>
+    <MaxStackAmount>5</MaxStackAmount>
+    <Stats>
+      <Stat Name="Food" Value="10" Clamped="true" />
+      <Stat Name="Vigor" Value="-0.3" />
+    </Stats>
+    <UseSound>PlayEat</UseSound>
+    <Mass>1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_ConsumableItemDefinition">
+    <Id Type="ConsumableItem" Subtype="Mushrooms" />
+    <Public>true</Public>
+    <Tag>Flavoring</Tag>
+    <DisplayName>DisplayName_Consumables_Mushrooms</DisplayName>
+    <Description>Description_Consumables_Mushrooms</Description>
+    <Icon>Textures\GUI\Icons\Consumables\Mushrooms.dds</Icon>
+    <Size>
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </Size>
+    <Model>Models\Consumables\Mushrooms.mwm</Model>
+    <PhysicalMaterial>Food</PhysicalMaterial>
+    <MaxStackAmount>30</MaxStackAmount>
+    <Stats>
+      <Stat Name="Food" Value="2" Clamped="true" />
+      <Stat Name="Vigor" Value="-0.5" />
+    </Stats>
+    <UseSound>PlayEat</UseSound>
+    <Mass>1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_ConsumableItemDefinition">
+    <Id Type="ConsumableItem" Subtype="Herbs" />
+    <Public>true</Public>
+    <Tag>Harvest</Tag>
+    <Tag>Flavoring</Tag>
+    <DisplayName>DisplayName_Consumables_Herbs</DisplayName>
+    <Description>Description_Consumables_Herbs</Description>
+    <Icon>Textures\GUI\Icons\Consumables\Herbs.dds</Icon>
+    <Size>
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </Size>
+    <Model>Models\Consumables\Herbs.mwm</Model>
+    <PhysicalMaterial>Generic</PhysicalMaterial>
+    <MaxStackAmount>30</MaxStackAmount>
+    <Stats>
+      <Stat Name="Food" Value="1" Clamped="true" />
+      <Stat Name="Vigor" Value="-0.5" />
+    </Stats>
+    <UseSound>PlayEat</UseSound>
+    <Mass>1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_ConsumableItemDefinition">
+    <Id Type="ConsumableItem" Subtype="Roots" />
+    <Public>true</Public>
+    <Tag>Vegetable</Tag>
+    <DisplayName>DisplayName_Consumables_Roots</DisplayName>
+    <Description>Description_Consumables_Roots</Description>
+    <Icon>Textures\GUI\Icons\Consumables\WoodenRoot.dds</Icon>
+    <Size>
+      <X>0.3</X>
+      <Y>0.1</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Volume>1</Volume>
+    <Model>Models\Consumables\WoodenRoot.mwm</Model>
+    <PhysicalMaterial>Food</PhysicalMaterial>
+    <MaxStackAmount>30</MaxStackAmount>
+    <Stats>
+      <Stat Name="Food" Value="1" Clamped="true" />
+      <Stat Name="Vigor" Value="-0.5" />
+    </Stats>
+    <UseSound>PlayEat</UseSound>
+    <Mass>1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_ConsumableItemDefinition">
+    <Id Type="ConsumableItem" Subtype="Meat" />
+    <Public>true</Public>
+    <Tag>Meat</Tag>
+    <DisplayName>DisplayName_Consumables_Meat</DisplayName>
+    <Description>Description_Consumables_Meat</Description>
+    <Icon>Textures\GUI\Icons\Consumables\Meat.dds</Icon>
+    <Size>
+      <X>0.3</X>
+      <Y>0.1</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Volume>1</Volume>
+    <Model>Models\Consumables\Meat.mwm</Model>
+    <PhysicalMaterial>Flesh</PhysicalMaterial>
+    <MaxStackAmount>30</MaxStackAmount>
+    <Stats>
+      <Stat Name="Food" Value="5" Clamped="true" />
+      <Stat Name="Vigor" Value="-1" />
+    </Stats>
+    <UseSound>PlayEat</UseSound>
+    <Mass>1</Mass>
+  </Definition>
+
+</Definitions>

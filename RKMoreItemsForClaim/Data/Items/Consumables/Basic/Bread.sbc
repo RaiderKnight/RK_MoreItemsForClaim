@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_ConsumableItemDefinition">
+    <Id Type="ConsumableItem" Subtype="Bread" />
+    <Public>true</Public>
+    <DisplayName>DisplayName_Consumables_Bread</DisplayName>
+    <Description>Description_Consumables_Bread</Description>
+    <Icon>Textures\GUI\Icons\Consumables\Bread.dds</Icon>
+    <Size>
+      <X>0.3</X>
+      <Y>0.3</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Consumables\Bread.mwm</Model>
+    <PhysicalMaterial>Food</PhysicalMaterial>
+    <MaxStackAmount>5</MaxStackAmount>
+    <Stats>
+      <Stat Name="Food" Value="30" Clamped="true" />
+    </Stats>
+    <UseSound>PlayEat</UseSound>
+    <Mass>1</Mass>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="Bread" />
+    <DisplayName>DisplayName_Consumables_Bread</DisplayName>
+    <Description>Description_Consumables_Bread</Description>
+    <Icon>Textures\GUI\Icons\Consumables\Bread.dds</Icon>
+    <Category>Oven</Category>
+	  <ShowFirstOutputAsDescription>true</ShowFirstOutputAsDescription>
+    <Prerequisites>
+      <Item Type="InventoryItem" Subtype="FlourWheat" Amount="1" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="2" Type="ConsumableItem" Subtype="Bread" />
+    </Results>
+    <CraftingTime Seconds="20" />
+  </Definition>
+</Definitions>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_ContainerDefinition">
+    <Id Type="VoxelMap" />
+
+    <Component Type="MyObjectBuilder_VoxelDataComponent" />
+    <Component Type="MyObjectBuilder_VoxelMesherComponent" Subtype="Terra" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_ContainerDefinition">
+    <Id Type="MyObjectBuilder_FloatingObject" />
+    <Component Type="FloatingObjectInteractionComponent" Subtype="Default" />
+    <Component Type="RenderComponentFloatingObject" />
+    <Component Type="ModelComponent" />
+    <Component Type="FloatingObjectDecayComponent" Subtype="Default" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_ContainerDefinition">
+    <Id Type="MyObjectBuilder_EntityBase" Subtype="FracturedPiece" />
+    <Tag>FracturedPiece</Tag>
+    <Component Type="SimpleDecayComponent" Subtype="FracturedPiece" />
+    <Component Type="ModelComponent" />
+    <Component Type="PhysicsBodyComponent" Subtype="FracturedPiece" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_ContainerDefinition">
+    <Id Type="MyObjectBuilder_EntityBase" Subtype="FracturedPieceStatic" />
+    <Tag>FracturedPiece</Tag>
+    <Component Type="SimpleDecayComponent" Subtype="FracturedPieceImmediate" />
+    <Component Type="ModelComponent" />
+    <Component Type="PhysicsBodyComponent" Subtype="FracturedPieceStatic" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_ContainerDefinition">
+    <Id Type="MyObjectBuilder_EntityBase" Subtype="Tree" />
+    <Component Type="ModelComponent" />
+    <Component Type="PhysicsBodyComponent" Subtype="Tree" />
+    <Component Type="CuttableTreeComponent" />
+    <Component Type="EntityFracturingComponent" />
+    <Component Type="RenderComponentFracturedEntity" />
+    <Component Type="MultiplayerComponent" />
+  </Definition>
+
+  <!--
+  <Definition xsi:type="MyObjectBuilder_ContainerDefinition">
+    <Id Type="MyObjectBuilder_CubeGrid" />
+    <Component Type="CubeGridDecayComponent" Subtype="Default" />
+    <Component Type="MedievalGridOwnershipComponent" />
+    <Component Type="MechanicalPowerSystem" Subtype="CubeGridLarge" />
+    <Component Type="RenderComponentCubeGrid" />
+
+    <Tag>CubeGrid</Tag>
+  </Definition>
+  -->
+
+  <Definition xsi:type="MyObjectBuilder_ContainerDefinition">
+    <Id Type="MyObjectBuilder_SafezoneAreaMarker" Subtype="RespawnSafeZone" />
+    <Component Type="SafezoneRespawnComponent" />
+    <Component Type="ModelComponent" Subtype="SpawnAreaMarker" />
+  </Definition>
+</Definitions>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_BuildableBlockDefinition">
+    <Id Type="Block" Subtype="TrainingDummy" />
+    <Rotation>All</Rotation>
+    <DisplayName>DisplayName_Block_TrainingDummy</DisplayName>
+	  <Description>Description_Block_TrainingDummy</Description>
+    <Icon>Textures\GUI\Icons\TrainingDummy.png</Icon>
+    <GridDataDefinitionId Type="GridDataComponent" Subtype="SmallGridDataBase" />
+    <BoundingBox>
+      <Min x="-2" y="0" z="-2" />
+      <Max x="3" y="7" z="3" />
+    </BoundingBox>
+    <Model>Models\Cubes\small\TrainingDummy.mwm</Model>
+    <PhysicalMaterial>WoodSoft</PhysicalMaterial>
+    <Components>
+      <Component Type="Block" Subtype="TrainingDummy" Count="1" />
+    </Components>
+    <MirroringY>Z</MirroringY>
+    <MirroringZ>Y</MirroringZ>
+    <MountPoints>
+      <MountPoint Side="Bottom" StartX="1" StartY="2" EndX="4" EndY="3" />
+      <MountPoint Side="Bottom" StartX="2" StartY="1" EndX="3" EndY="4" />
+      <MountPoint Side="Top" StartX="2" StartY="2" EndX="3" EndY="3" />
+    </MountPoints>
+    <Mass>70</Mass>
+    <MaxIntegrity>800</MaxIntegrity>
+    <CriticalIntegrityRatio>0.3</CriticalIntegrityRatio>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_ContainerDefinition" Copy="Append">
+    <Id Type="Block" Subtype="TrainingDummy" />
+    <CopyFrom Type="EntityBase" Subtype="BaseFatBlock" />
+    <Component Type="TargetLockableEntityComponent" Subtype="TrainingDummy" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TargetLockableEntityComponentDefinition">
+    <Id Type="TargetLockableEntityComponent" Subtype="TrainingDummy" />
+    <TargetingOffset x="0" y="0.45" z="0" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="CraftingRecipeDefinition" Subtype="TrainingDummy" />
+    <DisplayName>DisplayName_Block_TrainingDummy</DisplayName>
+    <Description>Description_Block_TrainingDummy</Description>
+    <Icon>Textures\GUI\Icons\TrainingDummy.png</Icon>
+    <Category>Woodcrafting</Category>
+    <Prerequisites>
+      <Item Amount="2" Tag="Timber" />
+      <Item Amount="1" Type="InventoryItem" Subtype="Thatch" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="Block" Subtype="TrainingDummy" />
+    </Results>
+    <CraftingTime Seconds="10" />
+  </Definition>
+</Definitions>

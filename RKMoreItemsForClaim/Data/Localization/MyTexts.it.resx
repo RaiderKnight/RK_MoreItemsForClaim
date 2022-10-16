@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AssignControlJoystick" xml:space="preserve">
+    <value>Premi un tasto
+sul joystick/gamepad</value>
+  </data>
+  <data name="AssignControlJoystickAxis" xml:space="preserve">
+    <value>Muovi un asse analogico
+sul joystick/gamepad</value>
+  </data>
+  <data name="ControlName_PrimaryToolAction" xml:space="preserve">
+    <value>Azione strumento principale</value>
+  </data>
+  <data name="ControlName_RotationDown" xml:space="preserve">
+    <value>Guarda in basso</value>
+  </data>
+  <data name="ControlName_RotationLeft" xml:space="preserve">
+    <value>Gira a sinistra</value>
+  </data>
+  <data name="ControlName_RotationRight" xml:space="preserve">
+    <value>Gira a Destra</value>
+  </data>
+  <data name="ControlName_RotationUp" xml:space="preserve">
+    <value>Guarda in alto</value>
+  </data>
+  <data name="ScreenCustomWorld_ScenarioLabel" xml:space="preserve">
+    <value>Scenario</value>
+  </data>
+  <data name="ControlName_Jetpack" xml:space="preserve">
+    <value>Modalità di volo on / off</value>
+  </data>
+  <data name="NotEnoughMaterial" xml:space="preserve">
+    <value>Materiale non sufficiente per creare un nuovo blocco.</value>
+  </data>
+  <data name="ToolTipNewWorldQuickstart" xml:space="preserve">
+    <value>Crea un nuovo mondo usando le impostazioni predefinite:
+Modalità: Creativa
+Auto salvataggio: Si</value>
+  </data>
+  <data name="MessageBoxTextTutorialQuestion" xml:space="preserve">
+    <value>Vuoi iniziare a vedere il video tutorial? Ricorda: tu puoi sempre vederlo cliccando "Tutorials" in nella finestra di "Aiuto" premendo F1.</value>
+  </data>
+  <data name="ControlDescZoom" xml:space="preserve">
+    <value>Zoom in visuale libera</value>
+  </data>
+  <data name="SteamOverlayDisabledText" xml:space="preserve">
+    <value>Si prega di abilitare l'interfaccia Steam: andare su Impostazioni, In gioco, Abilita l'Overlay di Steam mentre sei in gioco. Poi, dal menù Libreria, Medieval Engineers, Proprietà, Abilita Steam Community in gioco</value>
+  </data>
+  <data name="MessageBoxTextRecommend" xml:space="preserve">
+    <value>Se ti piace Medieval Engineers, puoi suggerirlo ai tuoi amici di Steam sulla pagina seguente.
+I suggerimenti aiutano la comunità a crescere. Grazie!</value>
+  </data>
+  <data name="MessageBoxCaptionRecommend" xml:space="preserve">
+    <value>Suggerisci Medieval Engineers</value>
+  </data>
+  <data name="NotificationJetpackOff" xml:space="preserve">
+    <value>Modalità di volo Off</value>
+  </data>
+  <data name="NotificationJetpackOffNoEnergy" xml:space="preserve">
+    <value>Modalità di volo Off</value>
+  </data>
+  <data name="NotificationJetpackOn" xml:space="preserve">
+    <value>Modalità di volo On</value>
+  </data>
+  <data name="Multiplayer_LastMsg" xml:space="preserve">
+    <value>Nessun contatto con il server da {0} secondi.</value>
+  </data>
+  <data name="NewVersionAvailable" xml:space="preserve">
+    <value>Una nuova versione di Medieval Engineers è disponibile!</value>
+  </data>
+  <data name="SpectatorControls_None_Desc" xml:space="preserve">
+    <value>Torna al personaggio controllato</value>
+  </data>
+  <data name="SpectatorControls_Free_Desc" xml:space="preserve">
+    <value>Osservatore libero. Puoi ancora svolgere azioni con l'oggetto controllato</value>
+  </data>
+  <data name="SpectatorControls_Static_Desc" xml:space="preserve">
+    <value>Osservatore fisso. Puoi controllare il personaggio ma la telecamera è fissa.</value>
+  </data>
+  <data name="MessageBoxErrorFactionsTag" xml:space="preserve">
+    <value>Il tag della fazione deve essere di esattamente 3 lettere</value>
+  </data>
+  <data name="NPCIdentityAdded" xml:space="preserve">
+    <value>Aggiunta l'identità {0}</value>
+  </data>
+  <data name="LoadingError_ModifiedOriginalContent" xml:space="preserve">
+    <value>Errore di caricamento del contenuto originale del gioco. Impossibile caricare il file:
+{0}
+Il contenuto originale del gioco è stato probabilmente modificato; ripristina tutte le modifiche e prova nuovamente. Il miglior modo è cancellare la cartella 'MedievalEngineers\Content\Data' e selezionare su Steam 'Verifica integrità della cache del gioco'.
+Reinstallare il gioco non è sufficiente perché Steam non elimina i file sconosciuti!</value>
+  </data>
+  <data name="ControlName_PickBlock" xml:space="preserve">
+    <value>Prendi il blocco</value>
+  </data>
+  <data name="ControlName_SwitchCompound" xml:space="preserve">
+    <value>Costruzione composita Si/No</value>
+  </data>
+  <data name="WorldSettings_StructuralIntegrity" xml:space="preserve">
+    <value>Integrità strutturale</value>
+  </data>
+  <data name="ScreenTerrainMaps_BiomeMapFile" xml:space="preserve">
+    <value>File Bioma della mappa</value>
+  </data>
+  <data name="ScreenTerrainMaps_Caption" xml:space="preserve">
+    <value>Mappe Terreni</value>
+  </data>
+  <data name="ScreenTerrainMaps_HeightMapFile" xml:space="preserve">
+    <value>Height map file</value>
+  </data>
+  <data name="ScreenTerrainMaps_HeightmapHeight" xml:space="preserve">
+    <value>Heightmap dimensione</value>
+  </data>
+  <data name="ScreenTerrainMaps_TreeMapFile" xml:space="preserve">
+    <value>File Mappa alberi</value>
+  </data>
+  <data name="ScreenTerrainMaps_TreeMaskFile" xml:space="preserve">
+    <value>Maschera file alberi</value>
+  </data>
+  <data name="ScreenTerrainMaps_UseSelectedFiles" xml:space="preserve">
+    <value>Usa file selezionionati</value>
+  </data>
+  <data name="ControlName_SwitchBuildingMode" xml:space="preserve">
+    <value>Modalità di costruzione dinamica Si/No</value>
+  </data>
+  <data name="ControlName_SecondaryToolAction" xml:space="preserve">
+    <value>Azione oggetto secondario</value>
+  </data>
+  <data name="ControlName_SIView" xml:space="preserve">
+    <value>Visuale di integrità strutturale</value>
+  </data>
+  <data name="ControlName_CustomizeTarget" xml:space="preserve">
+    <value>Obbiettivo personalizzato</value>
+  </data>
+  <data name="ScreenRopeReleaseSettings_Caption" xml:space="preserve">
+    <value>Impostazioni rilascio della corda</value>
+  </data>
+  <data name="NotificationAttachDefaultRope" xml:space="preserve">
+    <value>Premi {0} per attaccare la corda di base</value>
+  </data>
+  <data name="NotificationDetachRope" xml:space="preserve">
+    <value>Premi {0} per lasciare la corda</value>
+  </data>
+  <data name="NotificationEditRopeRelease" xml:space="preserve">
+    <value>Premi {0} per modificare le impostazioni della corda</value>
+  </data>
+  <data name="ScreenRopeReleaseSettings_PitchLabel" xml:space="preserve">
+    <value>Beccheggio</value>
+  </data>
+  <data name="ScreenRopeReleaseSettings_ReleaseThresholdAngle" xml:space="preserve">
+    <value>Angolo limite di rilascio</value>
+  </data>
+  <data name="ScreenRopeReleaseSettings_YawLabel" xml:space="preserve">
+    <value>Imbardata</value>
+  </data>
+  <data name="ControlName_HoldForCompound" xml:space="preserve">
+    <value>Tieni premuto per combinare l'edificio</value>
+  </data>
+  <data name="ControlDescAddTerrainVoxels" xml:space="preserve">
+    <value>Aggiungi voxel terreno</value>
+  </data>
+  <data name="ControlDescPaintTerrainVoxels" xml:space="preserve">
+    <value>Dipingi voxel terreno</value>
+  </data>
+  <data name="ControlDescRemoveTerrainVoxels" xml:space="preserve">
+    <value>Rimuovi voxel terreno</value>
+  </data>
+  <data name="ControlName_ChangeBlockVariants" xml:space="preserve">
+    <value>Cambia forme del blocco</value>
+  </data>
+  <data name="ControlName_PressToCompound" xml:space="preserve">
+    <value>Premi per comporre</value>
+  </data>
+  <data name="WorldSettings_Barbarians" xml:space="preserve">
+    <value>Barbari</value>
+  </data>
+  <data name="WorldSettings_MaxActiveFracturePieces" xml:space="preserve">
+    <value>Macerie Massime</value>
+  </data>
+  <data name="WorldSettings_TooltipMaxFracturePieces" xml:space="preserve">
+    <value>Maximum number of fracture pieces in world.</value>
+  </data>
+  <data name="DisplayName_Category_Bots" xml:space="preserve">
+    <value>Bot</value>
+  </data>
+  <data name="DisplayName_Bots_Barbarian" xml:space="preserve">
+    <value>Barbaro</value>
+  </data>
+  <data name="ControlName_GameplayOptions" xml:space="preserve">
+    <value>Opzioni di Gameplay</value>
+  </data>
+  <data name="ScreenGameplayOptions_Caption" xml:space="preserve">
+    <value>Opzioni di Gameplay</value>
+  </data>
+  <data name="ScreenGameplayOptions_NightMode" xml:space="preserve">
+    <value>Modalità Notte</value>
+  </data>
+  <data name="ScreenGameplayOptions_RemoveFractures" xml:space="preserve">
+    <value>Rimuovi Macerie</value>
+  </data>
+  <data name="ScreenGameplayOptions_SIView" xml:space="preserve">
+    <value>Mostra Integrità Strutturale</value>
+  </data>
+  <data name="DisplayName_AiCommand_AttackHere" xml:space="preserve">
+    <value>Attacca qui</value>
+  </data>
+  <data name="NotificationHintPressToOpenInventory" xml:space="preserve">
+    <value>Press {0} to access inventory</value>
+  </data>
+  <data name="WorldSettings_GameMode" xml:space="preserve">
+    <value>Modalità di gioco</value>
+  </data>
+  <data name="ScreenGameplayOptions_All" xml:space="preserve">
+    <value>Tutto</value>
+  </data>
+  <data name="ScreenGameplayOptions_InRadius" xml:space="preserve">
+    <value>In raggio</value>
+  </data>
+  <data name="NotificationAttachSpecificRope" xml:space="preserve">
+    <value>Punta un attacco per corde libero e premi {0} per attaccare la corda selezionata</value>
+  </data>
+  <data name="ToolTipWorldSettingsBarbarians" xml:space="preserve">
+    <value>Le Statue del Re compaiono in punti casuali del mondo. I barbari arrivano dopo 10 minuti in cerca delle statue per distruggerle.</value>
+  </data>
+  <data name="ToolTipWorldSettingsModeCreative" xml:space="preserve">
+    <value>Costruzione istantanea, possibilità di volare, immortalità.</value>
+  </data>
+  <data name="ToolTipWorldSettingsModeSurvival" xml:space="preserve">
+    <value>Costruzione istantanea, impossibilità di volare, morte. Caratteristiche aggiuntive verranno implementate settimanalmente attraverso nuovi aggiornamenti.</value>
+  </data>
+  <data name="ToolTipWorldSettingsStructuralSimulation" xml:space="preserve">
+    <value>Le costruzioni crolleranno sotto il loro stesso peso, o se danneggiate.</value>
+  </data>
+  <data name="ScreenGraphicsOptions_ShadowMapResolution" xml:space="preserve">
+    <value>Risoluzione ombre</value>
+  </data>
+  <data name="ScreenOptionsButtonDisplay" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="ScreenOptionsButtonGraphics" xml:space="preserve">
+    <value>Grafica</value>
+  </data>
+  <data name="ScreenGameplayOptions_FogColor" xml:space="preserve">
+    <value>Colore</value>
+  </data>
+  <data name="ScreenGameplayOptions_FogDensity" xml:space="preserve">
+    <value>Densità</value>
+  </data>
+  <data name="ScreenGameplayOptions_FogMultiplier" xml:space="preserve">
+    <value>Moltiplicatore</value>
+  </data>
+  <data name="ScreenGameplayOptions_FogSettings" xml:space="preserve">
+    <value>Impostazioni nebbia</value>
+  </data>
+  <data name="ScreenGameplayOptions_SunAzimuth" xml:space="preserve">
+    <value>Azimut</value>
+  </data>
+  <data name="ScreenGameplayOptions_SunElevation" xml:space="preserve">
+    <value>Elevazione</value>
+  </data>
+  <data name="ScreenGameplayOptions_SunIntensity" xml:space="preserve">
+    <value>Intensità</value>
+  </data>
+  <data name="ScreenGameplayOptions_SunSettings" xml:space="preserve">
+    <value>Impostazioni sole</value>
+  </data>
+  <data name="NotificationHintPressToToggleRotor" xml:space="preserve">
+    <value>Premi {0} per accendere/spegnere il rotore</value>
+  </data>
+  <data name="ScreenGameplayOptions_EnableDayNight" xml:space="preserve">
+    <value>Ciclo Giorno/Notte</value>
+  </data>
+  <data name="WorldSettings_DayDuration" xml:space="preserve">
+    <value>Durata giorno</value>
+  </data>
+  <data name="WorldSettings_DayNightRatio" xml:space="preserve">
+    <value>Day: {0}% Night: {1}%</value>
+  </data>
+  <data name="WorldSettings_DayOfYear" xml:space="preserve">
+    <value>Day of year</value>
+  </data>
+  <data name="WorldSettings_Latitude" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="ToolTipWorldSettingsDayDuration" xml:space="preserve">
+    <value>The length of the day in minutes</value>
+  </data>
+  <data name="ToolTipWorldSettingsDayNightRatio" xml:space="preserve">
+    <value>The ratio between day and night</value>
+  </data>
+  <data name="ScreenGameplayOptions_Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="DialogAmount_SetValueMinutesCaption" xml:space="preserve">
+    <value>Value to set (in minutes)</value>
+  </data>
+  <data name="DisplayName_Bots_Miner" xml:space="preserve">
+    <value>Miner</value>
+  </data>
+  <data name="DisplayName_Bots_Peasant" xml:space="preserve">
+    <value>Porter</value>
+  </data>
+  <data name="DialogTextJoiningWorld1" xml:space="preserve">
+    <value>Joining world</value>
+  </data>
+  <data name="DialogTextJoinWorldFailed1" xml:space="preserve">
+    <value>Joining world failed, reason: {0}</value>
+  </data>
+  <data name="WorldSettings_MaxPlayers" xml:space="preserve">
+    <value>Max players</value>
+  </data>
+  <data name="Description_Animation_Wave" xml:space="preserve">
+    <value>Wave</value>
+  </data>
+  <data name="DisplayName_Animation_Wave" xml:space="preserve">
+    <value>Wave</value>
+  </data>
+  <data name="DisplayName_Bots_Deer" xml:space="preserve">
+    <value>Deer</value>
+  </data>
+  <data name="ToolTipWorldSettingsAnimals" xml:space="preserve">
+    <value>Wild animals appear on the map</value>
+  </data>
+  <data name="WorldSettings_Animals" xml:space="preserve">
+    <value>Animals</value>
+  </data>
+  <data name="ControlName_ChatScreen" xml:space="preserve">
+    <value>Chat</value>
+  </data>
+  <data name="ControlName_ShowYourPlayerName" xml:space="preserve">
+    <value>Show your player name</value>
+  </data>
+  <data name="ScreenButtonBattle" xml:space="preserve">
+    <value>Battle</value>
+  </data>
+  <data name="ScreenCaptionBattleLobby" xml:space="preserve">
+    <value>Battle lobby</value>
+  </data>
+  <data name="ControlMenuItemLabel_Flying" xml:space="preserve">
+    <value>Flying</value>
+  </data>
+  <data name="ControlMenuItemLabel_GameOptions" xml:space="preserve">
+    <value>Game options</value>
+  </data>
+  <data name="NotificationCharacterBroadcastingOff" xml:space="preserve">
+    <value>Your player name is now hidden</value>
+  </data>
+  <data name="NotificationCharacterBroadcastingOn" xml:space="preserve">
+    <value>Your player name is now visible</value>
+  </data>
+  <data name="MaxBots" xml:space="preserve">
+    <value>Max uncontrolled bots</value>
+  </data>
+  <data name="WorldSettings_Battle" xml:space="preserve">
+    <value>Battle</value>
+  </data>
+  <data name="DisplayName_Bots_Woodcutter" xml:space="preserve">
+    <value>Woodcutter</value>
+  </data>
+  <data name="NotificationHintJoystickEditRopeRelease" xml:space="preserve">
+    <value>Go to control menu in order to edit rope settings</value>
+  </data>
+  <data name="NotificationHintJoystickPressToUseWardrobe" xml:space="preserve">
+    <value>Access control menu in order to change appearance</value>
+  </data>
+  <data name="ControlMenuItemLabel_RopeSettings" xml:space="preserve">
+    <value>Access rope settings</value>
+  </data>
+  <data name="DisplayName_AiCommand_MinerBehavior" xml:space="preserve">
+    <value>Transform into miner</value>
+  </data>
+  <data name="DisplayName_AiCommand_PorterBehavior" xml:space="preserve">
+    <value>Transform into porter</value>
+  </data>
+  <data name="DisplayName_AiCommand_WoodcutterBehavior" xml:space="preserve">
+    <value>Transform into woodcutter</value>
+  </data>
+  <data name="DisplayName_AiCommand_FollowerBehavior" xml:space="preserve">
+    <value>Transform into servant</value>
+  </data>
+  <data name="DisplayName_Bots_Servant" xml:space="preserve">
+    <value>Servant</value>
+  </data>
+  <data name="DisplayName_AreaMarkers_MiningMarker" xml:space="preserve">
+    <value>Mining area</value>
+  </data>
+  <data name="DisplayName_AreaMarkers_StockpileMarker" xml:space="preserve">
+    <value>Stockpile</value>
+  </data>
+  <data name="DisplayName_AreaMarkers_WoodcuttingMarker" xml:space="preserve">
+    <value>Woodcutting area</value>
+  </data>
+  <data name="PlayerBots" xml:space="preserve">
+    <value>Player controlled bots</value>
+  </data>
+  <data name="DisplayName_Bots_Child" xml:space="preserve">
+    <value>Child</value>
+  </data>
+  <data name="NotificationRemoveAreaMarker" xml:space="preserve">
+    <value>Press {0} to remove flag</value>
+  </data>
+  <data name="DisplayName_Bots_Female" xml:space="preserve">
+    <value>Woman</value>
+  </data>
+  <data name="DisplayName_Bots_OldMale" xml:space="preserve">
+    <value>Old man</value>
+  </data>
+  <data name="NotificationEditLockableDrum" xml:space="preserve">
+    <value>Press {0} to edit rope drum settings</value>
+  </data>
+  <data name="NotificationToggleLockableDrum" xml:space="preserve">
+    <value>Press {0} to toggle lockable drum lock</value>
+  </data>
+  <data name="ScreenCaptionLockableDrumSettings" xml:space="preserve">
+    <value>Lockable drum settings</value>
+  </data>
+  <data name="ScreenLockableDrum_DetachRope" xml:space="preserve">
+    <value>Detach rope</value>
+  </data>
+  <data name="ScreenLockableDrum_MaxLength" xml:space="preserve">
+    <value>Max. length</value>
+  </data>
+  <data name="ScreenLockableDrum_MinLength" xml:space="preserve">
+    <value>Min. length</value>
+  </data>
+  <data name="ScreenLockableDrum_MinLengthError" xml:space="preserve">
+    <value>Min. length must be less than max. length</value>
+  </data>
+  <data name="ToolTipWorldSettingsPlayerBots" xml:space="preserve">
+    <value>Maximum number of spawned bots per player</value>
+  </data>
+  <data name="ToolTipWorldSettingsUncontrolledBots" xml:space="preserve">
+    <value>Server-side bots (barbarians, deer, ...)</value>
+  </data>
+  <data name="ControlName_BattleMapSettings" xml:space="preserve">
+    <value>Open battle map settings</value>
+  </data>
+  <data name="ScreenLockableDrum_SetCurrent" xml:space="preserve">
+    <value>Set current</value>
+  </data>
+  <data name="ScreenLockableDrum_SetCurrentMaxToolTip" xml:space="preserve">
+    <value>Set current rope length as max. limit.</value>
+  </data>
+  <data name="ScreenLockableDrum_SetCurrentMinToolTip" xml:space="preserve">
+    <value>Set current rope length as min. limit.</value>
+  </data>
+  <data name="HudBlockInfo_InstalledRequired" xml:space="preserve">
+    <value>Installed / Required / Available</value>
+  </data>
+  <data name="HudBlockInfo_Components" xml:space="preserve">
+    <value>Parts</value>
+  </data>
+  <data name="WorkshopTag_Battle" xml:space="preserve">
+    <value>Battle</value>
+  </data>
+  <data name="WorkshopTag_BattleBaseMap" xml:space="preserve">
+    <value>Battle base map</value>
+  </data>
+</root>

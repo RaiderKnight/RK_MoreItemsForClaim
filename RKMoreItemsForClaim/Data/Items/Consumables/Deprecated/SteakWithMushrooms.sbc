@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- This food was deprecated for the time being; it will stay in the game so people don't lose their foods, but it may be deleted or repurposed in the future. -->
+  <Definition xsi:type="MyObjectBuilder_ConsumableItemDefinition">
+    <Id Type="ConsumableItem" Subtype="SteakWithMushrooms" />
+    <Public>false</Public>
+    <DisplayName>DisplayName_Consumables_Shroomsteak</DisplayName>
+	<Description>Description_Consumables_Shroomsteak</Description>
+    <Icon>Textures\GUI\Icons\Consumables\Dish_Shroomsteak.dds</Icon>
+    <Tag>Dish</Tag>
+    <Size>
+      <X>0.3</X>
+      <Y>0.1</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Volume>2</Volume>
+    <Model>Models\Consumables\Shroomsteak.mwm</Model>
+    <PhysicalMaterial>Food</PhysicalMaterial>
+    <MaxStackAmount>50</MaxStackAmount>
+    <Stats>
+      <Stat Name="Food" Value="15" Clamped="true" />
+    </Stats>
+    <UseSound>PlayEat</UseSound>
+    <CanSpawnFromScreen>false</CanSpawnFromScreen>
+    <Mass>1</Mass>
+  </Definition>
+</Definitions>

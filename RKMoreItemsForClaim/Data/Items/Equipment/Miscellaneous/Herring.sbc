@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_HandItemDefinition">
+    <Id Type="HandItem" Subtype="Herring" />
+
+    <!-- Display -->
+	  <Public>false</Public>
+	
+    <DisplayName>DisplayName_Herring</DisplayName>
+    <Description>Description_Herring</Description>
+    <Icon>Textures\GUI\Icons\RedHerring.dds</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Weapons\RedHerring.mwm</Model>
+
+    <PhysicalMaterial>Food</PhysicalMaterial>
+    <Mass>5</Mass>
+    
+    <Animation>Sword</Animation>
+
+    <MaxStackAmount>1</MaxStackAmount>
+
+    <!-- Equipment -->
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid" />
+
+    <MaxDurability>80</MaxDurability>
+
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+
+    <Position>
+      <Slot>OffHand</Slot>
+    </Position>
+
+    <!-- extra transform on IK dummy in 1st person -->
+    <EquippedTransform>
+      <!-- tool rotation offset from hand -->
+      <Orientation>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>1</W>
+      </Orientation>
+    </EquippedTransform>
+    <EquippedTransformFps>
+      <!-- hand IK target offset -->
+      <Position>
+        <X>0.817</X>
+        <Y>-1.0</Y>
+        <Z>-0.646</Z>
+      </Position>
+      <Orientation>
+        <X>0.5215536</X>
+        <Y>0.4426106</Y>
+        <Z>-0.4053448</Z>
+        <W>0.6064432</W>
+      </Orientation>
+    </EquippedTransformFps>
+
+    <!-- Behaviors -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_TreeCutterToolBehaviorDefinition" Subtype="AxeHerring" />
+    </StanceToBehavior>
+    <StanceToBehavior>
+      <StanceName>CombatMode</StanceName>
+      <BehaviorId Type="MeleeWeaponBehaviorDefinition" Subtype="Herring" />
+    </StanceToBehavior>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_TreeCutterToolBehaviorDefinition">
+    <Id Type="TreeCutterToolBehaviorDefinition" Subtype="AxeHerring" />
+    <Efficiency>1</Efficiency>
+    <ToolheadMaterial>Food</ToolheadMaterial>
+
+    <PrimaryEffect>
+      <HitTime>.6</HitTime>
+      <AnimationTime>1</AnimationTime>
+      <SwingSound>ToolSwish</SwingSound>
+      <Animation>Cutting</Animation>
+    </PrimaryEffect>
+
+    <PrimaryLogEffect>
+      <HitTime>.6</HitTime>
+      <AnimationTime>1</AnimationTime>
+      <SwingSound>ToolSwish</SwingSound>
+      <Animation>CuttingLog</Animation>
+    </PrimaryLogEffect>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_MeleeWeaponBehaviorDefinition">
+    <Id Type="MeleeWeaponBehaviorDefinition" Subtype="Herring" />
+
+    <LeftSwing>
+      <Range>1.2</Range>
+      <StartArc>-70</StartArc>
+      <EndArc>20</EndArc>
+
+      <Animation>Attack</Animation>
+      <SwingSound>ToolSwish</SwingSound>
+
+      <LightAttack MinimumDamage="10">
+        <StatCost Stat="Stamina" Cost="7" />
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Back">
+          <Effect Type="CompositeEntityEffect" Subtype="Backstab" Chance="1.0" />
+        </AppliedEffect>
+      </LightAttack>
+
+      <ChargedAttack MinimumDamage="10" MaximumDamage="12" AttackMultipleTargets="true">
+        <StatCost Stat="Stamina" Cost="9" />
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Back">
+          <Effect Type="CompositeEntityEffect" Subtype="Backstab" Chance="1.0" />
+        </AppliedEffect>
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Left">
+          <Effect Type="CompositeEntityEffect" Subtype="ArmWoundLeft" Chance="0.3" />
+        </AppliedEffect>
+        <AppliedEffect Affectee="Target" ContactType="Hit">
+          <Effect Type="CompositeEntityEffect" Subtype="Stun" Chance="0.2" />
+        </AppliedEffect>
+      </ChargedAttack>
+    </LeftSwing>
+
+    <RightSwing>
+      <Range>1.2</Range>
+      <StartArc>70</StartArc>
+      <EndArc>-20</EndArc>
+
+      <Animation>Attack</Animation>
+      <SwingSound>ToolSwish</SwingSound>
+
+      <LightAttack MinimumDamage="10">
+        <StatCost Stat="Stamina" Cost="7" />
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Back">
+          <Effect Type="CompositeEntityEffect" Subtype="Backstab" Chance="1.0" />
+        </AppliedEffect>
+      </LightAttack>
+
+      <ChargedAttack MinimumDamage="10" MaximumDamage="12" AttackMultipleTargets="true">
+        <StatCost Stat="Stamina" Cost="9" />
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Back">
+          <Effect Type="CompositeEntityEffect" Subtype="Backstab" Chance="1.0" />
+        </AppliedEffect>
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Right">
+          <Effect Type="CompositeEntityEffect" Subtype="ArmWoundRight" Chance="0.3" />
+        </AppliedEffect>
+        <AppliedEffect Affectee="Target" ContactType="Hit">
+          <Effect Type="CompositeEntityEffect" Subtype="Stun" Chance="0.2" />
+        </AppliedEffect>
+      </ChargedAttack>
+    </RightSwing>
+
+    <ForwardSwing>
+      <Range>1.2</Range>
+      <StartArc>70</StartArc>
+      <EndArc>-20</EndArc>
+
+      <Animation>Attack</Animation>
+      <SwingSound>ToolSwish</SwingSound>
+
+      <LightAttack MinimumDamage="10">
+        <StatCost Stat="Stamina" Cost="7" />
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Back">
+          <Effect Type="CompositeEntityEffect" Subtype="Backstab" Chance="1.0" />
+        </AppliedEffect>
+        <AppliedEffect Affectee="Target" ContactType="Hit">
+          <Effect Type="CompositeEntityEffect" Subtype="Stun" Chance="0.1" />
+        </AppliedEffect>
+      </LightAttack>
+
+      <ChargedAttack MinimumDamage="10" MaximumDamage="12" AttackMultipleTargets="true">
+        <StatCost Stat="Stamina" Cost="9" />
+        <AppliedEffect Affectee="Target" ContactType="Hit" HitRegion="Back">
+          <Effect Type="CompositeEntityEffect" Subtype="Backstab" Chance="1.0" />
+        </AppliedEffect>
+        <AppliedEffect Affectee="Target" ContactType="Hit">
+          <Effect Type="CompositeEntityEffect" Subtype="Stun" Chance="0.5" />
+        </AppliedEffect>
+      </ChargedAttack>
+    </ForwardSwing>
+
+    <CanBlock>true</CanBlock>
+    <HardnessLimited>true</HardnessLimited>
+    <WeaponMaterial>Food</WeaponMaterial>
+
+    <ChargeEffect Type="CompositeEntityEffect" Subtype="Charging" />
+
+    <BlockAnimation>block_idle</BlockAnimation>
+    <BlockRaiseTime>.03</BlockRaiseTime>
+    <BlockStatCost Stat="Stamina" Cost="10" />
+    <BlockEffect Type="CompositeEntityEffect" Subtype="Blocking" />
+
+    <ImmediateLocking>false</ImmediateLocking>
+  </Definition>
+</Definitions>

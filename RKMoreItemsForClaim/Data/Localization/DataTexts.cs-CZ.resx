@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element msdata:IsDataSet="true" name="root">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+                <xsd:element minOccurs="0" msdata:Ordinal="2" name="comment" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute msdata:Ordinal="1" name="name" type="xsd:string" use="required"/>
+              <xsd:attribute msdata:Ordinal="3" name="type" type="xsd:string"/>
+              <xsd:attribute msdata:Ordinal="4" name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName_Animation_Wave" xml:space="preserve">
+    <value>Animace vlny</value>
+  </data>
+  <data name="DisplayName_Category_AllBlocks" xml:space="preserve">
+    <value>Všechny bloky</value>
+  </data>
+  <data name="DisplayName_Category_CharacterAnimations" xml:space="preserve">
+    <value>Animace charakteru</value>
+  </data>
+  <data name="DisplayName_Category_ToolsWeapons" xml:space="preserve">
+    <value>Nástroje postavy</value>
+  </data>
+  <data name="DisplayName_Animation_Facepalm" xml:space="preserve">
+    <value>Ruka přes obličej</value>
+  </data>
+  <data name="DisplayName_Animation_ThumbUp" xml:space="preserve">
+    <value>Palec nahoru</value>
+  </data>
+  <data name="DisplayName_Animation_Victory" xml:space="preserve">
+    <value>Vítězství</value>
+  </data>
+  <data name="DisplayName_Category_VoxelHands" xml:space="preserve">
+    <value>Ruka voxelu</value>
+  </data>
+  <data name="DisplayName_VoxelHand_Box" xml:space="preserve">
+    <value>Box</value>
+  </data>
+  <data name="DisplayName_VoxelHand_Sphere" xml:space="preserve">
+    <value>Koule</value>
+  </data>
+  <data name="DisplayName_VoxelHand_AutoLevel" xml:space="preserve">
+    <value>Automatická úroveň terénu</value>
+  </data>
+  <data name="DisplayName_VoxelHand_Capsule" xml:space="preserve">
+    <value>Kapsle</value>
+  </data>
+  <data name="DisplayName_VoxelHand_Ramp" xml:space="preserve">
+    <value>Rampa</value>
+  </data>
+  <data name="DisplayName_Category_GeneratedBlocks" xml:space="preserve">
+    <value>Vygenerované bloky</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileCornerRoundTall_MultiBlock" xml:space="preserve">
+    <value>Rohová střešní taška vysoký oblouk.</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileTop" xml:space="preserve">
+    <value>Střešní taška</value>
+  </data>
+  <data name="DisplayName_Block_RoofWoodTop" xml:space="preserve">
+    <value>Hřeben dřevěné střechy.</value>
+  </data>
+  <data name="DisplayName_Block_RoofHayInvCorner" xml:space="preserve">
+    <value>Rohová střecha ze slámy</value>
+  </data>
+  <data name="DisplayName_Block_RoofWoodInvCorner" xml:space="preserve">
+    <value>Obrácená rohová dřevěná střecha</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileInvCorner" xml:space="preserve">
+    <value>Rohová střešní taška</value>
+  </data>
+  <data name="DisplayName_Block_RoofWoodCorner" xml:space="preserve">
+    <value>Rohová dřevěná střecha</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileCorner" xml:space="preserve">
+    <value>Rohová střešní taška</value>
+  </data>
+  <data name="DisplayName_Block_RoofWood" xml:space="preserve">
+    <value>Dřevěná střecha</value>
+  </data>
+  <data name="DisplayName_Block_RoofTile" xml:space="preserve">
+    <value>Tašková střecha</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockArch" xml:space="preserve">
+    <value>Blok kameného oblouku</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockCube" xml:space="preserve">
+    <value>Kamenný kvádr</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRound" xml:space="preserve">
+    <value>Kulatý kamenný blok</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRoundIn" xml:space="preserve">
+    <value>Kulatý kamenný blok vnitřní</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRoundInDoor" xml:space="preserve">
+    <value>Dveře v kulaté zdi</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockSlope" xml:space="preserve">
+    <value>Šikmý kamenný blok</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockStairs" xml:space="preserve">
+    <value>Kamenné schody</value>
+  </data>
+  <data name="DisplayName_Block_StoneWall" xml:space="preserve">
+    <value>Kamenná zeď</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallArch" xml:space="preserve">
+    <value>Oblouková kamená zeď</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallDoor" xml:space="preserve">
+    <value>Dveře kamenné zdi</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRound" xml:space="preserve">
+    <value>Kamenná kulatá zeď</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundDoor" xml:space="preserve">
+    <value>Dveře v kulaté zdi</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundDoorOffset" xml:space="preserve">
+    <value>Odsazené dveře v kulaté zdi</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundWindow" xml:space="preserve">
+    <value>Kamenná kulatá zeď s oknem</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallWindow" xml:space="preserve">
+    <value>Kamenné Okno</value>
+  </data>
+  <data name="DisplayName_Block_StoneSpiralStaircase" xml:space="preserve">
+    <value>Kamenné spirálové schody</value>
+  </data>
+  <data name="DisplayName_Block_StoneSpiralStaircaseMir" xml:space="preserve">
+    <value>Kamenné spirálové schodiště zrcadlově</value>
+  </data>
+  <data name="DisplayName_Block_StoneSpiralStaircaseSharp" xml:space="preserve">
+    <value>Ostré kamenné spirálovité schodiště</value>
+  </data>
+  <data name="DisplayName_Block_StoneSpiralStaircaseSharpMir" xml:space="preserve">
+    <value>Ostré kamenné spirálovité schodiště zrcadlové</value>
+  </data>
+  <data name="DisplayName_Block_RoofHayTop" xml:space="preserve">
+    <value>Střecha ze sena</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRoundInDoorMirror" xml:space="preserve">
+    <value>Vnitřní kulatý kamenný blok s dveřmi zrcadlový</value>
+  </data>
+  <data name="Description_Animation_Wave" xml:space="preserve">
+    <value>Zamávat na přítele (nebo nepřítele!)</value>
+  </data>
+  <data name="Quote00Author" xml:space="preserve">
+    <value>Alfons X, Král Kastilský</value>
+  </data>
+  <data name="Quote00Text" xml:space="preserve">
+    <value>Kdybych byl přítomen u stvoření, tak bych měl některé užitečné tipy pro lepší uspořádání vesmíru.</value>
+  </data>
+  <data name="Quote01Author" xml:space="preserve">
+    <value>Ibn Taymiyyah</value>
+  </data>
+  <data name="Quote01Text" xml:space="preserve">
+    <value>Nespoléhej příliš na každého, kdo je v tomto světě, protože i tvůj vlastní stín tě opustí, když se ocitneš ve tmě.</value>
+  </data>
+  <data name="Quote02Author" xml:space="preserve">
+    <value>Alí ibn Abí Tálib</value>
+  </data>
+  <data name="Quote02Text" xml:space="preserve">
+    <value>Potravou pro tělo je jídlo, a potravou duše je krmení jiných lidí.</value>
+  </data>
+  <data name="Quote03Author" xml:space="preserve">
+    <value>Markéta Navarrská</value>
+  </data>
+  <data name="Quote03Text" xml:space="preserve">
+    <value>Lidé předstírají, že nemají rádi hrozny, pokud jsou příliš vysoko, než  aby na ně dosáhli.</value>
+  </data>
+  <data name="Quote04Author" xml:space="preserve">
+    <value>Dante</value>
+  </data>
+  <data name="Quote04Text" xml:space="preserve">
+    <value>Zvažte svůj původ: nebyli jste stvořeni, abyste žili jako zvířata, ale k následování ctností a znalostí.</value>
+  </data>
+  <data name="Quote05Author" xml:space="preserve">
+    <value>Alfréd Veliký</value>
+  </data>
+  <data name="Quote05Text" xml:space="preserve">
+    <value>Vzpomeňte si, co nám připravil osud v tomto světě, když jsme nectili vědu a nepředávání znalostí ostatním lidem.</value>
+  </data>
+  <data name="Quote06Author" xml:space="preserve">
+    <value>Latinské přísloví</value>
+  </data>
+  <data name="Quote06Text" xml:space="preserve">
+    <value>Odvážnému štěstí přeje</value>
+  </data>
+  <data name="Quote07Author" xml:space="preserve">
+    <value>Shakespeare</value>
+  </data>
+  <data name="Quote07Text" xml:space="preserve">
+    <value>Celý svět je jeviště a všichni muži a ženy jsou pouhými herci.</value>
+  </data>
+  <data name="Quote08Author" xml:space="preserve">
+    <value>Staré velšské přísloví</value>
+  </data>
+  <data name="Quote08Text" xml:space="preserve">
+    <value>Je snadné být statečný za hradní zdí.</value>
+  </data>
+  <data name="Quote09Author" xml:space="preserve">
+    <value>Alcuin</value>
+  </data>
+  <data name="Quote09Text" xml:space="preserve">
+    <value>Člověk si myslí, bůh nasměruje.</value>
+  </data>
+  <data name="Quote10Author" xml:space="preserve">
+    <value>Albert Veliký</value>
+  </data>
+  <data name="Quote10Text" xml:space="preserve">
+    <value>Využil hněvu k zastrašení podřízených a hněv ho časem úplně posedl.</value>
+  </data>
+  <data name="Quote11Author" xml:space="preserve">
+    <value>Abú Bakr</value>
+  </data>
+  <data name="Quote11Text" xml:space="preserve">
+    <value>Činy bez znalostí jsou k ničemu a znalosti bez činů nemají smysl.</value>
+  </data>
+  <data name="Quote12Author" xml:space="preserve">
+    <value>Abú Bakr</value>
+  </data>
+  <data name="Quote12Text" xml:space="preserve">
+    <value>Velikosti neutečeš, velikost tě vždy dožene.</value>
+  </data>
+  <data name="Quote13Author" xml:space="preserve">
+    <value>Abú Bakr</value>
+  </data>
+  <data name="Quote13Text" xml:space="preserve">
+    <value>Dobré činy nás chrání před ranami z nepřízně osudu.</value>
+  </data>
+  <data name="Quote14Author" xml:space="preserve">
+    <value>Svatý Izák z Ninive</value>
+  </data>
+  <data name="Quote14Text" xml:space="preserve">
+    <value>Buďte v míru se svou duší, a Nebe i Země budou v míru s vámi.</value>
+  </data>
+  <data name="Quote15Author" xml:space="preserve">
+    <value>Svatý Jeroným</value>
+  </data>
+  <data name="Quote15Text" xml:space="preserve">
+    <value>Ani zuřivá bestie ani toulavý pták se nechytí do stejné pasti dvakrát.</value>
+  </data>
+  <data name="Quote16Author" xml:space="preserve">
+    <value>Robert Mnich</value>
+  </data>
+  <data name="Quote16Text" xml:space="preserve">
+    <value>Oh, stateční vojáci a potomci neporazitelný předků, neklesejte na duchu, ale připomínejte si statečnost svých předků.</value>
+  </data>
+  <data name="Quote17Author" xml:space="preserve">
+    <value>Tomáš Kempenský</value>
+  </data>
+  <data name="Quote17Text" xml:space="preserve">
+    <value>Přijmi své břemeno a přestane ti být břemenem.</value>
+  </data>
+  <data name="Quote18Author" xml:space="preserve">
+    <value>Staré anglické přísloví</value>
+  </data>
+  <data name="Quote18Text" xml:space="preserve">
+    <value>Pánův dům je jeho hrad.</value>
+  </data>
+  <data name="Quote19Author" xml:space="preserve">
+    <value>Filippo Brunelleschi</value>
+  </data>
+  <data name="Quote19Text" xml:space="preserve">
+    <value>Pouze umělec, nikoli blázen, odhalí skryté taje přírody.</value>
+  </data>
+  <data name="Quote20Author" xml:space="preserve">
+    <value>Michelangelo </value>
+  </data>
+  <data name="Quote20Text" xml:space="preserve">
+    <value>Kdyby lidé věděli jak tvrdě jsem pracoval na dosáhnutí mistrovství, tak by to nevypadalo vůbec nádherně.</value>
+  </data>
+  <data name="Quote21Author" xml:space="preserve">
+    <value>William Wallace</value>
+  </data>
+  <data name="Quote21Text" xml:space="preserve">
+    <value>Nepřišli jsme zde v míru, ale připraveni bojovat, odhodlaní pomstít křivdy a osvobodit naši zemi. Nechte své pány přijít a napadnout nás: jsme připraveni setkat se s nimi tváří v tvář.</value>
+  </data>
+  <data name="Quote22Author" xml:space="preserve">
+    <value>Johanka z Arku </value>
+  </data>
+  <data name="Quote22Text" xml:space="preserve">
+    <value>Nebojím se; Kvůli tomuto jsem se narodil.</value>
+  </data>
+  <data name="Quote23Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote23Text" xml:space="preserve">
+    <value>Ať prvky mé práce nečte nikdo jenž není matematik.</value>
+  </data>
+  <data name="Quote24Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote24Text" xml:space="preserve">
+    <value>Kdo netrestá zlo, přikazuje, aby se dálo.</value>
+  </data>
+  <data name="Quote25Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote25Text" xml:space="preserve">
+    <value>Mechanika je rájem matematických věd, neboť
+v ní plody matematiky sklízíme.</value>
+  </data>
+  <data name="Quote26Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote26Text" xml:space="preserve">
+    <value>Je jednodušší odolávat na začátku, než na konci.</value>
+  </data>
+  <data name="Quote27Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote27Text" xml:space="preserve">
+    <value>Věda je pozorování věcí možných, ať současných nebo minulých; předtucha je znalost věcí, které by se mohly prokázat, ale to chce čas.</value>
+  </data>
+  <data name="Quote28Author" xml:space="preserve">
+    <value>Niccolò Machiavelli</value>
+  </data>
+  <data name="Quote28Text" xml:space="preserve">
+    <value>Války jen tak nekončí, jsou jen odloženy ku prospěchu někoho jiného.</value>
+  </data>
+  <data name="Quote29Author" xml:space="preserve">
+    <value>Niccolò Machiavelli</value>
+  </data>
+  <data name="Quote29Text" xml:space="preserve">
+    <value>Bůh není ochoten udělat všechno, a tak vzal naši svobodnou vůli a podíl na slávě, který patří nám.</value>
+  </data>
+  <data name="Quote30Author" xml:space="preserve">
+    <value>Niccolò Machiavelli</value>
+  </data>
+  <data name="Quote30Text" xml:space="preserve">
+    <value>Válka může začít kdykoli si budete přát, ale neskončí když se vám zlíbí.</value>
+  </data>
+  <data name="Quote31Author" xml:space="preserve">
+    <value>Císař Fridrich II, Svatá říše římská</value>
+  </data>
+  <data name="Quote31Text" xml:space="preserve">
+    <value>Ten kdo brání všechno, neubrání nic.</value>
+  </data>
+  <data name="Quote32Author" xml:space="preserve">
+    <value>Mikuláš Kusánský</value>
+  </data>
+  <data name="Quote32Text" xml:space="preserve">
+    <value>Neboť ten, kdo je nejvíc chamtivý po poznání, může toho dosáhnout i bez větší dokonalosti, než být důkladně vědom své vlastní nevědomosti.</value>
+  </data>
+  <data name="Quote33Author" xml:space="preserve">
+    <value>Archimédés</value>
+  </data>
+  <data name="Quote33Text" xml:space="preserve">
+    <value>Dejte mi dostatečně dlouhou páku a pevný bod a já pohnu zemí.</value>
+  </data>
+  <data name="Quote34Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote34Text" xml:space="preserve">
+    <value>Příroda nikdy neporuší své vlastní zákony.</value>
+  </data>
+  <data name="Quote35Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote35Text" xml:space="preserve">
+    <value>V jednoduchosti je nejvyšší sofistikovanost.</value>
+  </data>
+  <data name="Quote36Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote36Text" xml:space="preserve">
+    <value>Tam kde je křik, není v pravdě poznání.</value>
+  </data>
+  <data name="Quote37Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote37Text" xml:space="preserve">
+    <value>Urazil jsem boha a lidstvo, protože moje práce nedosáhla kvality jakou by měla mít.</value>
+  </data>
+  <data name="Quote38Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote38Text" xml:space="preserve">
+    <value>Všechny naše poznání, mají svůj původ v našem vnímání.</value>
+  </data>
+  <data name="Quote39Author" xml:space="preserve">
+    <value>Galileo Galilei</value>
+  </data>
+  <data name="Quote39Text" xml:space="preserve">
+    <value>Pokud popřete vědecký princip, můžete hájit jakýkoli paradox.</value>
+  </data>
+  <data name="Quote40Author" xml:space="preserve">
+    <value>Galileo Galilei</value>
+  </data>
+  <data name="Quote40Text" xml:space="preserve">
+    <value>Matematika je jazyk ve kterém Bůh napsal vesmír.</value>
+  </data>
+  <data name="Quote41Author" xml:space="preserve">
+    <value>Galileo Galilei</value>
+  </data>
+  <data name="Quote41Text" xml:space="preserve">
+    <value>Kdybych opět začal studovat, tak bych se řídil pokyny Plata a začal s matematikou.</value>
+  </data>
+  <data name="Quote42Author" xml:space="preserve">
+    <value>Sokrates</value>
+  </data>
+  <data name="Quote42Text" xml:space="preserve">
+    <value>Vím, že nic nevím.</value>
+  </data>
+  <data name="Quote43Author" xml:space="preserve">
+    <value>Anonym</value>
+  </data>
+  <data name="Quote43Text" xml:space="preserve">
+    <value>Optimista vidí sklenici z poloviny plnou. Pesimista vidí sklenici poloprázdnou. Inženýr tuto sklenici vidí dvakrát větší než je třeba.</value>
+  </data>
+  <data name="Quote44Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote44Text" xml:space="preserve">
+    <value>Nejvyšším uměním války je podmanit si nepřítele bez boje.</value>
+  </data>
+  <data name="Quote45Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote45Text" xml:space="preserve">
+    <value>Ten kdo ví kdy bojovat a kdy ne, bude vítěz</value>
+  </data>
+  <data name="Quote46Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote46Text" xml:space="preserve">
+    <value>Nepřemožitelnost tví v obraně; možnost vítězství v útoku. </value>
+  </data>
+  <data name="Quote47Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote47Text" xml:space="preserve">
+    <value>Čelí zhoubě a zničení, přežijí, vrhnou se do spáru smrti, a oni přežijí. Když se lidé dostanou do nebezpečí, vždy jsou schopni přežít.</value>
+  </data>
+  <data name="Quote48Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote48Text" xml:space="preserve">
+    <value>Pokud jsi daleko od nepřítele, ujistiho, že jsi blízko.</value>
+  </data>
+  <data name="Quote49Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote49Text" xml:space="preserve">
+    <value>Jen osvícený panovník a moudrý generál, jenž pro účely špionáže používá nejvyšší inteligenci armády, dosahuje skvělých výsledků.</value>
+  </data>
+  <data name="Quote50Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote50Text" xml:space="preserve">
+    <value>Kdo nezná protivníka ani sebe, ztratí každou bitvu.</value>
+  </data>
+  <data name="Quote51Author" xml:space="preserve">
+    <value>Julius Caesar</value>
+  </data>
+  <data name="Quote51Text" xml:space="preserve">
+    <value>Snazší je najít lidi, jenž dobrovolně zemřou, než najít ty, jenž budou ochotni trpělivě snášet bolest.</value>
+  </data>
+  <data name="Quote52Author" xml:space="preserve">
+    <value>Julius Caesar</value>
+  </data>
+  <data name="Quote52Text" xml:space="preserve">
+    <value>Přišel jsem, viděl jsem, dobyl jsem.</value>
+  </data>
+  <data name="Quote53Author" xml:space="preserve">
+    <value>Julius Caesar</value>
+  </data>
+  <data name="Quote53Text" xml:space="preserve">
+    <value>Zbabělci před smrtí mnohokrát zemřou.</value>
+  </data>
+  <data name="Quote54Author" xml:space="preserve">
+    <value>Julius Caesar</value>
+  </data>
+  <data name="Quote54Text" xml:space="preserve">
+    <value>Miluju jmeno Čest, víc takových, tak se  bojím smrti.</value>
+  </data>
+  <data name="Quote55Author" xml:space="preserve">
+    <value>Julius Caesar</value>
+  </data>
+  <data name="Quote55Text" xml:space="preserve">
+    <value>Zkušenost je učitelem všech věcí.</value>
+  </data>
+  <data name="Quote56Author" xml:space="preserve">
+    <value>Aztécký Bojovník</value>
+  </data>
+  <data name="Quote56Text" xml:space="preserve">
+    <value>Tohle není obyčejný moment. Stále se zde něco děje.</value>
+  </data>
+  <data name="Quote57Author" xml:space="preserve">
+    <value>Bílý Los</value>
+  </data>
+  <data name="Quote57Text" xml:space="preserve">
+    <value>Když si se narodil, plakal jsi, ale svět se radoval. Žij svůj život tak, aby až zemřeš, svět plakal, ale ty si byl naplněn radostí.</value>
+  </data>
+  <data name="Quote58Author" xml:space="preserve">
+    <value>Staré indiánské rčení</value>
+  </data>
+  <data name="Quote58Text" xml:space="preserve">
+    <value>Některé věci ti padnou do oka, ale má cenu sledovat pouze ty, které polapí tvé srdce.</value>
+  </data>
+  <data name="Quote59Author" xml:space="preserve">
+    <value>Buddha</value>
+  </data>
+  <data name="Quote59Text" xml:space="preserve">
+    <value>Mysl je všechno. Co chceš se stane.</value>
+  </data>
+  <data name="Quote60Author" xml:space="preserve">
+    <value>Buddha</value>
+  </data>
+  <data name="Quote60Text" xml:space="preserve">
+    <value>Existují pouze dvě chyby, které můžete udělat na cestě k pravdě; nebude to celou cestu, a nezačíná.</value>
+  </data>
+  <data name="Quote61Author" xml:space="preserve">
+    <value>Buddha</value>
+  </data>
+  <data name="Quote61Text" xml:space="preserve">
+    <value>Lepší než tisíc prázdných slov, je jedno slovo, které přináší mír.</value>
+  </data>
+  <data name="Quote62Author" xml:space="preserve">
+    <value>Alexandr Veliký</value>
+  </data>
+  <data name="Quote62Text" xml:space="preserve">
+    <value>Není nic nemožného pro toho, kdo to zkusí.</value>
+  </data>
+  <data name="Quote63Author" xml:space="preserve">
+    <value>Sókratés</value>
+  </data>
+  <data name="Quote63Text" xml:space="preserve">
+    <value>Jediná skutečná moudrost je v poznatku, že nevíme nic.</value>
+  </data>
+  <data name="DisplayName_Block_RoofHay" xml:space="preserve">
+    <value>Střecha ze sena</value>
+  </data>
+  <data name="DisplayName_Block_RoofHayCorner" xml:space="preserve">
+    <value>Rohová střecha ze sena</value>
+  </data>
+  <data name="DisplayName_Block_Rotor" xml:space="preserve">
+    <value>Rotor</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementCenter" xml:space="preserve">
+    <value>Kamenné Cimbuří Středové</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRound_MultiBlock" xml:space="preserve">
+    <value>Kamenné Cimbuří Kulaté</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSide" xml:space="preserve">
+    <value>Kamenné Cimbuří Boční</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSideCorner" xml:space="preserve">
+    <value>Kamenné Cimbuří Boční Rohové</value>
+  </data>
+  <data name="DisplayName_Block_StonePlatform" xml:space="preserve">
+    <value>Kamená platforma</value>
+  </data>
+  <data name="DisplayName_Block_StonePlatformCorner" xml:space="preserve">
+    <value>Rohová kamenná platforma</value>
+  </data>
+  <data name="DisplayName_Block_StonePlatformRound_MultiBlock" xml:space="preserve">
+    <value>Kulatá kamenná platforma</value>
+  </data>
+  <data name="DisplayName_Block_Timber" xml:space="preserve">
+    <value>Trám</value>
+  </data>
+  <data name="DisplayName_Block_Timber10" xml:space="preserve">
+    <value>Trám 10</value>
+  </data>
+  <data name="DisplayName_Block_Timber2" xml:space="preserve">
+    <value>Trám 2</value>
+  </data>
+  <data name="DisplayName_Block_Timber3" xml:space="preserve">
+    <value>Trám 3</value>
+  </data>
+  <data name="DisplayName_Block_Timber4" xml:space="preserve">
+    <value>Trám 4</value>
+  </data>
+  <data name="DisplayName_Block_Timber5" xml:space="preserve">
+    <value>Trám 5</value>
+  </data>
+  <data name="DisplayName_Block_Timber6" xml:space="preserve">
+    <value>Trám 6</value>
+  </data>
+  <data name="DisplayName_Block_Timber7" xml:space="preserve">
+    <value>Trám 7</value>
+  </data>
+  <data name="DisplayName_Block_Timber8" xml:space="preserve">
+    <value>Trám 8</value>
+  </data>
+  <data name="DisplayName_Block_Timber9" xml:space="preserve">
+    <value>Trám 9</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloor" xml:space="preserve">
+    <value>Dřevěná podlaha</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloorInvRound" xml:space="preserve">
+    <value>Zakulacená dřevěná podlaha</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloorRound" xml:space="preserve">
+    <value>Kulatá dřevěná podlaha</value>
+  </data>
+  <data name="DisplayName_Block_WoodenRailing" xml:space="preserve">
+    <value>Dřevěné schodiště</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWall" xml:space="preserve">
+    <value>Dřevěná zeď</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWallDoor" xml:space="preserve">
+    <value>Dřevěný dveře</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWallSlope" xml:space="preserve">
+    <value>Dřevěná zeď šikmá</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWallTop" xml:space="preserve">
+    <value>Vrch dřevěné zdi</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWallWindow" xml:space="preserve">
+    <value>Dřevěné okno</value>
+  </data>
+  <data name="DisplayName_Block_CatapultHead" xml:space="preserve">
+    <value>Hlava Katapultu</value>
+  </data>
+  <data name="DisplayName_Block_CatchBlock" xml:space="preserve">
+    <value>Uchopit blok</value>
+  </data>
+  <data name="DisplayName_Block_LargeProjectile" xml:space="preserve">
+    <value>Velký projektil</value>
+  </data>
+  <data name="DisplayName_Block_LockCatchBlock" xml:space="preserve">
+    <value>Záchytný blok uzamykatelný</value>
+  </data>
+  <data name="DisplayName_Block_Projectile" xml:space="preserve">
+    <value>Projektily</value>
+  </data>
+  <data name="DisplayName_Block_RopeDrum" xml:space="preserve">
+    <value>Buben s lanem</value>
+  </data>
+  <data name="DisplayName_Block_RopeEnding" xml:space="preserve">
+    <value>Konec lana</value>
+  </data>
+  <data name="DisplayName_Block_RopeTorsionSpring" xml:space="preserve">
+    <value>Lano zkroucené do pružiny</value>
+  </data>
+  <data name="DisplayName_Block_TimberDiagonal" xml:space="preserve">
+    <value>Příčný Trám</value>
+  </data>
+  <data name="DisplayName_Block_TimberDiagonal_10" xml:space="preserve">
+    <value>Příčný Trám 10</value>
+  </data>
+  <data name="DisplayName_Block_TurnWheelCross" xml:space="preserve">
+    <value>Otočit kolo křížem</value>
+  </data>
+  <data name="DisplayName_Block_Weight" xml:space="preserve">
+    <value>Hmotnost</value>
+  </data>
+  <data name="DisplayName_Block_Wheel" xml:space="preserve">
+    <value>Kolo</value>
+  </data>
+  <data name="DisplayName_Block_WindMillBlade" xml:space="preserve">
+    <value>Lopatka Větrného Mlýna</value>
+  </data>
+  <data name="DisplayName_Block_WoodenRailingStairsMir_MultiBlock" xml:space="preserve">
+    <value>Dřevěné schodišťové zábradlí (mirror)</value>
+  </data>
+  <data name="DisplayName_Block_WoodenRailingStairs_MultiBlock" xml:space="preserve">
+    <value>Dřevěné schodišťové zábradlí</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloorRoundLargeMirror_MultiBlock" xml:space="preserve">
+    <value>Dřevěná zakulacená velká podlaha (mirror)</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloorRoundLarge_MultiBlock" xml:space="preserve">
+    <value>Dřevěná podlaha kulatá velká</value>
+  </data>
+  <data name="DisplayName_Block_WoodenStairs" xml:space="preserve">
+    <value>Dřevěné schody</value>
+  </data>
+  <data name="DisplayName_Block_WoodenStairsBottom" xml:space="preserve">
+    <value>Spodek dřevěných schodů</value>
+  </data>
+  <data name="DisplayName_Block_WoodenStairsTop" xml:space="preserve">
+    <value>Vrch dřevěných schodů</value>
+  </data>
+  <data name="DisplayName_Scenario_Plains" xml:space="preserve">
+    <value>Pláně</value>
+  </data>
+  <data name="DisplayName_Scenario_Castle" xml:space="preserve">
+    <value>Hrad</value>
+  </data>
+  <data name="DisplayName_Scenario_Bridges" xml:space="preserve">
+    <value>Mosty</value>
+  </data>
+  <data name="DisplayName_Scenario_PreviewDestructionMap" xml:space="preserve">
+    <value>Dva domy</value>
+  </data>
+  <data name="DisplayName_LargeProjectileThrower" xml:space="preserve">
+    <value>Velký vrhač projektilů</value>
+  </data>
+  <data name="DisplayName_MediumProjectileThrower" xml:space="preserve">
+    <value>Střední vrhač projektilů</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementCenterCorner" xml:space="preserve">
+    <value>Kamenné cimbuří střed koutu</value>
+  </data>
+  <data name="DisplayName_Block_StonePlatformInvCorner" xml:space="preserve">
+    <value>Rohová kamenná platforma (Inv.)</value>
+  </data>
+  <data name="DisplayName_Block_StoneCeiling" xml:space="preserve">
+    <value>Kamenný stropní oblouk</value>
+  </data>
+  <data name="DisplayName_Scenario_LargeTerrain" xml:space="preserve">
+    <value>Velký terén</value>
+  </data>
+  <data name="DisplayName_Scenario_NormalTerrain" xml:space="preserve">
+    <value>Normální terén</value>
+  </data>
+  <data name="DisplayName_Scenario_SmallTerrain" xml:space="preserve">
+    <value>Malý terén</value>
+  </data>
+  <data name="DisplayName_Scenario_VerySmallTerrain" xml:space="preserve">
+    <value>Velmi malý terén</value>
+  </data>
+  <data name="DisplayName_Scenario_Quickstart" xml:space="preserve">
+    <value>Rychlý start</value>
+  </data>
+  <data name="DisplayName_Block_CompoundBlock" xml:space="preserve">
+    <value>Sloučit blok</value>
+  </data>
+  <data name="DisplayName_Block_FracturedBlockLarge" xml:space="preserve">
+    <value>Roztříštěný velký blok</value>
+  </data>
+  <data name="DisplayName_Block_WoodenStairs_MultiBlock" xml:space="preserve">
+    <value>Dřevěné schody</value>
+  </data>
+  <data name="DisplayName_Block_BonFire" xml:space="preserve">
+    <value>Táborové ohniště</value>
+  </data>
+  <data name="DisplayName_Block_FireBucket" xml:space="preserve">
+    <value>Požární vědro</value>
+  </data>
+  <data name="DisplayName_Block_TorchStand" xml:space="preserve">
+    <value>Stojan pro pochodeň</value>
+  </data>
+  <data name="DisplayName_Block_WoodBarrel" xml:space="preserve">
+    <value>Dřevěný Sud</value>
+  </data>
+  <data name="DisplayName_Block_WoodBed" xml:space="preserve">
+    <value>Dřevěná Postel</value>
+  </data>
+  <data name="DisplayName_Block_WoodChair" xml:space="preserve">
+    <value>Dřevěná Židle</value>
+  </data>
+  <data name="DisplayName_Block_WoodChest" xml:space="preserve">
+    <value>Dřevěná truhla</value>
+  </data>
+  <data name="DisplayName_Block_WoodTable" xml:space="preserve">
+    <value>Dřevěný stůl</value>
+  </data>
+  <data name="DisplayName_StonePillarRound" xml:space="preserve">
+    <value>Kamenný pilíř kulatý</value>
+  </data>
+  <data name="DisplayName_StonePillarSquare" xml:space="preserve">
+    <value>Kamenný pilíř hranatý</value>
+  </data>
+  <data name="DisplayName_LargeProjectileThrower10" xml:space="preserve">
+    <value>Vrhač velkých projektilů 10x težší</value>
+  </data>
+  <data name="DisplayName_MediumProjectileThrower10" xml:space="preserve">
+    <value>Vrhač středních projektilů 10x težší</value>
+  </data>
+  <data name="DisplayName_Block_KingStatue" xml:space="preserve">
+    <value>Socha krále</value>
+  </data>
+  <data name="DisplayName_Block_WoodenPad10_1_10" xml:space="preserve">
+    <value>Dřevěná Podložka 10x10</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound" xml:space="preserve">
+    <value>Ttrám Kulatý</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound10" xml:space="preserve">
+    <value>Trám Kulatý 10</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound2" xml:space="preserve">
+    <value>Trám Kulatý 2</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound3" xml:space="preserve">
+    <value>Trám Kulatý 3</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound4" xml:space="preserve">
+    <value>Trám Kulatý 4</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound5" xml:space="preserve">
+    <value>Trám Kulatý 5</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound6" xml:space="preserve">
+    <value>Trám Kulatý 6</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound7" xml:space="preserve">
+    <value>Trám Kulatý 7</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound8" xml:space="preserve">
+    <value>Trám Kulatý 8</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound9" xml:space="preserve">
+    <value>Trám Kulatý 9</value>
+  </data>
+  <data name="DisplayName_Block_RopeRelease" xml:space="preserve">
+    <value>Uvolnění Lana</value>
+  </data>
+  <data name="DisplayName_Rope_Basic" xml:space="preserve">
+    <value>Základní lano</value>
+  </data>
+  <data name="DisplayName_Rope_TearableRope" xml:space="preserve">
+    <value>Tržné lano</value>
+  </data>
+  <data name="DisplayName_Block_CatchBlockExtended" xml:space="preserve">
+    <value>Prodloužený záchytný blok</value>
+  </data>
+  <data name="DisplayName_Block_CatchBlockClosed" xml:space="preserve">
+    <value>Uzavřený záchytný blok</value>
+  </data>
+  <data name="DisplayName_Block_LockCatchBlockExtended" xml:space="preserve">
+    <value>Prodloužený záchytný blok uzamykatelný</value>
+  </data>
+  <data name="DisplayName_Block_LockCatchBlockClosed" xml:space="preserve">
+    <value>Uzavřený záchytný blok uzamykatelný</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoundSmall" xml:space="preserve">
+    <value>Kamenné Cimbuří Kruhové Malé</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLong" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Dlouhé</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongLeft" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Dlouhé Levé</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongMirror" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Dlouhé Zrcadlové</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongMirrorLeft" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Dlouhé Zrcadlové Levé</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongMirrorLeftTop" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Dlouhé Zrcadlové Levé Horní</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongMirrorRight" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Dlouhé Zrcadlové Pravé</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongRight" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Dlouhé Pravé</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongRightTop" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Dlouhé Pravé Horní</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong30" xml:space="preserve">
+    <value>Kamenný Blok Šikmý Dlouhý</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong30Left" xml:space="preserve">
+    <value>Kamenný Blok Šikmý 30 Levý</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong30Right" xml:space="preserve">
+    <value>Kamenný Blok Šikmý Dlouhý 30 Pravý</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong60" xml:space="preserve">
+    <value>Kamenný Blok Šikmý Dlouhý 60</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong60Left" xml:space="preserve">
+    <value>Kamenný Blok Šikmý Dlouhý 60 Levý</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong60Right" xml:space="preserve">
+    <value>Kamenný Blok Šikmý Dlouhý 60 Pravý</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlope" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeBottom" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Dolní</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeBottomMirror" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Dolní Zrcadlové</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeMirror" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Zrcadlové</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeTop" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Horní</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeTopMirror" xml:space="preserve">
+    <value>Kamenné Cimbuří Šikmé Horní Zrcadlové</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockStairsCorner" xml:space="preserve">
+    <value>Stone Block Stairs Corner</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockStairsCornerRound" xml:space="preserve">
+    <value>Stone Block Stairs Corner Round</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockStairsCornerStraight" xml:space="preserve">
+    <value>Stone Block Stairs Corner Straight</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallArchHalf" xml:space="preserve">
+    <value>Stone Wall Arch Half</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallArchHalfMir" xml:space="preserve">
+    <value>Stone Wall Arch Half Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockSlopeCorner" xml:space="preserve">
+    <value>Stone Block Slope Corner</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockSlopeCornerRound" xml:space="preserve">
+    <value>Stone Block Slope Corner Round</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockSlopeCornerStraight" xml:space="preserve">
+    <value>Stone Block Slope Corner Straight</value>
+  </data>
+  <data name="DisplayName_Hammer" xml:space="preserve">
+    <value>Kladivo</value>
+  </data>
+  <data name="DisplayName_Mace" xml:space="preserve">
+    <value>Muškátový květ</value>
+  </data>
+  <data name="DisplayName_Torch" xml:space="preserve">
+    <value>Pochodeň</value>
+  </data>
+  <data name="DisplayName_Block_StoneCeilingInnerCornerSharp" xml:space="preserve">
+    <value>Stone Ceiling Inner Corner Sharp</value>
+  </data>
+  <data name="DisplayName_Block_StoneCeilingInnerCornerWall" xml:space="preserve">
+    <value>Stone Ceiling Inner Corner Wall</value>
+  </data>
+  <data name="DisplayName_Block_StoneCeilingOuterCorner" xml:space="preserve">
+    <value>Stone Ceiling Outer Corner</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallDoorCenter" xml:space="preserve">
+    <value>Stone Wall Door Center</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallDoorCenterLeft" xml:space="preserve">
+    <value>Stone Wall Door Center Left</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallDoorCenterRight" xml:space="preserve">
+    <value>Stone Wall Door Center Right</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallWindowCenter" xml:space="preserve">
+    <value>Stone Wall Window Center</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallWindowCenterLeft" xml:space="preserve">
+    <value>Stone Wall Window Center Left</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallWindowCenterRight" xml:space="preserve">
+    <value>Stone Wall Window Center Right</value>
+  </data>
+  <data name="DisplayName_Block_Stone" xml:space="preserve">
+    <value>Kámen</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangle" xml:space="preserve">
+    <value>Stone Battlement Triangle</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangle1" xml:space="preserve">
+    <value>Stone Battlement Triangle 1</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangle1Mir" xml:space="preserve">
+    <value>Stone Battlement Triangle 1 Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangle2Mir" xml:space="preserve">
+    <value>Stone Battlement Triangle 2 Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangleMir" xml:space="preserve">
+    <value>Stone Battlement Triangle Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneSmall" xml:space="preserve">
+    <value>Kámen Malý</value>
+  </data>
+  <data name="DisplayName_Block_Stone_BattlementRoofTriangle2" xml:space="preserve">
+    <value>Stone Battlement Triangle 2</value>
+  </data>
+  <data name="DisplayName_Block_TorchWall" xml:space="preserve">
+    <value>Wall Torch</value>
+  </data>
+  <data name="DisplayName_Block_Wood90Support" xml:space="preserve">
+    <value>Wood Support</value>
+  </data>
+  <data name="DisplayName_PickAxe" xml:space="preserve">
+    <value>Krompáč</value>
+  </data>
+  <data name="DisplayName_Block_SlicedRoofTileCornerRound_Main" xml:space="preserve">
+    <value>Roof Tile Corner Round Main</value>
+  </data>
+  <data name="DisplayName_Block_SlicedRoofTileCornerRound_Top" xml:space="preserve">
+    <value>Roof Tile Corner Round Top</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileCornerRound" xml:space="preserve">
+    <value>Roof Tile Corner Round</value>
+  </data>
+  <data name="DisplayName_Block_Banner" xml:space="preserve">
+    <value>Banner</value>
+  </data>
+  <data name="DisplayName_Block_BlankTowerEmpty" xml:space="preserve">
+    <value>Blank Tower Empty</value>
+  </data>
+  <data name="DisplayName_Block_Flag" xml:space="preserve">
+    <value>Flag</value>
+  </data>
+  <data name="DisplayName_Block_ScrapWood" xml:space="preserve">
+    <value>Scrap Wood</value>
+  </data>
+  <data name="DisplayName_Block_ScrapWoodBranches" xml:space="preserve">
+    <value>Scrap Wood Branches</value>
+  </data>
+  <data name="DisplayName_Block_WoodChestLarge" xml:space="preserve">
+    <value>Wood Chest Large</value>
+  </data>
+  <data name="DisplayName_Block_Log" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="DisplayName_Axe" xml:space="preserve">
+    <value>Axe</value>
+  </data>
+  <data name="DisplayName_ManipulationTool" xml:space="preserve">
+    <value>Manipulation Tool</value>
+  </data>
+  <data name="DisplayName_WoodenSpike" xml:space="preserve">
+    <value>Wooden Spike</value>
+  </data>
+  <data name="DisplayName_HouseHalfStoneDoubleWindows" xml:space="preserve">
+    <value>House Half Stone Double Windows</value>
+  </data>
+  <data name="DisplayName_HouseHalfStoneDoubleWindowsCube" xml:space="preserve">
+    <value>House Half Stone Double Windows Cube</value>
+  </data>
+  <data name="DisplayName_StoneBlockSlopeDiagonal" xml:space="preserve">
+    <value>Stone Block Slope Diagonal</value>
+  </data>
+  <data name="DisplayName_StoneBattlementSideDiagonal" xml:space="preserve">
+    <value>Stone Battlement Side Diagonal</value>
+  </data>
+  <data name="DisplayName_StoneBattlementSideDiagonalMultiBlock1" xml:space="preserve">
+    <value>Stone Battlement Side Diagonal 1</value>
+  </data>
+  <data name="DisplayName_StoneBattlementSideDiagonalMultiBlock2" xml:space="preserve">
+    <value>Stone Battlement Side Diagonal 2</value>
+  </data>
+  <data name="DisplayName_StonePlatformDiagonal" xml:space="preserve">
+    <value>Stone Platform Diagonal</value>
+  </data>
+  <data name="DisplayName_StonePlatformDiagonalMultiBlock1" xml:space="preserve">
+    <value>Stone Platform Diagonal 1</value>
+  </data>
+  <data name="DisplayName_StonePlatformDiagonalMultiBlock2" xml:space="preserve">
+    <value>Stone Platform Diagonal 2</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonal" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockRight" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Right</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockLeft" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Left</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockLeft_2" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Left 2</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockRight_2" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Right 2</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockCorner" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Corner</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockCornerTop" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Corner Top</value>
+  </data>
+  <data name="DisplayName_StonePlatformDiagonalCorner" xml:space="preserve">
+    <value>Stone Platform Diagonal Corner</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockFull" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Full</value>
+  </data>
+  <data name="DisplayName_StoneBattlementDiagonalMultiBlockCornerFull" xml:space="preserve">
+    <value>Stone Battlement Diagonal Corner</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockCornerTopFull" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Corner Top Full</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallSlope" xml:space="preserve">
+    <value>Stone Wall Slope</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallTop" xml:space="preserve">
+    <value>Stone Wall Top</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoundLargeSide" xml:space="preserve">
+    <value>Stone Battlement Round Large Side</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRoundLarge" xml:space="preserve">
+    <value>Stone Block Round Large</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundLarge" xml:space="preserve">
+    <value>Stone Wall Round Large</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundLargeDoor" xml:space="preserve">
+    <value>Stone Wall Round Large Door</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundLargeDoorOffset" xml:space="preserve">
+    <value>Stone Wall Round Large Door Offset</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundLargeWindow" xml:space="preserve">
+    <value>Stone Wall Round Large Window</value>
+  </data>
+  <data name="DisplayName_StonePlatformRoundLarge_1" xml:space="preserve">
+    <value>Stone Platform Round Large</value>
+  </data>
+  <data name="DisplayName_StoneBattlementRoundLargeCenterMir_1" xml:space="preserve">
+    <value>Stone Battlement Round Large Center</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileLargeRound" xml:space="preserve">
+    <value>Roof Tile Large Round</value>
+  </data>
+  <data name="DisplayName_LockableDrum" xml:space="preserve">
+    <value>Lockable drum</value>
+  </data>
+  <data name="DisplayName_Scenario_BattleBaseMap" xml:space="preserve">
+    <value>Battle Base Map</value>
+  </data>
+  <data name="DisplayName_Scenario_BattleMapCastle" xml:space="preserve">
+    <value>Battle Map Castle</value>
+  </data>
+  <data name="DisplayName_Item_LargeStone" xml:space="preserve">
+    <value>Large stone</value>
+  </data>
+  <data name="DisplayName_Item_ScrapWood" xml:space="preserve">
+    <value>Scrap wood</value>
+  </data>
+  <data name="DisplayName_Item_Stone" xml:space="preserve">
+    <value>Stone</value>
+  </data>
+  <data name="DisplayName_Item_Timber10" xml:space="preserve">
+    <value>Timber</value>
+  </data>
+  <data name="DisplayName_Item_Iron" xml:space="preserve">
+    <value>Iron</value>
+  </data>
+  <data name="DisplayName_Item_Wood" xml:space="preserve">
+    <value>Wood</value>
+  </data>
+</root>

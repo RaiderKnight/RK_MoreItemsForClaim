@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element msdata:IsDataSet="true" name="root">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+                <xsd:element minOccurs="0" msdata:Ordinal="2" name="comment" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute msdata:Ordinal="1" name="name" type="xsd:string" use="required"/>
+              <xsd:attribute msdata:Ordinal="3" name="type" type="xsd:string"/>
+              <xsd:attribute msdata:Ordinal="4" name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName_Animation_Wave" xml:space="preserve">
+    <value>Animacija Vala</value>
+  </data>
+  <data name="DisplayName_Category_AllBlocks" xml:space="preserve">
+    <value>Svi Elementi</value>
+  </data>
+  <data name="DisplayName_Category_CharacterAnimations" xml:space="preserve">
+    <value>Animacije Lika</value>
+  </data>
+  <data name="DisplayName_Category_ToolsWeapons" xml:space="preserve">
+    <value>Alati Lika</value>
+  </data>
+  <data name="DisplayName_Animation_Facepalm" xml:space="preserve">
+    <value>Facepalm</value>
+  </data>
+  <data name="DisplayName_Animation_ThumbUp" xml:space="preserve">
+    <value>Palac gore</value>
+  </data>
+  <data name="DisplayName_Animation_Victory" xml:space="preserve">
+    <value>Pobjeda</value>
+  </data>
+  <data name="DisplayName_Category_VoxelHands" xml:space="preserve">
+    <value>Voxel Ruke</value>
+  </data>
+  <data name="DisplayName_VoxelHand_Box" xml:space="preserve">
+    <value>Kutija</value>
+  </data>
+  <data name="DisplayName_VoxelHand_Sphere" xml:space="preserve">
+    <value>Sfera</value>
+  </data>
+  <data name="DisplayName_VoxelHand_AutoLevel" xml:space="preserve">
+    <value>Auto razina terena</value>
+  </data>
+  <data name="DisplayName_VoxelHand_Capsule" xml:space="preserve">
+    <value>Kapsula</value>
+  </data>
+  <data name="DisplayName_VoxelHand_Ramp" xml:space="preserve">
+    <value>Rampa</value>
+  </data>
+  <data name="DisplayName_Category_GeneratedBlocks" xml:space="preserve">
+    <value>Generirani Elementi</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileCornerRoundTall_MultiBlock" xml:space="preserve">
+    <value>Krov Crijep Ugao Okrugao Visok</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileTop" xml:space="preserve">
+    <value>Krov Crijep Vrh</value>
+  </data>
+  <data name="DisplayName_Block_RoofWoodTop" xml:space="preserve">
+    <value>Krov Drvo Vrh</value>
+  </data>
+  <data name="DisplayName_Block_RoofHayInvCorner" xml:space="preserve">
+    <value>Krov Sijeno Obrnut Ugao</value>
+  </data>
+  <data name="DisplayName_Block_RoofWoodInvCorner" xml:space="preserve">
+    <value>Krov Drveni Obrnut Ugao</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileInvCorner" xml:space="preserve">
+    <value>Krov Crijep Obrnut Ugao</value>
+  </data>
+  <data name="DisplayName_Block_RoofWoodCorner" xml:space="preserve">
+    <value>Krov Drveni Ugao</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileCorner" xml:space="preserve">
+    <value>Krov Crijep Ugao</value>
+  </data>
+  <data name="DisplayName_Block_RoofWood" xml:space="preserve">
+    <value>Krov Drvo</value>
+  </data>
+  <data name="DisplayName_Block_RoofTile" xml:space="preserve">
+    <value>Krov Crijep</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockArch" xml:space="preserve">
+    <value>Kameni Element Luk</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockCube" xml:space="preserve">
+    <value>Kameni Element Kocka</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRound" xml:space="preserve">
+    <value>Kameni Element Okrugao</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRoundIn" xml:space="preserve">
+    <value>Kameni Element Okrugao Obr</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRoundInDoor" xml:space="preserve">
+    <value>Kameni Element Okrugao Obr Vrata</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockSlope" xml:space="preserve">
+    <value>Kameni Element Nagib</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockStairs" xml:space="preserve">
+    <value>Kameni Element Stepenice</value>
+  </data>
+  <data name="DisplayName_Block_StoneWall" xml:space="preserve">
+    <value>Kameni Zid</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallArch" xml:space="preserve">
+    <value>Kameni Zid Luk</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallDoor" xml:space="preserve">
+    <value>Kameni Zid Vrata</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRound" xml:space="preserve">
+    <value>Kameni Zid Okrugao</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundDoor" xml:space="preserve">
+    <value>Kameni Zid Okrugao Vrata</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundDoorOffset" xml:space="preserve">
+    <value>Kameni Zid Okrugao Vrata Izjednačenje</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundWindow" xml:space="preserve">
+    <value>Kameni Zid Okrugao Prozor</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallWindow" xml:space="preserve">
+    <value>Kameni Zid Prozor</value>
+  </data>
+  <data name="DisplayName_Block_StoneSpiralStaircase" xml:space="preserve">
+    <value>Kameno Spiralno Stepenište</value>
+  </data>
+  <data name="DisplayName_Block_StoneSpiralStaircaseMir" xml:space="preserve">
+    <value>Kameno Spiralno Stepenište Ogledalo</value>
+  </data>
+  <data name="DisplayName_Block_StoneSpiralStaircaseSharp" xml:space="preserve">
+    <value>Kameno Spiralno Stepenište Oštro</value>
+  </data>
+  <data name="DisplayName_Block_StoneSpiralStaircaseSharpMir" xml:space="preserve">
+    <value>Kameno Spiralno Stepenište Oštro Ogledalo</value>
+  </data>
+  <data name="DisplayName_Block_RoofHayTop" xml:space="preserve">
+    <value>Krov Sijeno Vrh</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRoundInDoorMirror" xml:space="preserve">
+    <value>Kameni Element Okrugao Obr Vrata Ogledalo</value>
+  </data>
+  <data name="Description_Animation_Wave" xml:space="preserve">
+    <value>Mahni prijateljima (ili neprijateljima!)</value>
+  </data>
+  <data name="Quote00Author" xml:space="preserve">
+    <value>Alfons X, Kralj Kastilje</value>
+  </data>
+  <data name="Quote00Text" xml:space="preserve">
+    <value>Da sam bio prisutan kod Stvaranja, dao bih neke korisne savjete za bolje posložavanje svemira.</value>
+  </data>
+  <data name="Quote01Author" xml:space="preserve">
+    <value>Ibn Taymiyyah</value>
+  </data>
+  <data name="Quote01Text" xml:space="preserve">
+    <value>Nemoj previše ovisiti ni o kome u ovom svijetu, jer čak i tvoja sjena te napusti kada si u tami.</value>
+  </data>
+  <data name="Quote02Author" xml:space="preserve">
+    <value>Ali Ibn Abi Talib</value>
+  </data>
+  <data name="Quote02Text" xml:space="preserve">
+    <value>Okrijepa za tijelo je hrana, a okrijepa za dušu je hranjenje drugih.</value>
+  </data>
+  <data name="Quote03Author" xml:space="preserve">
+    <value>Margarita od Navarre</value>
+  </data>
+  <data name="Quote03Text" xml:space="preserve">
+    <value>Ljudi se pretvaraju da ne vole grožđe kada su previsoko da bi ih mogli dohvatiti.</value>
+  </data>
+  <data name="Quote04Author" xml:space="preserve">
+    <value>Dante</value>
+  </data>
+  <data name="Quote04Text" xml:space="preserve">
+    <value>Razmislite o svojem porijeklu: niste stvoreni da biste živili kao grubijani, nego kako biste slijedili vrlinu i znanje.</value>
+  </data>
+  <data name="Quote05Author" xml:space="preserve">
+    <value>Alfred Veliki</value>
+  </data>
+  <data name="Quote05Text" xml:space="preserve">
+    <value>Sjetite se kazni koje su nas snašle u ovom svijetu kada nismo cijenili učenje i prenosili ga drugim ljudima.</value>
+  </data>
+  <data name="Quote06Author" xml:space="preserve">
+    <value>Latinska izreka</value>
+  </data>
+  <data name="Quote06Text" xml:space="preserve">
+    <value>Sreća prati hrabre.</value>
+  </data>
+  <data name="Quote07Author" xml:space="preserve">
+    <value>Shakespeare</value>
+  </data>
+  <data name="Quote07Text" xml:space="preserve">
+    <value>Cijeli svijet je pozornica, a svi muškarci i žene samo su glumci.</value>
+  </data>
+  <data name="Quote08Author" xml:space="preserve">
+    <value>Stara velška izreka</value>
+  </data>
+  <data name="Quote08Text" xml:space="preserve">
+    <value>Lako je biti hrabar iza dvorskog zida.</value>
+  </data>
+  <data name="Quote09Author" xml:space="preserve">
+    <value>Alkuin</value>
+  </data>
+  <data name="Quote09Text" xml:space="preserve">
+    <value>Čovjek misli, Bog usmjerava.</value>
+  </data>
+  <data name="Quote10Author" xml:space="preserve">
+    <value>Albert Veliki</value>
+  </data>
+  <data name="Quote10Text" xml:space="preserve">
+    <value>Preuzeo je gnjev da plaši podređene, a s vremenom je gnjev preuzeo njega.</value>
+  </data>
+  <data name="Quote11Author" xml:space="preserve">
+    <value>Abu Bakr</value>
+  </data>
+  <data name="Quote11Text" xml:space="preserve">
+    <value>Bez znanja, djelovanje je beskorisno, a znanje bez djelovanja uzaludno.</value>
+  </data>
+  <data name="Quote12Author" xml:space="preserve">
+    <value>Abu Bakr</value>
+  </data>
+  <data name="Quote12Text" xml:space="preserve">
+    <value>Pobjegni od uzvišenosti i uzvišenost će te pratiti.</value>
+  </data>
+  <data name="Quote13Author" xml:space="preserve">
+    <value>Abu Bakr</value>
+  </data>
+  <data name="Quote13Text" xml:space="preserve">
+    <value>Dobra djela čuvaju od udaraca nedaće.</value>
+  </data>
+  <data name="Quote14Author" xml:space="preserve">
+    <value>Sveti Izak od Ninjive</value>
+  </data>
+  <data name="Quote14Text" xml:space="preserve">
+    <value>Pomiri se sa svojom dušom i raj i zemlja će biti pomireni s tobom.</value>
+  </data>
+  <data name="Quote15Author" xml:space="preserve">
+    <value>Sveti Jeronim</value>
+  </data>
+  <data name="Quote15Text" xml:space="preserve">
+    <value>Čak ni divlje životinje i lutajuće ptice ne padaju u iste zamke ili mreže dvaput.</value>
+  </data>
+  <data name="Quote16Author" xml:space="preserve">
+    <value>Robert Redovnik</value>
+  </data>
+  <data name="Quote16Text" xml:space="preserve">
+    <value>O, najhrabriji vojnici i potomci nepobjedivih predaka, ne degenerirajte nego se sjetite junaštva svojih praotaca.</value>
+  </data>
+  <data name="Quote17Author" xml:space="preserve">
+    <value>Toma Kempenac</value>
+  </data>
+  <data name="Quote17Text" xml:space="preserve">
+    <value>Ako rado nosiš križ, križ će nositi tebe.</value>
+  </data>
+  <data name="Quote18Author" xml:space="preserve">
+    <value>Stara Engleska izreka</value>
+  </data>
+  <data name="Quote18Text" xml:space="preserve">
+    <value>Čovjekov dom je njegov dvorac.</value>
+  </data>
+  <data name="Quote19Author" xml:space="preserve">
+    <value>Filippo Brunelleschi</value>
+  </data>
+  <data name="Quote19Text" xml:space="preserve">
+    <value>Samo umjetnik, a ne budala, otkriva što priroda skriva.</value>
+  </data>
+  <data name="Quote20Author" xml:space="preserve">
+    <value>Michelangelo</value>
+  </data>
+  <data name="Quote20Text" xml:space="preserve">
+    <value>Kad bi ljudi znali koliko sam radio da bih dostigao svoju vještinu, ne bi se uopće činilo tako divno.</value>
+  </data>
+  <data name="Quote21Author" xml:space="preserve">
+    <value>William Wallace</value>
+  </data>
+  <data name="Quote21Text" xml:space="preserve">
+    <value>Ne dolazimo s mirnom namjerom, nego spremni za boj, odlučni osvetiti nepravde i osloboditi svoju zemlju. Neka dođu vaši gospodari i napadnu nas: spremni smo suočiti se s njima bradom o bradu.</value>
+  </data>
+  <data name="Quote22Author" xml:space="preserve">
+    <value>Ivana Orleanska</value>
+  </data>
+  <data name="Quote22Text" xml:space="preserve">
+    <value>Ne bojim se; rođena sam za ovo.</value>
+  </data>
+  <data name="Quote23Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote23Text" xml:space="preserve">
+    <value>Ne dajte nikome tko nije matematičar da čita elemente moga rada.</value>
+  </data>
+  <data name="Quote24Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote24Text" xml:space="preserve">
+    <value>Onaj koji ne kažnjava zlo, naređuje da bude učinjeno.</value>
+  </data>
+  <data name="Quote25Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote25Text" xml:space="preserve">
+    <value>Mehanika je raj matematičkih znanosti jer njom se dolazi do plodova matematike.</value>
+  </data>
+  <data name="Quote26Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote26Text" xml:space="preserve">
+    <value>Lakše je oduprijeti se na početku nego na kraju.</value>
+  </data>
+  <data name="Quote27Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote27Text" xml:space="preserve">
+    <value>Znanost je promatranje mogućih stvari, bila to sadašnjost ili prošlost, predviđanje je znanje stvari koje bi se mogle dogoditi, ali polako.</value>
+  </data>
+  <data name="Quote28Author" xml:space="preserve">
+    <value>Niccolò Machiavelli</value>
+  </data>
+  <data name="Quote28Text" xml:space="preserve">
+    <value>Ratovi ne nestaju sami od sebe, samo budu odgođeni u nečiju tuđu korist.</value>
+  </data>
+  <data name="Quote29Author" xml:space="preserve">
+    <value>Niccolò Machiavelli</value>
+  </data>
+  <data name="Quote29Text" xml:space="preserve">
+    <value>Bog nije voljan učiniti sve i tako oduzeti našu slobodnu volju i taj dio slave koja pripada nama.</value>
+  </data>
+  <data name="Quote30Author" xml:space="preserve">
+    <value>Niccolò Machiavelli</value>
+  </data>
+  <data name="Quote30Text" xml:space="preserve">
+    <value>Ratovi počnu kada želimo, ali ne završe kada bismo htjeli.</value>
+  </data>
+  <data name="Quote31Author" xml:space="preserve">
+    <value>Car Franjo II., Sveto Rimsko Carstvo</value>
+  </data>
+  <data name="Quote31Text" xml:space="preserve">
+    <value>Onaj koji brani sve ne brani ništa.</value>
+  </data>
+  <data name="Quote32Author" xml:space="preserve">
+    <value>Nikola Kuzanski</value>
+  </data>
+  <data name="Quote32Text" xml:space="preserve">
+    <value>Čak i onaj koji je najpohlepniji za znanjem ne može dostići veće savršenstvo od bivanja potpuno svjesnim vlastitog neznanja.</value>
+  </data>
+  <data name="Quote33Author" xml:space="preserve">
+    <value>Arhimed</value>
+  </data>
+  <data name="Quote33Text" xml:space="preserve">
+    <value>Dajte mi dovoljno dugu polugu i uporište i pomaknut ću svijet.</value>
+  </data>
+  <data name="Quote34Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote34Text" xml:space="preserve">
+    <value>Priroda nikada ne krši svoje zakone.</value>
+  </data>
+  <data name="Quote35Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote35Text" xml:space="preserve">
+    <value>Jednostavnost je najviša sofisticiranost.</value>
+  </data>
+  <data name="Quote36Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote36Text" xml:space="preserve">
+    <value>Gdje ima vikanja, nema pravog znanja.</value>
+  </data>
+  <data name="Quote37Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote37Text" xml:space="preserve">
+    <value>Uvrijedio sam Boga i čovječanstvo jer moje djelo nije dostiglo kvalitetu koju je trebalo.</value>
+  </data>
+  <data name="Quote38Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote38Text" xml:space="preserve">
+    <value>Svo naše znanje je ukorijenjeno  u našim viđenjima.</value>
+  </data>
+  <data name="Quote39Author" xml:space="preserve">
+    <value>Galileo Galilej</value>
+  </data>
+  <data name="Quote39Text" xml:space="preserve">
+    <value>Poricanjem znanstvenih načela može se održavati bilo koji paradoks.</value>
+  </data>
+  <data name="Quote40Author" xml:space="preserve">
+    <value>Galileo Galilej</value>
+  </data>
+  <data name="Quote40Text" xml:space="preserve">
+    <value>Matematika je jezik na kojem je Bog napisao svemir.</value>
+  </data>
+  <data name="Quote41Author" xml:space="preserve">
+    <value>Galileo Galilej</value>
+  </data>
+  <data name="Quote41Text" xml:space="preserve">
+    <value>Da opet počinjem svoj studij, poslušao bih Platonov savjet i počeo matematikom.</value>
+  </data>
+  <data name="Quote42Author" xml:space="preserve">
+    <value>Sokrat</value>
+  </data>
+  <data name="Quote42Text" xml:space="preserve">
+    <value>Znam da ništa ne znam.</value>
+  </data>
+  <data name="Quote43Author" xml:space="preserve">
+    <value>Anonimno</value>
+  </data>
+  <data name="Quote43Text" xml:space="preserve">
+    <value>Optimistu je čaša polupuna. Pesimistu je čaša poluprazna. Inžinjeru je čaša duplo veća nego što treba biti ... .</value>
+  </data>
+  <data name="Quote44Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote44Text" xml:space="preserve">
+    <value>Vrhunsko umijeće rata je pokoriti neprijatelja bez borbe.</value>
+  </data>
+  <data name="Quote45Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote45Text" xml:space="preserve">
+    <value>Pobjednik će biti onaj koji zna kada se može boriti, a kada ne može.</value>
+  </data>
+  <data name="Quote46Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote46Text" xml:space="preserve">
+    <value>Nepobjedivost leži u obrani, a mogućnost pobjede u napadu.</value>
+  </data>
+  <data name="Quote47Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote47Text" xml:space="preserve">
+    <value>Suoči ih uništenjem i oni će preživjeti; baci ih u smrtonosnu situaciju i oni će živjeti. Kada ljudi upadnu u nevolju, onda mogu težiti pobjedi.</value>
+  </data>
+  <data name="Quote48Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote48Text" xml:space="preserve">
+    <value>Ako si daleko od neprijatelja, uvjeri ga da si blizu.</value>
+  </data>
+  <data name="Quote49Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote49Text" xml:space="preserve">
+    <value>Samo će prosvijetljeni vladar i mudri general upotrijebiti najveću inteligenciju vojske u svrhu špijuniranja i tako postići odlične rezultate.</value>
+  </data>
+  <data name="Quote50Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote50Text" xml:space="preserve">
+    <value>Tko ne poznaje ni svog neprijatelja ni sebe će sigurno biti u opasnosti</value>
+  </data>
+  <data name="Quote51Author" xml:space="preserve">
+    <value>Julije Cezar</value>
+  </data>
+  <data name="Quote51Text" xml:space="preserve">
+    <value>Lakše je naći ljude koji dobrovoljno umiru, nego naći one koji su voljni strpljivo trpiti bol.</value>
+  </data>
+  <data name="Quote52Author" xml:space="preserve">
+    <value>Julije Cezar</value>
+  </data>
+  <data name="Quote52Text" xml:space="preserve">
+    <value>Dođoh, vidjeh, pobijedih.</value>
+  </data>
+  <data name="Quote53Author" xml:space="preserve">
+    <value>Julije Cezar</value>
+  </data>
+  <data name="Quote53Text" xml:space="preserve">
+    <value>Kukavice umiru puno puta prije svoje prave smrti.</value>
+  </data>
+  <data name="Quote54Author" xml:space="preserve">
+    <value>Julije Cezar</value>
+  </data>
+  <data name="Quote54Text" xml:space="preserve">
+    <value>Volim ime časti više nego što se bojim smrti.</value>
+  </data>
+  <data name="Quote55Author" xml:space="preserve">
+    <value>Julije Cezar</value>
+  </data>
+  <data name="Quote55Text" xml:space="preserve">
+    <value>Iskustvo je učitelj svega.</value>
+  </data>
+  <data name="Quote56Author" xml:space="preserve">
+    <value>Astečki Ratnik</value>
+  </data>
+  <data name="Quote56Text" xml:space="preserve">
+    <value>Nema običnih trenutaka. Nešto se uvijek događa.</value>
+  </data>
+  <data name="Quote57Author" xml:space="preserve">
+    <value>Bijeli Los</value>
+  </data>
+  <data name="Quote57Text" xml:space="preserve">
+    <value>Kada si rođen, plakao si, a svijet se veselio. Živi svoj život tako da, kada umreš, svijet plače a ti se veseliš.</value>
+  </data>
+  <data name="Quote58Author" xml:space="preserve">
+    <value>Stara indijska izreka</value>
+  </data>
+  <data name="Quote58Text" xml:space="preserve">
+    <value>Određene stvari zapadnu za oko, ali valja ići samo za onima koje prirastu srcu.</value>
+  </data>
+  <data name="Quote59Author" xml:space="preserve">
+    <value>Buda</value>
+  </data>
+  <data name="Quote59Text" xml:space="preserve">
+    <value>Um je sve. Što mislimo, to i postanemo.</value>
+  </data>
+  <data name="Quote60Author" xml:space="preserve">
+    <value>Buda</value>
+  </data>
+  <data name="Quote60Text" xml:space="preserve">
+    <value>Postoje samo dvije pogreške koje se mogu učiniti na putu do istine; ne ići do kraja i ne započeti.</value>
+  </data>
+  <data name="Quote61Author" xml:space="preserve">
+    <value>Buda</value>
+  </data>
+  <data name="Quote61Text" xml:space="preserve">
+    <value>Od tisuću šupljih riječi bolja je jedna koja donosi mir.</value>
+  </data>
+  <data name="Quote62Author" xml:space="preserve">
+    <value>Aleksandar Veliki</value>
+  </data>
+  <data name="Quote62Text" xml:space="preserve">
+    <value>Onome tko proba ništa nije nemoguće.</value>
+  </data>
+  <data name="Quote63Author" xml:space="preserve">
+    <value>Sokrat</value>
+  </data>
+  <data name="Quote63Text" xml:space="preserve">
+    <value>Jedina prava mudrost je znati da ne znaš ništa.</value>
+  </data>
+  <data name="DisplayName_Block_RoofHay" xml:space="preserve">
+    <value>Krov Sijeno</value>
+  </data>
+  <data name="DisplayName_Block_RoofHayCorner" xml:space="preserve">
+    <value>Krov Sijeno Ugao</value>
+  </data>
+  <data name="DisplayName_Block_Rotor" xml:space="preserve">
+    <value>Rotor</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementCenter" xml:space="preserve">
+    <value>Kamena Fortifikacija Centar</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRound_MultiBlock" xml:space="preserve">
+    <value>Kamena Fortifikacija Okrugla</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSide" xml:space="preserve">
+    <value>Kamena Fortifikacija Bok</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSideCorner" xml:space="preserve">
+    <value>Kamena Fortifikacija Bok Ugao</value>
+  </data>
+  <data name="DisplayName_Block_StonePlatform" xml:space="preserve">
+    <value>Kamena Platforma</value>
+  </data>
+  <data name="DisplayName_Block_StonePlatformCorner" xml:space="preserve">
+    <value>Kamena Platforma Ugao</value>
+  </data>
+  <data name="DisplayName_Block_StonePlatformRound_MultiBlock" xml:space="preserve">
+    <value>Kamena Platforma Okrugla</value>
+  </data>
+  <data name="DisplayName_Block_Timber" xml:space="preserve">
+    <value>Debla</value>
+  </data>
+  <data name="DisplayName_Block_Timber10" xml:space="preserve">
+    <value>Debla 10</value>
+  </data>
+  <data name="DisplayName_Block_Timber2" xml:space="preserve">
+    <value>Debla 2</value>
+  </data>
+  <data name="DisplayName_Block_Timber3" xml:space="preserve">
+    <value>Debla 3</value>
+  </data>
+  <data name="DisplayName_Block_Timber4" xml:space="preserve">
+    <value>Debla 4</value>
+  </data>
+  <data name="DisplayName_Block_Timber5" xml:space="preserve">
+    <value>Debla 5</value>
+  </data>
+  <data name="DisplayName_Block_Timber6" xml:space="preserve">
+    <value>Debla 6</value>
+  </data>
+  <data name="DisplayName_Block_Timber7" xml:space="preserve">
+    <value>Debla 7</value>
+  </data>
+  <data name="DisplayName_Block_Timber8" xml:space="preserve">
+    <value>Debla 8</value>
+  </data>
+  <data name="DisplayName_Block_Timber9" xml:space="preserve">
+    <value>Debla 9</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloor" xml:space="preserve">
+    <value>Drveni Pod</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloorInvRound" xml:space="preserve">
+    <value>Drveni Pod Obrnut Okrugao</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloorRound" xml:space="preserve">
+    <value>Drveni Pod Okrugao</value>
+  </data>
+  <data name="DisplayName_Block_WoodenRailing" xml:space="preserve">
+    <value>Drvena Ograda</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWall" xml:space="preserve">
+    <value>Drveni Zid</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWallDoor" xml:space="preserve">
+    <value>Drveni Zid Vrata</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWallSlope" xml:space="preserve">
+    <value>Drveni Zid Nagib</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWallTop" xml:space="preserve">
+    <value>Drveni Zid Vrh</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWallWindow" xml:space="preserve">
+    <value>Drveni Zid Prozor</value>
+  </data>
+  <data name="DisplayName_Block_CatapultHead" xml:space="preserve">
+    <value>Katapultiraj Glavu</value>
+  </data>
+  <data name="DisplayName_Block_CatchBlock" xml:space="preserve">
+    <value>Uhvati Element</value>
+  </data>
+  <data name="DisplayName_Block_LargeProjectile" xml:space="preserve">
+    <value>Velik Projektil</value>
+  </data>
+  <data name="DisplayName_Block_LockCatchBlock" xml:space="preserve">
+    <value>Zaključaj Uhvati Element</value>
+  </data>
+  <data name="DisplayName_Block_Projectile" xml:space="preserve">
+    <value>Projektil</value>
+  </data>
+  <data name="DisplayName_Block_RopeDrum" xml:space="preserve">
+    <value>Bubanj Užeta</value>
+  </data>
+  <data name="DisplayName_Block_RopeEnding" xml:space="preserve">
+    <value>Kraj Ežeta</value>
+  </data>
+  <data name="DisplayName_Block_RopeTorsionSpring" xml:space="preserve">
+    <value>Torzijska Opruga Užeta</value>
+  </data>
+  <data name="DisplayName_Block_TimberDiagonal" xml:space="preserve">
+    <value>Debla Dijagonalno</value>
+  </data>
+  <data name="DisplayName_Block_TimberDiagonal_10" xml:space="preserve">
+    <value>Debla Dijagonalno 10</value>
+  </data>
+  <data name="DisplayName_Block_TurnWheelCross" xml:space="preserve">
+    <value>Okreni Kotač Križ</value>
+  </data>
+  <data name="DisplayName_Block_Weight" xml:space="preserve">
+    <value>Težina</value>
+  </data>
+  <data name="DisplayName_Block_Wheel" xml:space="preserve">
+    <value>Kotač</value>
+  </data>
+  <data name="DisplayName_Block_WindMillBlade" xml:space="preserve">
+    <value>Lopatica Vjetrenjače</value>
+  </data>
+  <data name="DisplayName_Block_WoodenRailingStairsMir_MultiBlock" xml:space="preserve">
+    <value>Drvena Ograda Stepenice Ogledalo</value>
+  </data>
+  <data name="DisplayName_Block_WoodenRailingStairs_MultiBlock" xml:space="preserve">
+    <value>Drvena Ograda Stepenice</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloorRoundLargeMirror_MultiBlock" xml:space="preserve">
+    <value>Drveni Pod Okrugao Velik Ogledalo</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloorRoundLarge_MultiBlock" xml:space="preserve">
+    <value>Drveni Pod Okrugao Velik</value>
+  </data>
+  <data name="DisplayName_Block_WoodenStairs" xml:space="preserve">
+    <value>Drvene Stepenice</value>
+  </data>
+  <data name="DisplayName_Block_WoodenStairsBottom" xml:space="preserve">
+    <value>Drvene Stepenice Dno</value>
+  </data>
+  <data name="DisplayName_Block_WoodenStairsTop" xml:space="preserve">
+    <value>Drvene Stepenice Vrh</value>
+  </data>
+  <data name="DisplayName_Scenario_Plains" xml:space="preserve">
+    <value>Ravnica</value>
+  </data>
+  <data name="DisplayName_Scenario_Castle" xml:space="preserve">
+    <value>Dvorac</value>
+  </data>
+  <data name="DisplayName_Scenario_Bridges" xml:space="preserve">
+    <value>Mostovi</value>
+  </data>
+  <data name="DisplayName_Scenario_PreviewDestructionMap" xml:space="preserve">
+    <value>Dvije kuće</value>
+  </data>
+  <data name="DisplayName_LargeProjectileThrower" xml:space="preserve">
+    <value>Velik bacač projektila</value>
+  </data>
+  <data name="DisplayName_MediumProjectileThrower" xml:space="preserve">
+    <value>Srednji bacač projektila</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementCenterCorner" xml:space="preserve">
+    <value>Kamena Fortifikacija Centar Ugao</value>
+  </data>
+  <data name="DisplayName_Block_StonePlatformInvCorner" xml:space="preserve">
+    <value>Kamena Platforma Obrnut Ugao</value>
+  </data>
+  <data name="DisplayName_Block_StoneCeiling" xml:space="preserve">
+    <value>Kameni Strop</value>
+  </data>
+  <data name="DisplayName_Scenario_LargeTerrain" xml:space="preserve">
+    <value>Velik teren</value>
+  </data>
+  <data name="DisplayName_Scenario_NormalTerrain" xml:space="preserve">
+    <value>Normalan teren</value>
+  </data>
+  <data name="DisplayName_Scenario_SmallTerrain" xml:space="preserve">
+    <value>Mal teren</value>
+  </data>
+  <data name="DisplayName_Scenario_VerySmallTerrain" xml:space="preserve">
+    <value>Vrlo mal teren</value>
+  </data>
+  <data name="DisplayName_Scenario_Quickstart" xml:space="preserve">
+    <value>Brzi Početak</value>
+  </data>
+  <data name="DisplayName_Block_CompoundBlock" xml:space="preserve">
+    <value>Složeni Element</value>
+  </data>
+  <data name="DisplayName_Block_FracturedBlockLarge" xml:space="preserve">
+    <value>Slomljeni Element Veliki</value>
+  </data>
+  <data name="DisplayName_Block_WoodenStairs_MultiBlock" xml:space="preserve">
+    <value>Drvene Stepenice</value>
+  </data>
+  <data name="DisplayName_Block_BonFire" xml:space="preserve">
+    <value>Lomača</value>
+  </data>
+  <data name="DisplayName_Block_FireBucket" xml:space="preserve">
+    <value>Vatrena Kanta</value>
+  </data>
+  <data name="DisplayName_Block_TorchStand" xml:space="preserve">
+    <value>Držač Baklje</value>
+  </data>
+  <data name="DisplayName_Block_WoodBarrel" xml:space="preserve">
+    <value>Drvena Bačva</value>
+  </data>
+  <data name="DisplayName_Block_WoodBed" xml:space="preserve">
+    <value>Drveni Krevet</value>
+  </data>
+  <data name="DisplayName_Block_WoodChair" xml:space="preserve">
+    <value>Drvena Stolica</value>
+  </data>
+  <data name="DisplayName_Block_WoodChest" xml:space="preserve">
+    <value>Drvena Škrinja</value>
+  </data>
+  <data name="DisplayName_Block_WoodTable" xml:space="preserve">
+    <value>Drveni Stol</value>
+  </data>
+  <data name="DisplayName_StonePillarRound" xml:space="preserve">
+    <value>Kameni Stup Okrugao</value>
+  </data>
+  <data name="DisplayName_StonePillarSquare" xml:space="preserve">
+    <value>Kameni Stup Kvadrat</value>
+  </data>
+  <data name="DisplayName_LargeProjectileThrower10" xml:space="preserve">
+    <value>Velik bacač projektila 10x mase</value>
+  </data>
+  <data name="DisplayName_MediumProjectileThrower10" xml:space="preserve">
+    <value>Srednji bacač projektila 10x mase</value>
+  </data>
+  <data name="DisplayName_Block_KingStatue" xml:space="preserve">
+    <value>Kip Kralja</value>
+  </data>
+  <data name="DisplayName_Block_WoodenPad10_1_10" xml:space="preserve">
+    <value>Drvena podloga 10x10</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound" xml:space="preserve">
+    <value>DeblaOkrugla</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound10" xml:space="preserve">
+    <value>DeblaOkrugla 10</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound2" xml:space="preserve">
+    <value>DeblaOkrugla 2</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound3" xml:space="preserve">
+    <value>DeblaOkrugla 3</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound4" xml:space="preserve">
+    <value>DeblaOkrugla 4</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound5" xml:space="preserve">
+    <value>DeblaOkrugla 5</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound6" xml:space="preserve">
+    <value>DeblaOkrugla 6</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound7" xml:space="preserve">
+    <value>DeblaOkrugla 7</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound8" xml:space="preserve">
+    <value>DeblaOkrugla 8</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound9" xml:space="preserve">
+    <value>DeblaOkrugla 9</value>
+  </data>
+  <data name="DisplayName_Block_RopeRelease" xml:space="preserve">
+    <value>Otpuštanje Užeta</value>
+  </data>
+  <data name="DisplayName_Rope_Basic" xml:space="preserve">
+    <value>Obično uže</value>
+  </data>
+  <data name="DisplayName_Rope_TearableRope" xml:space="preserve">
+    <value>Uže koje može pući</value>
+  </data>
+  <data name="DisplayName_Block_CatchBlockExtended" xml:space="preserve">
+    <value>Uhvati Element Produženo</value>
+  </data>
+  <data name="DisplayName_Block_CatchBlockClosed" xml:space="preserve">
+    <value>Uhvati Element Zatvoreno</value>
+  </data>
+  <data name="DisplayName_Block_LockCatchBlockExtended" xml:space="preserve">
+    <value>Zaključaj Uhvati Element Produženo</value>
+  </data>
+  <data name="DisplayName_Block_LockCatchBlockClosed" xml:space="preserve">
+    <value>Zaključaj Uhvati Element Zatvoreno</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoundSmall" xml:space="preserve">
+    <value>Kamena Fortifikacija Okrugla Mala</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLong" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Dug</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongLeft" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Dug Lijevo</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongMirror" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Dug Obrnut</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongMirrorLeft" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Dug Obrnut Lijevo</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongMirrorLeftTop" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Dug Obrnut Lijevo Vrh</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongMirrorRight" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Dug Obrnut Desno</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongRight" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Dug Desno</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongRightTop" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Dug Desno Vrh</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong30" xml:space="preserve">
+    <value>Kameni Nagib Dug</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong30Left" xml:space="preserve">
+    <value>Kameni Nagib Dug 30 Lijevo</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong30Right" xml:space="preserve">
+    <value>Kameni Nagib Dug 30 Desno</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong60" xml:space="preserve">
+    <value>Kameni Nagib Dug 60</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong60Left" xml:space="preserve">
+    <value>Kameni Nagib Dug 60 Lijevo</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong60Right" xml:space="preserve">
+    <value>Kameni Nagib Dug 60 Desno</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlope" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeBottom" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Dno</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeBottomMirror" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Dno Obrnut</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeMirror" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Obrnut</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeTop" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Vrh</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeTopMirror" xml:space="preserve">
+    <value>Kamena Fortifikacija Nagib Vrh Obrnut</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockStairsCorner" xml:space="preserve">
+    <value>Stone Block Stairs Corner</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockStairsCornerRound" xml:space="preserve">
+    <value>Stone Block Stairs Corner Round</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockStairsCornerStraight" xml:space="preserve">
+    <value>Stone Block Stairs Corner Straight</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallArchHalf" xml:space="preserve">
+    <value>Stone Wall Arch Half</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallArchHalfMir" xml:space="preserve">
+    <value>Stone Wall Arch Half Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockSlopeCorner" xml:space="preserve">
+    <value>Stone Block Slope Corner</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockSlopeCornerRound" xml:space="preserve">
+    <value>Stone Block Slope Corner Round</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockSlopeCornerStraight" xml:space="preserve">
+    <value>Stone Block Slope Corner Straight</value>
+  </data>
+  <data name="DisplayName_Hammer" xml:space="preserve">
+    <value>Hammer</value>
+  </data>
+  <data name="DisplayName_Mace" xml:space="preserve">
+    <value>Mace</value>
+  </data>
+  <data name="DisplayName_Torch" xml:space="preserve">
+    <value>Torch</value>
+  </data>
+  <data name="DisplayName_Block_StoneCeilingInnerCornerSharp" xml:space="preserve">
+    <value>Stone Ceiling Inner Corner Sharp</value>
+  </data>
+  <data name="DisplayName_Block_StoneCeilingInnerCornerWall" xml:space="preserve">
+    <value>Stone Ceiling Inner Corner Wall</value>
+  </data>
+  <data name="DisplayName_Block_StoneCeilingOuterCorner" xml:space="preserve">
+    <value>Stone Ceiling Outer Corner</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallDoorCenter" xml:space="preserve">
+    <value>Stone Wall Door Center</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallDoorCenterLeft" xml:space="preserve">
+    <value>Stone Wall Door Center Left</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallDoorCenterRight" xml:space="preserve">
+    <value>Stone Wall Door Center Right</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallWindowCenter" xml:space="preserve">
+    <value>Stone Wall Window Center</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallWindowCenterLeft" xml:space="preserve">
+    <value>Stone Wall Window Center Left</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallWindowCenterRight" xml:space="preserve">
+    <value>Stone Wall Window Center Right</value>
+  </data>
+  <data name="DisplayName_Block_Stone" xml:space="preserve">
+    <value>Stone</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangle" xml:space="preserve">
+    <value>Stone Battlement Triangle</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangle1" xml:space="preserve">
+    <value>Stone Battlement Triangle 1</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangle1Mir" xml:space="preserve">
+    <value>Stone Battlement Triangle 1 Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangle2Mir" xml:space="preserve">
+    <value>Stone Battlement Triangle 2 Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangleMir" xml:space="preserve">
+    <value>Stone Battlement Triangle Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneSmall" xml:space="preserve">
+    <value>Stone Small</value>
+  </data>
+  <data name="DisplayName_Block_Stone_BattlementRoofTriangle2" xml:space="preserve">
+    <value>Stone Battlement Triangle 2</value>
+  </data>
+  <data name="DisplayName_Block_TorchWall" xml:space="preserve">
+    <value>Wall Torch</value>
+  </data>
+  <data name="DisplayName_Block_Wood90Support" xml:space="preserve">
+    <value>Wood Support</value>
+  </data>
+  <data name="DisplayName_PickAxe" xml:space="preserve">
+    <value>Pick Axe</value>
+  </data>
+  <data name="DisplayName_Block_SlicedRoofTileCornerRound_Main" xml:space="preserve">
+    <value>Roof Tile Corner Round Main</value>
+  </data>
+  <data name="DisplayName_Block_SlicedRoofTileCornerRound_Top" xml:space="preserve">
+    <value>Roof Tile Corner Round Top</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileCornerRound" xml:space="preserve">
+    <value>Roof Tile Corner Round</value>
+  </data>
+  <data name="DisplayName_Block_Banner" xml:space="preserve">
+    <value>Banner</value>
+  </data>
+  <data name="DisplayName_Block_BlankTowerEmpty" xml:space="preserve">
+    <value>Blank Tower Empty</value>
+  </data>
+  <data name="DisplayName_Block_Flag" xml:space="preserve">
+    <value>Flag</value>
+  </data>
+  <data name="DisplayName_Block_ScrapWood" xml:space="preserve">
+    <value>Scrap Wood</value>
+  </data>
+  <data name="DisplayName_Block_ScrapWoodBranches" xml:space="preserve">
+    <value>Scrap Wood Branches</value>
+  </data>
+  <data name="DisplayName_Block_WoodChestLarge" xml:space="preserve">
+    <value>Wood Chest Large</value>
+  </data>
+  <data name="DisplayName_Block_Log" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="DisplayName_Axe" xml:space="preserve">
+    <value>Axe</value>
+  </data>
+  <data name="DisplayName_ManipulationTool" xml:space="preserve">
+    <value>Manipulation Tool</value>
+  </data>
+  <data name="DisplayName_WoodenSpike" xml:space="preserve">
+    <value>Wooden Spike</value>
+  </data>
+  <data name="DisplayName_HouseHalfStoneDoubleWindows" xml:space="preserve">
+    <value>House Half Stone Double Windows</value>
+  </data>
+  <data name="DisplayName_HouseHalfStoneDoubleWindowsCube" xml:space="preserve">
+    <value>House Half Stone Double Windows Cube</value>
+  </data>
+  <data name="DisplayName_StoneBlockSlopeDiagonal" xml:space="preserve">
+    <value>Stone Block Slope Diagonal</value>
+  </data>
+  <data name="DisplayName_StoneBattlementSideDiagonal" xml:space="preserve">
+    <value>Stone Battlement Side Diagonal</value>
+  </data>
+  <data name="DisplayName_StoneBattlementSideDiagonalMultiBlock1" xml:space="preserve">
+    <value>Stone Battlement Side Diagonal 1</value>
+  </data>
+  <data name="DisplayName_StoneBattlementSideDiagonalMultiBlock2" xml:space="preserve">
+    <value>Stone Battlement Side Diagonal 2</value>
+  </data>
+  <data name="DisplayName_StonePlatformDiagonal" xml:space="preserve">
+    <value>Stone Platform Diagonal</value>
+  </data>
+  <data name="DisplayName_StonePlatformDiagonalMultiBlock1" xml:space="preserve">
+    <value>Stone Platform Diagonal 1</value>
+  </data>
+  <data name="DisplayName_StonePlatformDiagonalMultiBlock2" xml:space="preserve">
+    <value>Stone Platform Diagonal 2</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonal" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockRight" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Right</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockLeft" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Left</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockLeft_2" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Left 2</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockRight_2" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Right 2</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockCorner" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Corner</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockCornerTop" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Corner Top</value>
+  </data>
+  <data name="DisplayName_StonePlatformDiagonalCorner" xml:space="preserve">
+    <value>Stone Platform Diagonal Corner</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockFull" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Full</value>
+  </data>
+  <data name="DisplayName_StoneBattlementDiagonalMultiBlockCornerFull" xml:space="preserve">
+    <value>Stone Battlement Diagonal Corner</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockCornerTopFull" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Corner Top Full</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallSlope" xml:space="preserve">
+    <value>Stone Wall Slope</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallTop" xml:space="preserve">
+    <value>Stone Wall Top</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoundLargeSide" xml:space="preserve">
+    <value>Stone Battlement Round Large Side</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRoundLarge" xml:space="preserve">
+    <value>Stone Block Round Large</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundLarge" xml:space="preserve">
+    <value>Stone Wall Round Large</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundLargeDoor" xml:space="preserve">
+    <value>Stone Wall Round Large Door</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundLargeDoorOffset" xml:space="preserve">
+    <value>Stone Wall Round Large Door Offset</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundLargeWindow" xml:space="preserve">
+    <value>Stone Wall Round Large Window</value>
+  </data>
+  <data name="DisplayName_StonePlatformRoundLarge_1" xml:space="preserve">
+    <value>Stone Platform Round Large</value>
+  </data>
+  <data name="DisplayName_StoneBattlementRoundLargeCenterMir_1" xml:space="preserve">
+    <value>Stone Battlement Round Large Center</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileLargeRound" xml:space="preserve">
+    <value>Roof Tile Large Round</value>
+  </data>
+  <data name="DisplayName_LockableDrum" xml:space="preserve">
+    <value>Lockable drum</value>
+  </data>
+  <data name="DisplayName_Scenario_BattleBaseMap" xml:space="preserve">
+    <value>Battle Base Map</value>
+  </data>
+  <data name="DisplayName_Scenario_BattleMapCastle" xml:space="preserve">
+    <value>Battle Map Castle</value>
+  </data>
+  <data name="DisplayName_Item_LargeStone" xml:space="preserve">
+    <value>Large stone</value>
+  </data>
+  <data name="DisplayName_Item_ScrapWood" xml:space="preserve">
+    <value>Scrap wood</value>
+  </data>
+  <data name="DisplayName_Item_Stone" xml:space="preserve">
+    <value>Stone</value>
+  </data>
+  <data name="DisplayName_Item_Timber10" xml:space="preserve">
+    <value>Timber</value>
+  </data>
+  <data name="DisplayName_Item_Iron" xml:space="preserve">
+    <value>Iron</value>
+  </data>
+  <data name="DisplayName_Item_Wood" xml:space="preserve">
+    <value>Wood</value>
+  </data>
+</root>

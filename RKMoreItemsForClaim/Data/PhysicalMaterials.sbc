@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Basic Materials -->
+  
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Stone" />
+    <Density>192.0</Density>
+    <Hardness>50</Hardness>
+    <!-- SI Classic-->
+    <HorisontalTransmissionMultiplier>1</HorisontalTransmissionMultiplier>
+    <HorisontalFragility>2</HorisontalFragility>
+    <SupportMultiplier>1.4</SupportMultiplier>
+    <!-- new SI prototype-->
+    <BreachingStress>1.3</BreachingStress>
+    <AxialStressMultiplier>1.0</AxialStressMultiplier>
+    <BendingStressMultiplier>3.0</BendingStressMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Wood" />
+    <Density>55</Density>
+    <CollisionMultiplier>1.2</CollisionMultiplier>
+    <Hardness>30</Hardness>
+    <!-- SI Classic-->
+    <HorisontalTransmissionMultiplier>0.01</HorisontalTransmissionMultiplier>
+    <HorisontalFragility>1</HorisontalFragility>
+    <SupportMultiplier>1</SupportMultiplier>
+    <!-- new SI prototype-->
+    <BreachingStress>3</BreachingStress>
+    <AxialStressMultiplier>1.2</AxialStressMultiplier>
+    <BendingStressMultiplier>2.4</BendingStressMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Metal" />
+    <Density>787.4</Density>
+    <CollisionMultiplier>0.5</CollisionMultiplier>
+    <Hardness>80</Hardness>
+    <!-- SI Classic-->
+    <HorisontalTransmissionMultiplier>0.05</HorisontalTransmissionMultiplier>
+    <HorisontalFragility>0.5</HorisontalFragility>
+    <SupportMultiplier>2</SupportMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Flesh" />
+    <Hardness>5</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Ceramic" />
+    <Density>55.0</Density>
+    <Hardness>30</Hardness>
+    <!-- SI Classic-->
+    <HorisontalTransmissionMultiplier>0.01</HorisontalTransmissionMultiplier>
+    <HorisontalFragility>1</HorisontalFragility>
+    <SupportMultiplier>1</SupportMultiplier>    
+    <!-- new SI prototype-->
+    <BreachingStress>1</BreachingStress>
+    <AxialStressMultiplier>1.4</AxialStressMultiplier>    
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Cloth" />
+    <Hardness>5</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Paper" />
+    <Hardness>5</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Pumpkin" />
+    <Hardness>5</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Food" />
+    <Hardness>5</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Generic" />
+    <Hardness>5</Hardness>
+  </Definition>
+  
+  <!-- Inheritor Materials -->
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="StoneLight" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Stone" />
+    <Hardness>40</Hardness>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="StoneHeavy" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Stone" />
+    <Hardness>50</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="StoneSoft" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Stone" />
+    <Density>192</Density>
+    <HorisontalTransmissionMultiplier>1</HorisontalTransmissionMultiplier>
+    <HorisontalFragility>2</HorisontalFragility>
+    <SupportMultiplier>1.4</SupportMultiplier>
+    <Hardness>44</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="WoodLight" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Wood" />
+    <Hardness>25</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="WoodHeavy" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Wood" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="WoodSoft" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Wood" />
+    <Hardness>25</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="WoodHard" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Wood" />
+    <Hardness>46</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="WallClay" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="WoodHeavy" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="RoofTile" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Ceramic" />
+    <Density>19.0</Density>
+    <HorisontalTransmissionMultiplier>0.1</HorisontalTransmissionMultiplier>
+    <HorisontalFragility>1</HorisontalFragility>
+    <SupportMultiplier>1</SupportMultiplier>
+    <Hardness>30</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="RoofWood" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Wood" />
+    <Density>19.2</Density>
+    <HorisontalTransmissionMultiplier>0.1</HorisontalTransmissionMultiplier>
+    <HorisontalFragility>1</HorisontalFragility>
+    <SupportMultiplier>1</SupportMultiplier>
+    <Hardness>30</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="RoofHay" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Grass" />
+    <Density>1.9</Density>
+    <HorisontalTransmissionMultiplier>0.01</HorisontalTransmissionMultiplier>
+    <HorisontalFragility>1</HorisontalFragility>
+    <SupportMultiplier>1</SupportMultiplier>
+    <Hardness>15</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="TreeShort" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Wood" />
+    <Density>200</Density>
+    <HorisontalTransmissionMultiplier>0.01</HorisontalTransmissionMultiplier>
+    <HorisontalFragility>1</HorisontalFragility>
+    <SupportMultiplier>1</SupportMultiplier>
+    <Hardness>30</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="TreeTall" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Wood" />
+    <Density>200</Density>
+    <HorisontalTransmissionMultiplier>0.01</HorisontalTransmissionMultiplier>
+    <HorisontalFragility>1</HorisontalFragility>
+    <SupportMultiplier>1</SupportMultiplier>
+    <Hardness>30</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="FloorWood" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Wood" />
+    <Density>19.2</Density>
+    <HorisontalTransmissionMultiplier>0.005</HorisontalTransmissionMultiplier>
+    <HorisontalFragility>0.5</HorisontalFragility>
+    <SupportMultiplier>2</SupportMultiplier>
+    <Hardness>30</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="ProjectileStone" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Stone" />
+    <Hardness>50</Hardness>
+  </Definition>
+  
+  <!-- Equipment Materials -->
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Axe" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Metal" />
+    <Hardness>45</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Pickaxe" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Metal" />
+    <Hardness>45</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Hammer" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Metal" />
+    <Hardness>80</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="HammerCombat" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Metal" />
+    <Hardness>45</Hardness>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="HammerWood" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="WoodLight" />
+    <Hardness>47</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="AxeStone" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="StoneLight" />
+    <Hardness>20</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="ShovelWood" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="WoodLight" />
+    <Hardness>30</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="ShovelMetal" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Metal" />
+    <Hardness>45</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="ShovelFill" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="ShovelMetal" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Plow" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Metal" />
+    <Hardness>45</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Seedbag" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Cloth" />
+    <Hardness>20</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="LandscapeStake" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="WoodLight" />
+  </Definition>
+  
+  <!-- Weapon Materials -->
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="ShieldWood" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="WoodLight" />
+    <Hardness>40</Hardness>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Mace" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Metal" />
+    <Hardness>45</Hardness>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Sword" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Metal" />
+    <Hardness>45</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="ClubWood" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="WoodLight" />
+    <Hardness>25</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="ClubStudded" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Wood" />
+    <Hardness>45</Hardness>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Arrow" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Metal" />
+    <Hardness>28</Hardness>
+  </Definition>
+  
+  <!-- Voxel Physical Materials -->
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Soil" />
+    <Hardness>10</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Grass" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Soil" />
+    <Hardness>10</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Sand" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Soil" />
+    <Hardness>10</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Snow" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Soil" />
+    <Hardness>10</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Clay" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Soil" />
+    <Hardness>10</Hardness>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition" Copy="Append">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Gravel" />
+    <CopyFrom Type="PhysicalMaterialDefinition" Subtype="Stone" />
+    <Hardness>10</Hardness>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="None" />
+    <Hardness>1</Hardness>
+  </Definition>
+
+  <!--This material is a temporary fix for gates breaking into pieces if placed in a large structure. Goal was to disable horizontal transmission of integrity.-->
+  <!--<Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="GateStone" />
+    <Density>220.00</Density>
+    <Hardness>50</Hardness>
+
+    -->
+  <!-- new SI prototype-->
+  <!--
+    <BreachingStress>20000</BreachingStress>
+    <AxialStressMultiplier>1.0</AxialStressMultiplier>
+    <BendingStressMultiplier>3.0</BendingStressMultiplier>    
+  </Definition>-->
+
+  <!--<Definition xsi:type="MyObjectBuilder_PhysicalMaterialDefinition">
+    <Id Type="PhysicalMaterialDefinition" Subtype="Rock" />
+    <Hardness>50</Hardness>
+  </Definition>-->
+
+</Definitions>

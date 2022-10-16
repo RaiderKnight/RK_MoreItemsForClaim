@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_ProjectileItemDefinition">
+    <Id Type="ProjectileItem" Subtype="CrossbowBolt" />
+    <Public>true</Public>
+    <DisplayName>DisplayName_Item_CrossbowBolt</DisplayName>
+    <Description>Description_Item_CrossbowBolt</Description>
+    <Icon>Textures\GUI\Icons\ammo\Crossbow_Quiver.dds</Icon>
+    <Size>
+      <X>0.2</X>
+      <Y>0.05</Y>
+      <Z>0.02</Z>
+    </Size>
+    <Model>Models\Weapons\Crossbow_Quiver.mwm</Model>
+    <PhysicalMaterial>Generic</PhysicalMaterial>
+    <Ammo Type="ProjectileAmmoDefinition" Subtype="CrossbowBolt" />
+    <MaxStackAmount>50</MaxStackAmount>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+	  <Id Type="ProjectileAmmoDefinition" Subtype="CrossbowBolt" />
+    <DesiredSpeed>0</DesiredSpeed>
+    <SpeedVariance>0</SpeedVariance>
+    <MaxTrajectory>400</MaxTrajectory>
+    <PhysicalMaterial>Arrow</PhysicalMaterial>
+    <GravityMultiplier>0.01</GravityMultiplier>
+    <DragMultiplier>2.5</DragMultiplier>
+    <ProjectileHitImpulse>0</ProjectileHitImpulse>
+    <ProjectileTrailScale>0.5</ProjectileTrailScale>
+    <ProjectileTrailWidth>0.025</ProjectileTrailWidth>
+    <ProjectileTrailColor x="1" y="1" z="1" />
+    <ProjectileTrailMaterial>CrossbowBolt</ProjectileTrailMaterial>
+    <ProjectileTrailProbability>1</ProjectileTrailProbability>
+    <ProjectileMassDamage>30</ProjectileMassDamage>
+    <TracersTextureMaterial>CrossbowTracer</TracersTextureMaterial>
+    <TracersLength>0.16</TracersLength>
+    <TracersCount>60</TracersCount>
+    <TracersWidth>0.4</TracersWidth>
+    <HeadShot>false</HeadShot>
+    <ProjectileHeadShotDamage>10</ProjectileHeadShotDamage>
+    <VelocityDamageMultiplier>0.031</VelocityDamageMultiplier>
+    <AppliedEffect Type="DamageOverTimeEffect" Subtype="BleedingLong" Operation="Add" Chance="1.0" />
+	</Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="CrossbowBolt" />
+    <DisplayName>DisplayName_Ammo_CrossbowQuiver</DisplayName>
+    <Icon>Textures\GUI\Icons\ammo\Crossbow_Quiver.dds</Icon>
+    <Category>Weapons</Category>
+    <Category>Woodcrafting</Category>
+    <Prerequisites>
+      <Item Tag="ScrapWood" Amount="5" />
+      <Item Type="InventoryItem" Subtype="PartsMetal" Amount="10" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="10" Type="ProjectileItem" Subtype="CrossbowBolt" />
+    </Results>
+    <CraftingTime Seconds="3" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_ContainerDefinition">
+    <Id Type="EntityBase" Subtype="CrossbowBolt" />
+
+    <Component Type="MultiplayerComponent" />
+    <Component Type="ModelComponent" Subtype="CrossbowBolt" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_ModelComponentDefinition">
+    <Id Type="ModelComponent" Subtype="CrossbowBolt" />
+    <Model>Models\Weapons\LandscapingStakeEntity.mwm</Model>
+  </Definition>
+
+</Definitions>

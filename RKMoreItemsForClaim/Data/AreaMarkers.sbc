@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_AreaMarkerDefinition">
+    <Id Type="AreaMarker" Subtype="MiningArea" />
+    <DisplayName>DisplayName_AreaMarkers_MiningMarker</DisplayName>
+    <Icon>Textures\GUI\Icons\Cubes\Mining.dds</Icon>
+    <ColorHSV x="0.0" y="-1.0" z="-0.45" />
+    <Model>Models\BotFlags\BotFlag.mwm</Model>
+    <ColorMetalTexture>Textures\Models\BotFlags\BotFlag_Mining_cm.dds</ColorMetalTexture>
+    <AddMapsTexture>Textures\Models\BotFlags\BotFlag_Mining_add.dds</AddMapsTexture>
+    <MarkerPosition x="0.0" y="1.1" z="0.0" />
+    <Public>false</Public>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_AreaMarkerDefinition">
+    <Id Type="AreaMarker" Subtype="Stockpile" />
+    <DisplayName>DisplayName_AreaMarkers_StockpileMarker</DisplayName>
+    <Icon>Textures\GUI\Icons\Cubes\Stockpile.dds</Icon>
+    <ColorHSV x="0.58" y="-0.2" z="-0.25" />
+    <Model>Models\BotFlags\BotFlag.mwm</Model>
+    <ColorMetalTexture>Textures\Models\BotFlags\BotFlag_Stockpile_cm.dds</ColorMetalTexture>
+    <AddMapsTexture>Textures\Models\BotFlags\BotFlag_Stockpile_add.dds</AddMapsTexture>
+    <MarkerPosition x="0.0" y="1.1" z="0.0" />
+    <Public>false</Public>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_AreaMarkerDefinition">
+    <Id Type="AreaMarker" Subtype="ForestingArea" />
+    <DisplayName>DisplayName_AreaMarkers_WoodcuttingMarker</DisplayName>
+    <Icon>Textures\GUI\Icons\Cubes\Woodcutting.dds</Icon>
+    <ColorHSV x="0.3" y="-0.4" z="-0.45" />
+    <Model>Models\BotFlags\BotFlag.mwm</Model>
+    <ColorMetalTexture>Textures\Models\BotFlags\BotFlag_Woodcutting_cm.dds</ColorMetalTexture>
+    <AddMapsTexture>Textures\Models\BotFlags\BotFlag_Woodcutting_add.dds</AddMapsTexture>
+    <MarkerPosition x="0.0" y="1.1" z="0.0" />
+    <Public>false</Public>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_AreaMarkerDefinition">
+    <Id Type="SafezoneAreaMarker" Subtype="RespawnSafeZone" />
+    <DisplayName>DisplayName_AreaMarkers_RespawnSafeZone</DisplayName>
+    <Icon>Textures\GUI\Icons\BotFlagDefender.dds</Icon>
+    <ColorHSV x="0.3" y="-0.4" z="-0.45" />
+    <Model>Models\BotFlags\BotFlag.mwm</Model>
+    <ColorMetalTexture>Textures\Models\BotFlags\BotFlag_Defender_cm.dds</ColorMetalTexture>
+    <AddMapsTexture>Textures\Models\BotFlags\BotFlag_Defender_add.dds</AddMapsTexture>
+    <MaxNumber>-1</MaxNumber>
+    <MarkerPosition x="0.0" y="1.1" z="0.0" />
+    <Public>true</Public>
+  </Definition>
+</Definitions>

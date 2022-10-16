@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element msdata:IsDataSet="true" name="root">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+                <xsd:element minOccurs="0" msdata:Ordinal="2" name="comment" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute msdata:Ordinal="1" name="name" type="xsd:string" use="required"/>
+              <xsd:attribute msdata:Ordinal="3" name="type" type="xsd:string"/>
+              <xsd:attribute msdata:Ordinal="4" name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName_Animation_Wave" xml:space="preserve">
+    <value>Animazione onda</value>
+  </data>
+  <data name="DisplayName_Category_AllBlocks" xml:space="preserve">
+    <value>Tutti i blocchi</value>
+  </data>
+  <data name="DisplayName_Category_CharacterAnimations" xml:space="preserve">
+    <value>Animazione del personaggio</value>
+  </data>
+  <data name="DisplayName_Category_ToolsWeapons" xml:space="preserve">
+    <value>Attrezzi del personaggio</value>
+  </data>
+  <data name="DisplayName_Animation_Facepalm" xml:space="preserve">
+    <value>Facepalm</value>
+  </data>
+  <data name="DisplayName_Animation_ThumbUp" xml:space="preserve">
+    <value>Pollice in su</value>
+  </data>
+  <data name="DisplayName_Animation_Victory" xml:space="preserve">
+    <value>Vittoria</value>
+  </data>
+  <data name="DisplayName_Category_VoxelHands" xml:space="preserve">
+    <value>Mani Voxel</value>
+  </data>
+  <data name="DisplayName_VoxelHand_Box" xml:space="preserve">
+    <value>Cielo</value>
+  </data>
+  <data name="DisplayName_VoxelHand_Sphere" xml:space="preserve">
+    <value>Sfera</value>
+  </data>
+  <data name="DisplayName_VoxelHand_AutoLevel" xml:space="preserve">
+    <value>Livella automaticamente terreno</value>
+  </data>
+  <data name="DisplayName_VoxelHand_Capsule" xml:space="preserve">
+    <value>Capsula</value>
+  </data>
+  <data name="DisplayName_VoxelHand_Ramp" xml:space="preserve">
+    <value>Rampa</value>
+  </data>
+  <data name="DisplayName_Category_GeneratedBlocks" xml:space="preserve">
+    <value>Blocchi generati</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileCornerRoundTall_MultiBlock" xml:space="preserve">
+    <value>Spigolo arrotondato alto del tetto</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileTop" xml:space="preserve">
+    <value>Parte superiore del tetto</value>
+  </data>
+  <data name="DisplayName_Block_RoofWoodTop" xml:space="preserve">
+    <value>Tetto in legno superiore</value>
+  </data>
+  <data name="DisplayName_Block_RoofHayInvCorner" xml:space="preserve">
+    <value>Angolo invertito del tetto in fieno</value>
+  </data>
+  <data name="DisplayName_Block_RoofWoodInvCorner" xml:space="preserve">
+    <value>Angolo di tetto in legno inv</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileInvCorner" xml:space="preserve">
+    <value>Angolo invertito del tetto</value>
+  </data>
+  <data name="DisplayName_Block_RoofWoodCorner" xml:space="preserve">
+    <value>Angolo del tetto in legno</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileCorner" xml:space="preserve">
+    <value>Angolo del tetto</value>
+  </data>
+  <data name="DisplayName_Block_RoofWood" xml:space="preserve">
+    <value>Tetto di legno</value>
+  </data>
+  <data name="DisplayName_Block_RoofTile" xml:space="preserve">
+    <value>Tetto</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockArch" xml:space="preserve">
+    <value>Arco di pietra</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockCube" xml:space="preserve">
+    <value>Blocco di pietra cubico</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRound" xml:space="preserve">
+    <value>Blocco di pietra circolare</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRoundIn" xml:space="preserve">
+    <value>Blocco di pietra circolare inferiore</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRoundInDoor" xml:space="preserve">
+    <value>Porta nel blocco di pietra circolare</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockSlope" xml:space="preserve">
+    <value>Blocco di pietra inclinato</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockStairs" xml:space="preserve">
+    <value>Scale in blocco di pietra</value>
+  </data>
+  <data name="DisplayName_Block_StoneWall" xml:space="preserve">
+    <value>Muro di pietra</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallArch" xml:space="preserve">
+    <value>Arco da muro in pietra</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallDoor" xml:space="preserve">
+    <value>Muro di pietra per porta</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRound" xml:space="preserve">
+    <value>Muro di pietra circolare</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundDoor" xml:space="preserve">
+    <value>Porta da muro di pietra circolare</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundDoorOffset" xml:space="preserve">
+    <value>Porta con offset da muro di pietra circolare</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundWindow" xml:space="preserve">
+    <value>Finestra da muro di pietra circolare</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallWindow" xml:space="preserve">
+    <value>Finestra da muro di pietra</value>
+  </data>
+  <data name="DisplayName_Block_StoneSpiralStaircase" xml:space="preserve">
+    <value>Scala a chiocciola in pietra</value>
+  </data>
+  <data name="DisplayName_Block_StoneSpiralStaircaseMir" xml:space="preserve">
+    <value>Scala a chioccola in pietra invertita</value>
+  </data>
+  <data name="DisplayName_Block_StoneSpiralStaircaseSharp" xml:space="preserve">
+    <value>Scala a chiocciola in pietra tagliata</value>
+  </data>
+  <data name="DisplayName_Block_StoneSpiralStaircaseSharpMir" xml:space="preserve">
+    <value>Scala a chiocciola in pietra tagliata invertita</value>
+  </data>
+  <data name="DisplayName_Block_RoofHayTop" xml:space="preserve">
+    <value>Parte sup del tetto di fieno</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRoundInDoorMirror" xml:space="preserve">
+    <value>Porta nel blocco di pietra circolare invertito</value>
+  </data>
+  <data name="Description_Animation_Wave" xml:space="preserve">
+    <value>Ondata di amici (o nemici!)</value>
+  </data>
+  <data name="Quote00Author" xml:space="preserve">
+    <value>Alfonso X, Re di Castiglia</value>
+  </data>
+  <data name="Quote00Text" xml:space="preserve">
+    <value>Se fossi stato presente alla creazione, avrei dato alcuni utili suggerimenti per un miglior ordine nell'universo. [cit.]</value>
+  </data>
+  <data name="Quote01Author" xml:space="preserve">
+    <value>Ibn Taymiyyah</value>
+  </data>
+  <data name="Quote01Text" xml:space="preserve">
+    <value>Non dipendere troppo da nessuno in questo mondo poiché persino la propria ombra scompare quando si è nelle tenebre. [cit.]</value>
+  </data>
+  <data name="Quote02Author" xml:space="preserve">
+    <value>Ali Ibn Abi Talib</value>
+  </data>
+  <data name="Quote02Text" xml:space="preserve">
+    <value>Il nutrimento del corpo è il cibo mentre il nutrimento dell'anima sta alimentando altri. [cit.]</value>
+  </data>
+  <data name="Quote03Author" xml:space="preserve">
+    <value>Margherita d'Angoulême</value>
+  </data>
+  <data name="Quote03Text" xml:space="preserve">
+    <value>Come la volpe, le persone sostengono che l'uva non sia buona se fosse troppo difficile da raggiungere.</value>
+  </data>
+  <data name="Quote04Author" xml:space="preserve">
+    <value>Dante</value>
+  </data>
+  <data name="Quote04Text" xml:space="preserve">
+    <value>Considerate la vostra semenza: fatti non foste a viver come bruti, ma per seguir virtute e canoscenza. [cit.]</value>
+  </data>
+  <data name="Quote05Author" xml:space="preserve">
+    <value>Alfredo il Grande</value>
+  </data>
+  <data name="Quote05Text" xml:space="preserve">
+    <value>Ricordate quali punizioni ci accadono in questo mondo, quando noi stessi non amiamo né l'insegnamento né di trasmetterlo ad altri uomini. [cit.]</value>
+  </data>
+  <data name="Quote06Author" xml:space="preserve">
+    <value>Proverbio latino.</value>
+  </data>
+  <data name="Quote06Text" xml:space="preserve">
+    <value>La fortuna aiuta gli audaci [cit.]</value>
+  </data>
+  <data name="Quote07Author" xml:space="preserve">
+    <value>Shakespeare</value>
+  </data>
+  <data name="Quote07Text" xml:space="preserve">
+    <value>Tutto il mondo è un palcoscenico e tutti gli uomini e le donne semplicemente attori. [cit.]</value>
+  </data>
+  <data name="Quote08Author" xml:space="preserve">
+    <value>Antico proverbio gallese</value>
+  </data>
+  <data name="Quote08Text" xml:space="preserve">
+    <value>È facile essere coraggiosi dietro un muro del castello. [cit.]</value>
+  </data>
+  <data name="Quote09Author" xml:space="preserve">
+    <value>Alcuino di York</value>
+  </data>
+  <data name="Quote09Text" xml:space="preserve">
+    <value>L'uomo pensa, Dio dirige.</value>
+  </data>
+  <data name="Quote10Author" xml:space="preserve">
+    <value>Alberto Magno</value>
+  </data>
+  <data name="Quote10Text" xml:space="preserve">
+    <value>Dominò la rabbia per intimidire i subordinati e alla fine la rabbia lo dominò. [cit.]</value>
+  </data>
+  <data name="Quote11Author" xml:space="preserve">
+    <value>Abu Bakr</value>
+  </data>
+  <data name="Quote11Text" xml:space="preserve">
+    <value>L'azione senza conoscenza è inutile, la conoscenza senza l'azione è futile. [cit.]</value>
+  </data>
+  <data name="Quote12Author" xml:space="preserve">
+    <value>Abu Bakr</value>
+  </data>
+  <data name="Quote12Text" xml:space="preserve">
+    <value>Scappa dalla grandezza e la grandezza ti seguirà [cit.]</value>
+  </data>
+  <data name="Quote13Author" xml:space="preserve">
+    <value>Abu Bakr</value>
+  </data>
+  <data name="Quote13Text" xml:space="preserve">
+    <value>Le buone azioni sono una guardia contro il soffio delle avversità. [cit.]</value>
+  </data>
+  <data name="Quote14Author" xml:space="preserve">
+    <value>Isacco di Ninive</value>
+  </data>
+  <data name="Quote14Text" xml:space="preserve">
+    <value>Sii in pace con la tua anima, così paradiso e terra saranno in pace con te. [cit.]</value>
+  </data>
+  <data name="Quote15Author" xml:space="preserve">
+    <value>San Gerolamo</value>
+  </data>
+  <data name="Quote15Text" xml:space="preserve">
+    <value>Anche le bestie e gli uccelli viaggiatori non rientrano due volte nella stessa trappola. [cit.]</value>
+  </data>
+  <data name="Quote16Author" xml:space="preserve">
+    <value>Roberto il Monaco</value>
+  </data>
+  <data name="Quote16Text" xml:space="preserve">
+    <value>Oh, soldati valorosi e discendenti di antenati invincibili, non siate dissoluti ma ricordate il valore dei vostri progenitori. [cit.]</value>
+  </data>
+  <data name="Quote17Author" xml:space="preserve">
+    <value>Tommaso da Kempis</value>
+  </data>
+  <data name="Quote17Text" xml:space="preserve">
+    <value>Se tu solleverai la croce con gioia, essa ti solleverà. [cit.]</value>
+  </data>
+  <data name="Quote18Author" xml:space="preserve">
+    <value>Antico proverbio inglese</value>
+  </data>
+  <data name="Quote18Text" xml:space="preserve">
+    <value>La casa di un uomo è il suo castello [cit.]</value>
+  </data>
+  <data name="Quote19Author" xml:space="preserve">
+    <value>Filippo Brunelleschi</value>
+  </data>
+  <data name="Quote19Text" xml:space="preserve">
+    <value>Solo l'artista, non lo sciocco, scopre ciò che la natura nasconde.</value>
+  </data>
+  <data name="Quote20Author" xml:space="preserve">
+    <value>Michelangelo</value>
+  </data>
+  <data name="Quote20Text" xml:space="preserve">
+    <value>Se la gente sapesse quanto ho lavorato per ottenere il mio talento, non sembrerebbe così meraviglioso a tutti. [cit.]</value>
+  </data>
+  <data name="Quote21Author" xml:space="preserve">
+    <value>William Wallace</value>
+  </data>
+  <data name="Quote21Text" xml:space="preserve">
+    <value>Noi non veniamo con intenzioni pacifiche ma pronti per la battaglia, decisi a correggere i nostri errori e liberare il nostro paese. Lasciate che i vostri maestri vengano e ci attacchino: siamo pronti ad affrontarli di petto. [cit.]</value>
+  </data>
+  <data name="Quote22Author" xml:space="preserve">
+    <value>Giovanna d'Arco</value>
+  </data>
+  <data name="Quote22Text" xml:space="preserve">
+    <value>Non ho paura: sono nato per questo. [cit.]</value>
+  </data>
+  <data name="Quote23Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote23Text" xml:space="preserve">
+    <value>Nessuno uomo, che non sia un matematico, legga gli elementi del mio lavoro. [cit.]</value>
+  </data>
+  <data name="Quote24Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote24Text" xml:space="preserve">
+    <value>Chi non punisce il male, ordina di commetterlo. [cit.]</value>
+  </data>
+  <data name="Quote25Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote25Text" xml:space="preserve">
+    <value>La meccanica è il paradiso delle scienze matematiche, perché con essa si ottengono i frutti della matematica. [cit.]</value>
+  </data>
+  <data name="Quote26Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote26Text" xml:space="preserve">
+    <value>È più semplice resistere all'inizio che alla fine. [cit.]</value>
+  </data>
+  <data name="Quote27Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote27Text" xml:space="preserve">
+    <value>La scienza è l'osservazione delle cose possibili, siano essere presenti o passate; la preveggenza è delle cose che possono ancora accadere, anche se lentamente. [cit.]</value>
+  </data>
+  <data name="Quote28Author" xml:space="preserve">
+    <value>Niccolò Machiavelli</value>
+  </data>
+  <data name="Quote28Text" xml:space="preserve">
+    <value>Le guerre non scompaiono, sono solo rinviate per dare vantaggio a qualcun altro. [cit.]</value>
+  </data>
+  <data name="Quote29Author" xml:space="preserve">
+    <value>Niccolò Machiavelli</value>
+  </data>
+  <data name="Quote29Text" xml:space="preserve">
+    <value>Dio non vuole fare tutto, quindi prendiamoci la nostra liberà e la gloria che ci appartiene. [cit.]</value>
+  </data>
+  <data name="Quote30Author" xml:space="preserve">
+    <value>Niccolò Machiavelli</value>
+  </data>
+  <data name="Quote30Text" xml:space="preserve">
+    <value>Le guerre iniziano quando si vuole ma non terminano quando si vorrebbe. [cit.]</value>
+  </data>
+  <data name="Quote31Author" xml:space="preserve">
+    <value>Imperatore Federico II, Sacro Romano Impero</value>
+  </data>
+  <data name="Quote31Text" xml:space="preserve">
+    <value>Colui che difende tutto, non difende alcunché. [cit.]</value>
+  </data>
+  <data name="Quote32Author" xml:space="preserve">
+    <value>Niccolò da Cusa</value>
+  </data>
+  <data name="Quote32Text" xml:space="preserve">
+    <value>Anche il più avido di conoscenza non può ottenere la più grande perfezione di di esser consapevole della propria ignoranza. [cit.]</value>
+  </data>
+  <data name="Quote33Author" xml:space="preserve">
+    <value>Archimede</value>
+  </data>
+  <data name="Quote33Text" xml:space="preserve">
+    <value>Datemi una leva abbastanza lunga ed un fulcro su cui posizionarla e io solleverò il mondo. [cit.]</value>
+  </data>
+  <data name="Quote34Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote34Text" xml:space="preserve">
+    <value>La natura non infrange mai le proprie leggi. [cit.]</value>
+  </data>
+  <data name="Quote35Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote35Text" xml:space="preserve">
+    <value>La semplicità è la massima sofisticatezza. [cit.]</value>
+  </data>
+  <data name="Quote36Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote36Text" xml:space="preserve">
+    <value>Dove si grida, non vi è vera conoscenza. [cit.]</value>
+  </data>
+  <data name="Quote37Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote37Text" xml:space="preserve">
+    <value>Ho offeso Dio e gli uomini perché il mio lavoro non ha raggiunto la qualità che avrebbe dovuto avere. [cit.]</value>
+  </data>
+  <data name="Quote38Author" xml:space="preserve">
+    <value>Leonardo da Vinci</value>
+  </data>
+  <data name="Quote38Text" xml:space="preserve">
+    <value>Tutta la nostra conoscenza ha origine dalle nostre percezioni. [cit.]</value>
+  </data>
+  <data name="Quote39Author" xml:space="preserve">
+    <value>Galileo Galilei</value>
+  </data>
+  <data name="Quote39Text" xml:space="preserve">
+    <value>Negando i principi scientifici, si può mantenere qualunque paradosso. [cit.]</value>
+  </data>
+  <data name="Quote40Author" xml:space="preserve">
+    <value>Galileo Galilei</value>
+  </data>
+  <data name="Quote40Text" xml:space="preserve">
+    <value>La matematica è l'alfabeto nel quale Dio ha scritto l'universo. [cit.]</value>
+  </data>
+  <data name="Quote41Author" xml:space="preserve">
+    <value>Galileo Galilei</value>
+  </data>
+  <data name="Quote41Text" xml:space="preserve">
+    <value>Se potessi iniziare nuovamente i miei studi, avrei seguito il consiglio di Platone partendo con la matematica. [cit.]</value>
+  </data>
+  <data name="Quote42Author" xml:space="preserve">
+    <value>Socrate</value>
+  </data>
+  <data name="Quote42Text" xml:space="preserve">
+    <value>So solamente una cosa: non so alcunché. [cit.]</value>
+  </data>
+  <data name="Quote43Author" xml:space="preserve">
+    <value>Anonimo</value>
+  </data>
+  <data name="Quote43Text" xml:space="preserve">
+    <value>Per l'ottimista, il bicchiere è mezzo pieno. Per il pessimista, è mezzo vuoto. Per l'ingegnere, il bicchiere è due volte più grande di quanto sarebbe necessario. [cit.]</value>
+  </data>
+  <data name="Quote44Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote44Text" xml:space="preserve">
+    <value>L'arte suprema della guerra è di sottomettere il nemico senza combattere. [cit.]</value>
+  </data>
+  <data name="Quote45Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote45Text" xml:space="preserve">
+    <value>Colui che sa quando combattere e quando no, otterrà la vittoria. [cit.]</value>
+  </data>
+  <data name="Quote46Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote46Text" xml:space="preserve">
+    <value>L'invincibilità è nella difesa. La possibilità di vittoria nell'attacco. [cit.]</value>
+  </data>
+  <data name="Quote47Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote47Text" xml:space="preserve">
+    <value>Minacciali con l'annientamento ed esso sopravvivranno; gettali in una situazione mortale, ed essi vivranno. Quando le persone sono in pericolo, saranno in grado di lottare per la vittoria. [cit.]</value>
+  </data>
+  <data name="Quote48Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote48Text" xml:space="preserve">
+    <value>Anche se fossi lontano dal nemico, fagli credere che sia vicino. [cit.]</value>
+  </data>
+  <data name="Quote49Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote49Text" xml:space="preserve">
+    <value>Solo il sovrano illuminato e sapiente generalmente utilizza i segreti militari per spiare, ottenendo così grandi risultati. [cit.]</value>
+  </data>
+  <data name="Quote50Author" xml:space="preserve">
+    <value>Sun Tzu</value>
+  </data>
+  <data name="Quote50Text" xml:space="preserve">
+    <value>Se ignori sia il nemico che te stesso, sarai certamente in pericolo. [cit.]</value>
+  </data>
+  <data name="Quote51Author" xml:space="preserve">
+    <value>Giulio Cesare</value>
+  </data>
+  <data name="Quote51Text" xml:space="preserve">
+    <value>È più facile trovare uomini che muoiano volontariamente, piuttosto che trovare coloro che siano disposti a sopportare il dolore con pazienza. [cit.]</value>
+  </data>
+  <data name="Quote52Author" xml:space="preserve">
+    <value>Giulio Cesare</value>
+  </data>
+  <data name="Quote52Text" xml:space="preserve">
+    <value>Venni, vidi, vinsi. [cit.]</value>
+  </data>
+  <data name="Quote53Author" xml:space="preserve">
+    <value>Giulio Cesare</value>
+  </data>
+  <data name="Quote53Text" xml:space="preserve">
+    <value>I codardi muoiono infinite volte prima di morire veramente. [cit.]</value>
+  </data>
+  <data name="Quote54Author" xml:space="preserve">
+    <value>Giulio Cesare</value>
+  </data>
+  <data name="Quote54Text" xml:space="preserve">
+    <value>Amo l'onore più di quanto temi la morte. [cit.]</value>
+  </data>
+  <data name="Quote55Author" xml:space="preserve">
+    <value>Giulio Cesare</value>
+  </data>
+  <data name="Quote55Text" xml:space="preserve">
+    <value>L'esperienza è l'insegnante di tutte le cose. [cit.]</value>
+  </data>
+  <data name="Quote56Author" xml:space="preserve">
+    <value>Guerriero azteco</value>
+  </data>
+  <data name="Quote56Text" xml:space="preserve">
+    <value>Non ci sono momenti normali. C'è sempre qualcosa da fare.</value>
+  </data>
+  <data name="Quote57Author" xml:space="preserve">
+    <value>Alce bianco</value>
+  </data>
+  <data name="Quote57Text" xml:space="preserve">
+    <value>Quando nascesti, tutti erano contenti e tu piangevi. Vivi in modo che, quando morirai, tutti piangano e tu sia felice. [cit.]</value>
+  </data>
+  <data name="Quote58Author" xml:space="preserve">
+    <value>Antico detto indiano</value>
+  </data>
+  <data name="Quote58Text" xml:space="preserve">
+    <value>Certe cose attirano i tuoi occhi ma segui solo quelle che catturano il tuo cuore. [cit.]</value>
+  </data>
+  <data name="Quote59Author" xml:space="preserve">
+    <value>Buddha</value>
+  </data>
+  <data name="Quote59Text" xml:space="preserve">
+    <value>La mente è tutto. Noi diventiamo ciò che pensiamo. [cit.]</value>
+  </data>
+  <data name="Quote60Author" xml:space="preserve">
+    <value>Buddha</value>
+  </data>
+  <data name="Quote60Text" xml:space="preserve">
+    <value>Ci sono solo due errori che si possono fare lungo la strada verso il vero: non andare fino in fondo e non iniziare. [cit.]</value>
+  </data>
+  <data name="Quote61Author" xml:space="preserve">
+    <value>Buddha</value>
+  </data>
+  <data name="Quote61Text" xml:space="preserve">
+    <value>Meglio di mille parole vuote, è una parola che porta la pace. [cit.]</value>
+  </data>
+  <data name="Quote62Author" xml:space="preserve">
+    <value>Alessandro il Grande</value>
+  </data>
+  <data name="Quote62Text" xml:space="preserve">
+    <value>Niente è impossibile per colui che osa. [cit.]</value>
+  </data>
+  <data name="Quote63Author" xml:space="preserve">
+    <value>Socrate</value>
+  </data>
+  <data name="Quote63Text" xml:space="preserve">
+    <value>La vera saggezza sta in colui che sa di non sapere. [cit.]</value>
+  </data>
+  <data name="DisplayName_Block_RoofHay" xml:space="preserve">
+    <value>Tetto di fieno</value>
+  </data>
+  <data name="DisplayName_Block_RoofHayCorner" xml:space="preserve">
+    <value>Angolo del tetto di fieno</value>
+  </data>
+  <data name="DisplayName_Block_Rotor" xml:space="preserve">
+    <value>Rotore</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementCenter" xml:space="preserve">
+    <value>Parapetto di pietra centrale</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRound_MultiBlock" xml:space="preserve">
+    <value>Parapetto di pietra circolare</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSide" xml:space="preserve">
+    <value>Parapetto di pietra laterale</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSideCorner" xml:space="preserve">
+    <value>Parapetto di pietra angolare</value>
+  </data>
+  <data name="DisplayName_Block_StonePlatform" xml:space="preserve">
+    <value>Piattaforma di pietra</value>
+  </data>
+  <data name="DisplayName_Block_StonePlatformCorner" xml:space="preserve">
+    <value>Piattaforma di pietra angolare</value>
+  </data>
+  <data name="DisplayName_Block_StonePlatformRound_MultiBlock" xml:space="preserve">
+    <value>Piattaforma di pietra circolare</value>
+  </data>
+  <data name="DisplayName_Block_Timber" xml:space="preserve">
+    <value>Trave</value>
+  </data>
+  <data name="DisplayName_Block_Timber10" xml:space="preserve">
+    <value>Trave 10</value>
+  </data>
+  <data name="DisplayName_Block_Timber2" xml:space="preserve">
+    <value>Trave 2</value>
+  </data>
+  <data name="DisplayName_Block_Timber3" xml:space="preserve">
+    <value>Trave 3</value>
+  </data>
+  <data name="DisplayName_Block_Timber4" xml:space="preserve">
+    <value>Trave 4</value>
+  </data>
+  <data name="DisplayName_Block_Timber5" xml:space="preserve">
+    <value>Trave 5</value>
+  </data>
+  <data name="DisplayName_Block_Timber6" xml:space="preserve">
+    <value>Trave 6</value>
+  </data>
+  <data name="DisplayName_Block_Timber7" xml:space="preserve">
+    <value>Trave 7</value>
+  </data>
+  <data name="DisplayName_Block_Timber8" xml:space="preserve">
+    <value>Trave 8</value>
+  </data>
+  <data name="DisplayName_Block_Timber9" xml:space="preserve">
+    <value>Trave 9</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloor" xml:space="preserve">
+    <value>Pavimento di legno</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloorInvRound" xml:space="preserve">
+    <value>Pavimento di legno circolare inv</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloorRound" xml:space="preserve">
+    <value>Pavimento di legno circolare</value>
+  </data>
+  <data name="DisplayName_Block_WoodenRailing" xml:space="preserve">
+    <value>Ringhiera di legno</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWall" xml:space="preserve">
+    <value>Muro di legno</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWallDoor" xml:space="preserve">
+    <value>Porta da muro di legno</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWallSlope" xml:space="preserve">
+    <value>Inclinazione muro di legno</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWallTop" xml:space="preserve">
+    <value>Muro di legno superiore</value>
+  </data>
+  <data name="DisplayName_Block_WoodenWallWindow" xml:space="preserve">
+    <value>Finestra da muro di legno</value>
+  </data>
+  <data name="DisplayName_Block_CatapultHead" xml:space="preserve">
+    <value>Testa della catapulta</value>
+  </data>
+  <data name="DisplayName_Block_CatchBlock" xml:space="preserve">
+    <value>Mozzo</value>
+  </data>
+  <data name="DisplayName_Block_LargeProjectile" xml:space="preserve">
+    <value>Proiettile grande</value>
+  </data>
+  <data name="DisplayName_Block_LockCatchBlock" xml:space="preserve">
+    <value>Mozzo Bloccabile</value>
+  </data>
+  <data name="DisplayName_Block_Projectile" xml:space="preserve">
+    <value>Proiettile</value>
+  </data>
+  <data name="DisplayName_Block_RopeDrum" xml:space="preserve">
+    <value>Tamburo di corda</value>
+  </data>
+  <data name="DisplayName_Block_RopeEnding" xml:space="preserve">
+    <value>Fine della corda</value>
+  </data>
+  <data name="DisplayName_Block_RopeTorsionSpring" xml:space="preserve">
+    <value>Molla a torsione di corda</value>
+  </data>
+  <data name="DisplayName_Block_TimberDiagonal" xml:space="preserve">
+    <value>Trave Diagonale</value>
+  </data>
+  <data name="DisplayName_Block_TimberDiagonal_10" xml:space="preserve">
+    <value>Trave Diagonale 10</value>
+  </data>
+  <data name="DisplayName_Block_TurnWheelCross" xml:space="preserve">
+    <value>Gira la ruota a croce</value>
+  </data>
+  <data name="DisplayName_Block_Weight" xml:space="preserve">
+    <value>Peso</value>
+  </data>
+  <data name="DisplayName_Block_Wheel" xml:space="preserve">
+    <value>Ruota</value>
+  </data>
+  <data name="DisplayName_Block_WindMillBlade" xml:space="preserve">
+    <value>Pala del mulino</value>
+  </data>
+  <data name="DisplayName_Block_WoodenRailingStairsMir_MultiBlock" xml:space="preserve">
+    <value>Scale con corrimano di legno invertite</value>
+  </data>
+  <data name="DisplayName_Block_WoodenRailingStairs_MultiBlock" xml:space="preserve">
+    <value>Scale con corrimano in legno</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloorRoundLargeMirror_MultiBlock" xml:space="preserve">
+    <value>Pavimento di legno circolare grande invertito</value>
+  </data>
+  <data name="DisplayName_Block_WoodenFloorRoundLarge_MultiBlock" xml:space="preserve">
+    <value>Pavimento di legno grande circolare</value>
+  </data>
+  <data name="DisplayName_Block_WoodenStairs" xml:space="preserve">
+    <value>Scale di legno</value>
+  </data>
+  <data name="DisplayName_Block_WoodenStairsBottom" xml:space="preserve">
+    <value>Parte inferiore delle scale in legno</value>
+  </data>
+  <data name="DisplayName_Block_WoodenStairsTop" xml:space="preserve">
+    <value>Parte superiore delle scale in legno</value>
+  </data>
+  <data name="DisplayName_Scenario_Plains" xml:space="preserve">
+    <value>Pianure</value>
+  </data>
+  <data name="DisplayName_Scenario_Castle" xml:space="preserve">
+    <value>Castello</value>
+  </data>
+  <data name="DisplayName_Scenario_Bridges" xml:space="preserve">
+    <value>Ponti</value>
+  </data>
+  <data name="DisplayName_Scenario_PreviewDestructionMap" xml:space="preserve">
+    <value>Due case</value>
+  </data>
+  <data name="DisplayName_LargeProjectileThrower" xml:space="preserve">
+    <value>Lanciatore di proiettili grande</value>
+  </data>
+  <data name="DisplayName_MediumProjectileThrower" xml:space="preserve">
+    <value>Lanciatore di proiettili medio</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementCenterCorner" xml:space="preserve">
+    <value>Angolo centrale del parapetto in pietra</value>
+  </data>
+  <data name="DisplayName_Block_StonePlatformInvCorner" xml:space="preserve">
+    <value>Piattaforma di pietra angolare invertita</value>
+  </data>
+  <data name="DisplayName_Block_StoneCeiling" xml:space="preserve">
+    <value>Soffitto di pietra</value>
+  </data>
+  <data name="DisplayName_Scenario_LargeTerrain" xml:space="preserve">
+    <value>Terreno grande</value>
+  </data>
+  <data name="DisplayName_Scenario_NormalTerrain" xml:space="preserve">
+    <value>Terreno normale</value>
+  </data>
+  <data name="DisplayName_Scenario_SmallTerrain" xml:space="preserve">
+    <value>Terreno piccolo</value>
+  </data>
+  <data name="DisplayName_Scenario_VerySmallTerrain" xml:space="preserve">
+    <value>Terreno molto piccolo</value>
+  </data>
+  <data name="DisplayName_Scenario_Quickstart" xml:space="preserve">
+    <value>Avvio rapido</value>
+  </data>
+  <data name="DisplayName_Block_CompoundBlock" xml:space="preserve">
+    <value>Blocco composito</value>
+  </data>
+  <data name="DisplayName_Block_FracturedBlockLarge" xml:space="preserve">
+    <value>Blocco fratturato grande</value>
+  </data>
+  <data name="DisplayName_Block_WoodenStairs_MultiBlock" xml:space="preserve">
+    <value>Scale di legno</value>
+  </data>
+  <data name="DisplayName_Block_BonFire" xml:space="preserve">
+    <value>Falò</value>
+  </data>
+  <data name="DisplayName_Block_FireBucket" xml:space="preserve">
+    <value>Paiolo per il fuoco</value>
+  </data>
+  <data name="DisplayName_Block_TorchStand" xml:space="preserve">
+    <value>Supporto per la torcia</value>
+  </data>
+  <data name="DisplayName_Block_WoodBarrel" xml:space="preserve">
+    <value>Barile</value>
+  </data>
+  <data name="DisplayName_Block_WoodBed" xml:space="preserve">
+    <value>Letto di legno</value>
+  </data>
+  <data name="DisplayName_Block_WoodChair" xml:space="preserve">
+    <value>Sedia di legno</value>
+  </data>
+  <data name="DisplayName_Block_WoodChest" xml:space="preserve">
+    <value>Cassa di legno</value>
+  </data>
+  <data name="DisplayName_Block_WoodTable" xml:space="preserve">
+    <value>Tavolo di legno</value>
+  </data>
+  <data name="DisplayName_StonePillarRound" xml:space="preserve">
+    <value>Pilastro di pietra circolare</value>
+  </data>
+  <data name="DisplayName_StonePillarSquare" xml:space="preserve">
+    <value>Pilastro di pietra quadrato</value>
+  </data>
+  <data name="DisplayName_LargeProjectileThrower10" xml:space="preserve">
+    <value>Lanciatore di proiettili grande massa 10x</value>
+  </data>
+  <data name="DisplayName_MediumProjectileThrower10" xml:space="preserve">
+    <value>Lanciatore di proiettile medio massa 10x</value>
+  </data>
+  <data name="DisplayName_Block_KingStatue" xml:space="preserve">
+    <value>Statua del re </value>
+  </data>
+  <data name="DisplayName_Block_WoodenPad10_1_10" xml:space="preserve">
+    <value>Bosco 10x10</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound" xml:space="preserve">
+    <value>Palo</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound10" xml:space="preserve">
+    <value>Palo 10</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound2" xml:space="preserve">
+    <value>Palo 2</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound3" xml:space="preserve">
+    <value>Palo 3</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound4" xml:space="preserve">
+    <value>Palo 4</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound5" xml:space="preserve">
+    <value>Palo 5</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound6" xml:space="preserve">
+    <value>Palo 6</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound7" xml:space="preserve">
+    <value>Palo 7</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound8" xml:space="preserve">
+    <value>Palo 8</value>
+  </data>
+  <data name="DisplayName_Block_TimberRound9" xml:space="preserve">
+    <value>Palo 9</value>
+  </data>
+  <data name="DisplayName_Block_RopeRelease" xml:space="preserve">
+    <value>Sgancia-corda</value>
+  </data>
+  <data name="DisplayName_Rope_Basic" xml:space="preserve">
+    <value>Corda di base</value>
+  </data>
+  <data name="DisplayName_Rope_TearableRope" xml:space="preserve">
+    <value>Corda Strappabile</value>
+  </data>
+  <data name="DisplayName_Block_CatchBlockExtended" xml:space="preserve">
+    <value>Mozzo esteso</value>
+  </data>
+  <data name="DisplayName_Block_CatchBlockClosed" xml:space="preserve">
+    <value>Mozzo Chiuso</value>
+  </data>
+  <data name="DisplayName_Block_LockCatchBlockExtended" xml:space="preserve">
+    <value>Mozzo Bloccabile Esteso</value>
+  </data>
+  <data name="DisplayName_Block_LockCatchBlockClosed" xml:space="preserve">
+    <value>Mozzo Bloccabile Chiuso</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoundSmall" xml:space="preserve">
+    <value>Merlo di Pietra Circolare Piccolo</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLong" xml:space="preserve">
+    <value>Merlo di Pietra Inclinato Lungo</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongLeft" xml:space="preserve">
+    <value>Merlo di Pietra Inclinato Lungo Sinistra</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongMirror" xml:space="preserve">
+    <value>Stone Battlement Slope Long Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongMirrorLeft" xml:space="preserve">
+    <value>Stone Battlement Slope Long Mirrored Left</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongMirrorLeftTop" xml:space="preserve">
+    <value>Stone Battlement Slope Long Mirrored Left Top</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongMirrorRight" xml:space="preserve">
+    <value>Stone Battlement Slope Long Mirrored Right</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongRight" xml:space="preserve">
+    <value>Stone Battlement Slope Long Right</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeLongRightTop" xml:space="preserve">
+    <value>Stone Battlement Slope Long Right Top</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong30" xml:space="preserve">
+    <value>Blocco di Pietra Inclinato Lungo</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong30Left" xml:space="preserve">
+    <value>Blocco di Pietra Inclinato Lungo 30 Sinistra</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong30Right" xml:space="preserve">
+    <value>Blocco di Pietra Inclinato Lungo 30 Destra</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong60" xml:space="preserve">
+    <value>Blocco di Pietra Inclinato Lungo 60</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong60Left" xml:space="preserve">
+    <value>Blocco di Pietra Inclinato Lungo 60 Sinistra</value>
+  </data>
+  <data name="DisplayName_Block_StoneSlopeLong60Right" xml:space="preserve">
+    <value>Blocco di Pietra Inclinato Lungo 60 Destra</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlope" xml:space="preserve">
+    <value>Parapetto di Pietra Inclinato</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeBottom" xml:space="preserve">
+    <value>Stone Battlement Slope Bottom</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeBottomMirror" xml:space="preserve">
+    <value>Stone Battlement Slope Bottom Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeMirror" xml:space="preserve">
+    <value>Stone Battlement Slope Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeTop" xml:space="preserve">
+    <value>Stone Battlement Slope Top</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementSlopeTopMirror" xml:space="preserve">
+    <value>Stone Battlement Slope Top Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockStairsCorner" xml:space="preserve">
+    <value>Stone Block Stairs Corner</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockStairsCornerRound" xml:space="preserve">
+    <value>Stone Block Stairs Corner Round</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockStairsCornerStraight" xml:space="preserve">
+    <value>Stone Block Stairs Corner Straight</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallArchHalf" xml:space="preserve">
+    <value>Stone Wall Arch Half</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallArchHalfMir" xml:space="preserve">
+    <value>Stone Wall Arch Half Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockSlopeCorner" xml:space="preserve">
+    <value>Stone Block Slope Corner</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockSlopeCornerRound" xml:space="preserve">
+    <value>Stone Block Slope Corner Round</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockSlopeCornerStraight" xml:space="preserve">
+    <value>Stone Block Slope Corner Straight</value>
+  </data>
+  <data name="DisplayName_Hammer" xml:space="preserve">
+    <value>Martello</value>
+  </data>
+  <data name="DisplayName_Mace" xml:space="preserve">
+    <value>Mazza</value>
+  </data>
+  <data name="DisplayName_Torch" xml:space="preserve">
+    <value>Torcia</value>
+  </data>
+  <data name="DisplayName_Block_StoneCeilingInnerCornerSharp" xml:space="preserve">
+    <value>Stone Ceiling Inner Corner Sharp</value>
+  </data>
+  <data name="DisplayName_Block_StoneCeilingInnerCornerWall" xml:space="preserve">
+    <value>Stone Ceiling Inner Corner Wall</value>
+  </data>
+  <data name="DisplayName_Block_StoneCeilingOuterCorner" xml:space="preserve">
+    <value>Stone Ceiling Outer Corner</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallDoorCenter" xml:space="preserve">
+    <value>Stone Wall Door Center</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallDoorCenterLeft" xml:space="preserve">
+    <value>Stone Wall Door Center Left</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallDoorCenterRight" xml:space="preserve">
+    <value>Stone Wall Door Center Right</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallWindowCenter" xml:space="preserve">
+    <value>Stone Wall Window Center</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallWindowCenterLeft" xml:space="preserve">
+    <value>Stone Wall Window Center Left</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallWindowCenterRight" xml:space="preserve">
+    <value>Stone Wall Window Center Right</value>
+  </data>
+  <data name="DisplayName_Block_Stone" xml:space="preserve">
+    <value>Pietra</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangle" xml:space="preserve">
+    <value>Stone Battlement Triangle</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangle1" xml:space="preserve">
+    <value>Stone Battlement Triangle 1</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangle1Mir" xml:space="preserve">
+    <value>Stone Battlement Triangle 1 Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangle2Mir" xml:space="preserve">
+    <value>Stone Battlement Triangle 2 Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoofTriangleMir" xml:space="preserve">
+    <value>Stone Battlement Triangle Mirrored</value>
+  </data>
+  <data name="DisplayName_Block_StoneSmall" xml:space="preserve">
+    <value>Stone Small</value>
+  </data>
+  <data name="DisplayName_Block_Stone_BattlementRoofTriangle2" xml:space="preserve">
+    <value>Stone Battlement Triangle 2</value>
+  </data>
+  <data name="DisplayName_Block_TorchWall" xml:space="preserve">
+    <value>Torcia da Parete</value>
+  </data>
+  <data name="DisplayName_Block_Wood90Support" xml:space="preserve">
+    <value>Supporto in legno</value>
+  </data>
+  <data name="DisplayName_PickAxe" xml:space="preserve">
+    <value>Piccone</value>
+  </data>
+  <data name="DisplayName_Block_SlicedRoofTileCornerRound_Main" xml:space="preserve">
+    <value>Roof Tile Corner Round Main</value>
+  </data>
+  <data name="DisplayName_Block_SlicedRoofTileCornerRound_Top" xml:space="preserve">
+    <value>Roof Tile Corner Round Top</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileCornerRound" xml:space="preserve">
+    <value>Roof Tile Corner Round</value>
+  </data>
+  <data name="DisplayName_Block_Banner" xml:space="preserve">
+    <value>Banner</value>
+  </data>
+  <data name="DisplayName_Block_BlankTowerEmpty" xml:space="preserve">
+    <value>Blank Tower Empty</value>
+  </data>
+  <data name="DisplayName_Block_Flag" xml:space="preserve">
+    <value>Flag</value>
+  </data>
+  <data name="DisplayName_Block_ScrapWood" xml:space="preserve">
+    <value>Scrap Wood</value>
+  </data>
+  <data name="DisplayName_Block_ScrapWoodBranches" xml:space="preserve">
+    <value>Scrap Wood Branches</value>
+  </data>
+  <data name="DisplayName_Block_WoodChestLarge" xml:space="preserve">
+    <value>Wood Chest Large</value>
+  </data>
+  <data name="DisplayName_Block_Log" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="DisplayName_Axe" xml:space="preserve">
+    <value>Axe</value>
+  </data>
+  <data name="DisplayName_ManipulationTool" xml:space="preserve">
+    <value>Manipulation Tool</value>
+  </data>
+  <data name="DisplayName_WoodenSpike" xml:space="preserve">
+    <value>Wooden Spike</value>
+  </data>
+  <data name="DisplayName_HouseHalfStoneDoubleWindows" xml:space="preserve">
+    <value>House Half Stone Double Windows</value>
+  </data>
+  <data name="DisplayName_HouseHalfStoneDoubleWindowsCube" xml:space="preserve">
+    <value>House Half Stone Double Windows Cube</value>
+  </data>
+  <data name="DisplayName_StoneBlockSlopeDiagonal" xml:space="preserve">
+    <value>Stone Block Slope Diagonal</value>
+  </data>
+  <data name="DisplayName_StoneBattlementSideDiagonal" xml:space="preserve">
+    <value>Stone Battlement Side Diagonal</value>
+  </data>
+  <data name="DisplayName_StoneBattlementSideDiagonalMultiBlock1" xml:space="preserve">
+    <value>Stone Battlement Side Diagonal 1</value>
+  </data>
+  <data name="DisplayName_StoneBattlementSideDiagonalMultiBlock2" xml:space="preserve">
+    <value>Stone Battlement Side Diagonal 2</value>
+  </data>
+  <data name="DisplayName_StonePlatformDiagonal" xml:space="preserve">
+    <value>Stone Platform Diagonal</value>
+  </data>
+  <data name="DisplayName_StonePlatformDiagonalMultiBlock1" xml:space="preserve">
+    <value>Stone Platform Diagonal 1</value>
+  </data>
+  <data name="DisplayName_StonePlatformDiagonalMultiBlock2" xml:space="preserve">
+    <value>Stone Platform Diagonal 2</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonal" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockRight" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Right</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockLeft" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Left</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockLeft_2" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Left 2</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockRight_2" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Right 2</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockCorner" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Corner</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockCornerTop" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Corner Top</value>
+  </data>
+  <data name="DisplayName_StonePlatformDiagonalCorner" xml:space="preserve">
+    <value>Stone Platform Diagonal Corner</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockFull" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Full</value>
+  </data>
+  <data name="DisplayName_StoneBattlementDiagonalMultiBlockCornerFull" xml:space="preserve">
+    <value>Stone Battlement Diagonal Corner</value>
+  </data>
+  <data name="DisplayName_StoneBattlementCenterDiagonalMultiBlockCornerTopFull" xml:space="preserve">
+    <value>Stone Battlement Center Diagonal Corner Top Full</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallSlope" xml:space="preserve">
+    <value>Stone Wall Slope</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallTop" xml:space="preserve">
+    <value>Stone Wall Top</value>
+  </data>
+  <data name="DisplayName_Block_StoneBattlementRoundLargeSide" xml:space="preserve">
+    <value>Stone Battlement Round Large Side</value>
+  </data>
+  <data name="DisplayName_Block_StoneBlockRoundLarge" xml:space="preserve">
+    <value>Stone Block Round Large</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundLarge" xml:space="preserve">
+    <value>Stone Wall Round Large</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundLargeDoor" xml:space="preserve">
+    <value>Stone Wall Round Large Door</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundLargeDoorOffset" xml:space="preserve">
+    <value>Stone Wall Round Large Door Offset</value>
+  </data>
+  <data name="DisplayName_Block_StoneWallRoundLargeWindow" xml:space="preserve">
+    <value>Stone Wall Round Large Window</value>
+  </data>
+  <data name="DisplayName_StonePlatformRoundLarge_1" xml:space="preserve">
+    <value>Stone Platform Round Large</value>
+  </data>
+  <data name="DisplayName_StoneBattlementRoundLargeCenterMir_1" xml:space="preserve">
+    <value>Stone Battlement Round Large Center</value>
+  </data>
+  <data name="DisplayName_Block_RoofTileLargeRound" xml:space="preserve">
+    <value>Roof Tile Large Round</value>
+  </data>
+  <data name="DisplayName_LockableDrum" xml:space="preserve">
+    <value>Lockable drum</value>
+  </data>
+  <data name="DisplayName_Scenario_BattleBaseMap" xml:space="preserve">
+    <value>Battle Base Map</value>
+  </data>
+  <data name="DisplayName_Scenario_BattleMapCastle" xml:space="preserve">
+    <value>Battle Map Castle</value>
+  </data>
+  <data name="DisplayName_Item_LargeStone" xml:space="preserve">
+    <value>Large stone</value>
+  </data>
+  <data name="DisplayName_Item_ScrapWood" xml:space="preserve">
+    <value>Scrap wood</value>
+  </data>
+  <data name="DisplayName_Item_Stone" xml:space="preserve">
+    <value>Stone</value>
+  </data>
+  <data name="DisplayName_Item_Timber10" xml:space="preserve">
+    <value>Timber</value>
+  </data>
+  <data name="DisplayName_Item_Iron" xml:space="preserve">
+    <value>Iron</value>
+  </data>
+  <data name="DisplayName_Item_Wood" xml:space="preserve">
+    <value>Wood</value>
+  </data>
+</root>

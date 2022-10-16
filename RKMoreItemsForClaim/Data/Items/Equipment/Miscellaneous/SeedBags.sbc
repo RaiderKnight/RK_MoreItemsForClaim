@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- Seed bags - Plants -->
+  
+  <Definition xsi:type="MyObjectBuilder_SeedBagHandItemDefinition">
+    <Id Type="SeedBagHandItem" Subtype="SeedBagPumpkin" />
+	  <Tag>SeedBag</Tag>
+    <DisplayName>DisplayName_Tool_SeedBagPumpkin</DisplayName>
+    <Description>Description_Tool_SeedBag</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\Cubes\Pumpkin.dds</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Weapons\SeedBag_Pumpkin.mwm</Model>
+    <PhysicalMaterial>Cloth</PhysicalMaterial>
+    <Mass>1</Mass>
+    <ItemBreakEvent>ToolBreakSeedbag</ItemBreakEvent>
+    <Animation>SeedBag</Animation>
+    <MaxStackAmount>1</MaxStackAmount>
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid" />
+    <MaxDurability>10</MaxDurability>
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+    <Position>
+      <Slot>OffHand</Slot>
+    </Position>
+    <!-- extra transform on IK dummy in 1st person -->
+    <EquippedTransform>
+      <!-- tool rotation offset from hand -->
+      <Position>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0.2</Z>
+      </Position>
+      <Orientation>
+        <X>0.707</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>-0.707</W>
+      </Orientation>
+    </EquippedTransform>
+    <EquippedTransformFps>
+      <!-- hand IK target offset -->
+      <Position>
+        <X>0.360</X>
+        <Y>-0.258</Y>
+        <Z>-0.339</Z>
+      </Position>
+      <Orientation>
+        <X>0.3001874</X>
+        <Y>0.6298291</Y>
+        <Z>-0.2882942</Z>
+        <W>0.6558119</W>
+      </Orientation>
+    </EquippedTransformFps>
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_SeedingToolBehaviorDefinition" Subtype="SeedingNormal" />
+    </StanceToBehavior>
+    <!-- Seed bag definition -->
+    <GrowableDefinitionId>
+      <TypeId>MyObjectBuilder_FarmableEnvironmentItemDefinition</TypeId>
+      <SubtypeId>FarmPumpkin</SubtypeId>
+    </GrowableDefinitionId>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_SeedBagHandItemDefinition">
+    <Id Type="SeedBagHandItem" Subtype="SeedBagCabbage" />
+	  <Tag>SeedBag</Tag>
+    <DisplayName>DisplayName_Tool_SeedBagCabbage</DisplayName>
+    <Description>Description_Tool_SeedBag</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\Consumables\Cabbage.dds</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Weapons\SeedBag_Cabbage.mwm</Model>
+    <PhysicalMaterial>Cloth</PhysicalMaterial>
+    <Mass>1</Mass>
+    <ItemBreakEvent>ToolBreakSeedbag</ItemBreakEvent>
+    <Animation>SeedBag</Animation>
+    <MaxStackAmount>1</MaxStackAmount>
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid" />
+    <MaxDurability>10</MaxDurability>
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+    <Position>
+      <Slot>OffHand</Slot>
+    </Position>
+    <!-- extra transform on IK dummy in 1st person -->
+    <EquippedTransform>
+      <!-- tool rotation offset from hand -->
+      <Position>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0.2</Z>
+      </Position>
+      <Orientation>
+        <X>0.707</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>-0.707</W>
+      </Orientation>
+    </EquippedTransform>
+    <EquippedTransformFps>
+      <!-- hand IK target offset -->
+      <Position>
+        <X>0.360</X>
+        <Y>-0.258</Y>
+        <Z>-0.339</Z>
+      </Position>
+      <Orientation>
+        <X>0.3001874</X>
+        <Y>0.6298291</Y>
+        <Z>-0.2882942</Z>
+        <W>0.6558119</W>
+      </Orientation>
+    </EquippedTransformFps>
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_SeedingToolBehaviorDefinition" Subtype="SeedingNormal" />
+    </StanceToBehavior>
+    <!-- Seed bag definition -->
+    <GrowableDefinitionId>
+      <TypeId>MyObjectBuilder_FarmableEnvironmentItemDefinition</TypeId>
+      <SubtypeId>FarmCabbage</SubtypeId>
+    </GrowableDefinitionId>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_SeedBagHandItemDefinition">
+    <Id Type="SeedBagHandItem" Subtype="SeedBagFlax" />
+	  <Tag>SeedBag</Tag>
+    <DisplayName>DisplayName_Tool_SeedBagFlax</DisplayName>
+    <Description>Description_Tool_SeedBag</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\Consumables\Flax.dds</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Weapons\SeedBag_Flax.mwm</Model>
+    <PhysicalMaterial>Cloth</PhysicalMaterial>
+    <Mass>1</Mass>
+    <ItemBreakEvent>ToolBreakSeedbag</ItemBreakEvent>
+    <Animation>SeedBag</Animation>
+    <MaxStackAmount>1</MaxStackAmount>
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid" />
+    <MaxDurability>10</MaxDurability>
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+    <Position>
+      <Slot>OffHand</Slot>
+    </Position>
+    <!-- extra transform on IK dummy in 1st person -->
+    <EquippedTransform>
+      <!-- tool rotation offset from hand -->
+      <Position>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0.2</Z>
+      </Position>
+      <Orientation>
+        <X>0.707</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>-0.707</W>
+      </Orientation>
+    </EquippedTransform>
+    <EquippedTransformFps>
+      <!-- hand IK target offset -->
+      <Position>
+        <X>0.360</X>
+        <Y>-0.258</Y>
+        <Z>-0.339</Z>
+      </Position>
+      <Orientation>
+        <X>0.3001874</X>
+        <Y>0.6298291</Y>
+        <Z>-0.2882942</Z>
+        <W>0.6558119</W>
+      </Orientation>
+    </EquippedTransformFps>
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_SeedingToolBehaviorDefinition" Subtype="SeedingNormal" />
+    </StanceToBehavior>
+    <!-- Seed bag definition -->
+    <GrowableDefinitionId>
+      <TypeId>MyObjectBuilder_FarmableEnvironmentItemDefinition</TypeId>
+      <SubtypeId>FarmFlax</SubtypeId>
+    </GrowableDefinitionId>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_SeedBagHandItemDefinition">
+    <Id Type="SeedBagHandItem" Subtype="SeedBagWheat" />
+	  <Tag>SeedBag</Tag>
+    <DisplayName>DisplayName_Tool_SeedBagWheat</DisplayName>
+    <Description>Description_Tool_SeedBag</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\Materials\WheatStraws.dds</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Weapons\SeedBag_Wheat.mwm</Model>
+    <PhysicalMaterial>Cloth</PhysicalMaterial>
+    <Mass>1</Mass>
+    <ItemBreakEvent>ToolBreakSeedbag</ItemBreakEvent>
+    <Animation>SeedBag</Animation>
+    <MaxStackAmount>1</MaxStackAmount>
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid" />
+    <MaxDurability>10</MaxDurability>
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+    <Position>
+      <Slot>OffHand</Slot>
+    </Position>
+    <!-- extra transform on IK dummy in 1st person -->
+    <EquippedTransform>
+      <!-- tool rotation offset from hand -->
+      <Position>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0.2</Z>
+      </Position>
+      <Orientation>
+        <X>0.707</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>-0.707</W>
+      </Orientation>
+    </EquippedTransform>
+    <EquippedTransformFps>
+      <!-- hand IK target offset -->
+      <Position>
+        <X>0.360</X>
+        <Y>-0.258</Y>
+        <Z>-0.339</Z>
+      </Position>
+      <Orientation>
+        <X>0.3001874</X>
+        <Y>0.6298291</Y>
+        <Z>-0.2882942</Z>
+        <W>0.6558119</W>
+      </Orientation>
+    </EquippedTransformFps>
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_SeedingToolBehaviorDefinition" Subtype="SeedingNormal" />
+    </StanceToBehavior>
+    <!-- Seed bag definition -->
+    <GrowableDefinitionId>
+      <TypeId>MyObjectBuilder_FarmableEnvironmentItemDefinition</TypeId>
+      <SubtypeId>FarmWheat</SubtypeId>
+    </GrowableDefinitionId>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_SeedBagHandItemDefinition">
+    <Id Type="SeedBagHandItem" Subtype="SeedBagHerbs" />
+	  <Tag>SeedBag</Tag>
+    <DisplayName>DisplayName_Tool_SeedBagHerbs</DisplayName>
+    <Description>Description_Tool_SeedBag</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\Consumables\Herbs.dds</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Weapons\SeedBag_Herbs.mwm</Model>
+    <PhysicalMaterial>Cloth</PhysicalMaterial>
+    <Mass>1</Mass>
+    <ItemBreakEvent>ToolBreakSeedbag</ItemBreakEvent>
+    <Animation>SeedBag</Animation>
+    <MaxStackAmount>1</MaxStackAmount>
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid" />
+    <MaxDurability>10</MaxDurability>
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+    <Position>
+      <Slot>OffHand</Slot>
+    </Position>
+    <!-- extra transform on IK dummy in 1st person -->
+    <EquippedTransform>
+      <!-- tool rotation offset from hand -->
+      <Position>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0.2</Z>
+      </Position>
+      <Orientation>
+        <X>0.707</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>-0.707</W>
+      </Orientation>
+    </EquippedTransform>
+    <EquippedTransformFps>
+      <!-- hand IK target offset -->
+      <Position>
+        <X>0.360</X>
+        <Y>-0.258</Y>
+        <Z>-0.339</Z>
+      </Position>
+      <Orientation>
+        <X>0.3001874</X>
+        <Y>0.6298291</Y>
+        <Z>-0.2882942</Z>
+        <W>0.6558119</W>
+      </Orientation>
+    </EquippedTransformFps>
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_SeedingToolBehaviorDefinition" Subtype="SeedingNormal" />
+    </StanceToBehavior>
+    <!-- Seed bag definition -->
+    <GrowableDefinitionId>
+      <TypeId>MyObjectBuilder_FarmableEnvironmentItemDefinition</TypeId>
+      <SubtypeId>FarmHerbs</SubtypeId>
+    </GrowableDefinitionId>
+  </Definition>
+
+  <!-- Seed bags - Trees -->
+
+  <Definition xsi:type="MyObjectBuilder_SeedBagHandItemDefinition">
+    <Id Type="SeedBagHandItem" Subtype="SeedBagSpruce" />
+    <Tag>SeedBag</Tag>
+    <DisplayName>DisplayName_Tool_SeedBagSpruce</DisplayName>
+    <Description>Description_Tool_SeedBagTree</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\SpruceTree.png</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Weapons\SeedBag_Generic.mwm</Model>
+    <PhysicalMaterial>Cloth</PhysicalMaterial>
+    <Mass>1</Mass>
+    <ItemBreakEvent>ToolBreakSeedbag</ItemBreakEvent>
+    <Animation>SeedBag</Animation>
+    <MaxStackAmount>1</MaxStackAmount>
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid" />
+    <MaxDurability>3</MaxDurability>
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+    <Position>
+      <Slot>OffHand</Slot>
+    </Position>
+    <!-- extra transform on IK dummy in 1st person -->
+    <EquippedTransform>
+      <!-- tool rotation offset from hand -->
+      <Position>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0.2</Z>
+      </Position>
+      <Orientation>
+        <X>0.707</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>-0.707</W>
+      </Orientation>
+    </EquippedTransform>
+    <EquippedTransformFps>
+      <!-- hand IK target offset -->
+      <Position>
+        <X>0.360</X>
+        <Y>-0.258</Y>
+        <Z>-0.339</Z>
+      </Position>
+      <Orientation>
+        <X>0.3001874</X>
+        <Y>0.6298291</Y>
+        <Z>-0.2882942</Z>
+        <W>0.6558119</W>
+      </Orientation>
+    </EquippedTransformFps>
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_SeedingToolBehaviorDefinition" Subtype="SeedingNormal" />
+    </StanceToBehavior>
+    <!-- Seed bag definition -->
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="PlowedSoil" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableSpruceTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Grass" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableSpruceTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Snow" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableSpruceTreeSnowy" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Woods" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableSpruceTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Woods_grass" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableSpruceTree" />
+    </VoxelToSeed>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_SeedBagHandItemDefinition">
+    <Id Type="SeedBagHandItem" Subtype="SeedBagPalmtree" />
+    <Tag>SeedBag</Tag>
+    <DisplayName>DisplayName_Tool_SeedBagPalmtree</DisplayName>
+    <Description>Description_Tool_SeedBagTree</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\PalmTree.png</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Weapons\SeedBag_Generic.mwm</Model>
+    <PhysicalMaterial>Cloth</PhysicalMaterial>
+    <Mass>1</Mass>
+    <Animation>SeedBag</Animation>
+    <MaxStackAmount>1</MaxStackAmount>
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid" />
+    <MaxDurability>3</MaxDurability>
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+    <Position>
+      <Slot>OffHand</Slot>
+    </Position>
+    <!-- extra transform on IK dummy in 1st person -->
+    <EquippedTransform>
+      <!-- tool rotation offset from hand -->
+      <Position>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0.2</Z>
+      </Position>
+      <Orientation>
+        <X>0.707</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>-0.707</W>
+      </Orientation>
+    </EquippedTransform>
+    <EquippedTransformFps>
+      <!-- hand IK target offset -->
+      <Position>
+        <X>0.360</X>
+        <Y>-0.258</Y>
+        <Z>-0.339</Z>
+      </Position>
+      <Orientation>
+        <X>0.3001874</X>
+        <Y>0.6298291</Y>
+        <Z>-0.2882942</Z>
+        <W>0.6558119</W>
+      </Orientation>
+    </EquippedTransformFps>
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_SeedingToolBehaviorDefinition" Subtype="SeedingNormal" />
+    </StanceToBehavior>
+    <!-- Seed bag definition -->
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="PlowedSoil" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantablePalmTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Grass" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantablePalmTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="SteppeYellowGrass" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantablePalmTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Woods_needles" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantablePalmTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Woods_grass" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantablePalmTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Sand" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantablePalmTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="SandGrass" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantablePalmTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="SandGrassGreen" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantablePalmTree" />
+    </VoxelToSeed>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_SeedBagHandItemDefinition">
+    <Id Type="SeedBagHandItem" Subtype="SeedBagOakTree" />
+    <Tag>SeedBag</Tag>
+    <DisplayName>DisplayName_Tool_SeedBagOakTree</DisplayName>
+    <Description>Description_Tool_SeedBagTree</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\OakTree.png</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Weapons\SeedBag_Generic.mwm</Model>
+    <PhysicalMaterial>Cloth</PhysicalMaterial>
+    <Mass>1</Mass>
+    <ItemBreakEvent>ToolBreakSeedbag</ItemBreakEvent>
+    <Animation>SeedBag</Animation>
+    <MaxStackAmount>1</MaxStackAmount>
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid" />
+    <MaxDurability>3</MaxDurability>
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+    <Position>
+      <Slot>OffHand</Slot>
+    </Position>
+    <!-- extra transform on IK dummy in 1st person -->
+    <EquippedTransform>
+      <!-- tool rotation offset from hand -->
+      <Position>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0.2</Z>
+      </Position>
+      <Orientation>
+        <X>0.707</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>-0.707</W>
+      </Orientation>
+    </EquippedTransform>
+    <EquippedTransformFps>
+      <!-- hand IK target offset -->
+      <Position>
+        <X>0.360</X>
+        <Y>-0.258</Y>
+        <Z>-0.339</Z>
+      </Position>
+      <Orientation>
+        <X>0.3001874</X>
+        <Y>0.6298291</Y>
+        <Z>-0.2882942</Z>
+        <W>0.6558119</W>
+      </Orientation>
+    </EquippedTransformFps>
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_SeedingToolBehaviorDefinition" Subtype="SeedingNormal" />
+    </StanceToBehavior>
+    <!-- Seed bag definition -->
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="PlowedSoil" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableOakTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Grass" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableOakTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="SteppeYellowGrass" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableOakTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Woods_needles" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableOakTree" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Woods_grass" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableOakTree" />
+    </VoxelToSeed>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_SeedBagHandItemDefinition">
+    <Id Type="SeedBagHandItem" Subtype="SeedBagHazel" />
+    <Tag>SeedBag</Tag>
+    <DisplayName>DisplayName_Tool_SeedBagHazel</DisplayName>
+    <Description>Description_Tool_SeedBagHazel</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\SeedBag.dds</Icon>
+    <Icon>Textures\GUI\Icons\HazelBush.png</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Model>Models\Weapons\SeedBag_Generic.mwm</Model>
+    <PhysicalMaterial>Cloth</PhysicalMaterial>
+    <Mass>1</Mass>
+    <ItemBreakEvent>ToolBreakSeedbag</ItemBreakEvent>
+    <Animation>SeedBag</Animation>
+    <MaxStackAmount>1</MaxStackAmount>
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid" />
+    <MaxDurability>5</MaxDurability>
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+    <Position>
+      <Slot>OffHand</Slot>
+    </Position>
+    <!-- extra transform on IK dummy in 1st person -->
+    <EquippedTransform>
+      <!-- tool rotation offset from hand -->
+      <Position>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0.2</Z>
+      </Position>
+      <Orientation>
+        <X>0.707</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>-0.707</W>
+      </Orientation>
+    </EquippedTransform>
+    <EquippedTransformFps>
+      <!-- hand IK target offset -->
+      <Position>
+        <X>0.360</X>
+        <Y>-0.258</Y>
+        <Z>-0.339</Z>
+      </Position>
+      <Orientation>
+        <X>0.3001874</X>
+        <Y>0.6298291</Y>
+        <Z>-0.2882942</Z>
+        <W>0.6558119</W>
+      </Orientation>
+    </EquippedTransformFps>
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_SeedingToolBehaviorDefinition" Subtype="SeedingNormal" />
+    </StanceToBehavior>
+    <!-- Seed bag definition -->
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="PlowedSoil" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableHazel" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Grass" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableHazel" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="SteppeYellowGrass" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableHazelSteppe" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Woods_needles" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableHazelKarst" />
+    </VoxelToSeed>
+    <VoxelToSeed>
+      <Voxel Type="VoxelMaterialDefinition" Subtype="Woods_grass" />
+      <Seed Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="PlantableHazel" />
+    </VoxelToSeed>
+  </Definition>
+
+  <!-- Behavior for seedbags -->
+  
+  <Definition xsi:type="MyObjectBuilder_SeedingToolBehaviorDefinition">
+    <Id Type="MyObjectBuilder_SeedingToolBehaviorDefinition" Subtype="SeedingNormal" />
+    <Efficiency>2</Efficiency>
+	  <Cost Stat="Stamina" Cost="2.5" />
+
+    <ToolheadMaterial>Seedbag</ToolheadMaterial>
+    <TargetingDistance>2.0</TargetingDistance>
+    <PrimaryEffect>
+      <HitTime>.3</HitTime>
+      <AnimationTime>1.4</AnimationTime>
+      <SwingSound>ToolSeedbag</SwingSound>
+      <Animation>Seeding</Animation>
+    </PrimaryEffect>
+  </Definition>
+</Definitions>

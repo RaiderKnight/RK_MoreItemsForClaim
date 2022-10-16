@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_HandItemDefinition">
+    <Id Type="HandItem" Subtype="Jackhammer" />
+		<Public>false</Public>
+		
+    <DisplayName>DisplayName_Tool_Jackhammer</DisplayName>
+    <Description>Description_Tool_Jackhammer</Description>
+    <Icon>Textures\HUD\Mining_allowed.png</Icon>
+    <Model>Models\Environment\Rocks\IronOre.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Mass>5</Mass>
+    <Size>
+      <X>0.7</X>
+      <Y>0.1</Y>
+      <Z>1</Z>
+    </Size>
+    <MaxStackAmount>1</MaxStackAmount>
+
+    <MaxDurability>1</MaxDurability>
+
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+
+    <Animation>SeedBag</Animation>
+
+    <!-- extra transform on IK dummy in 1st person -->
+    <EquippedTransform>
+      <!-- tool rotation offset from hand -->
+      <Orientation>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <W>1</W>
+      </Orientation>
+    </EquippedTransform>
+    <EquippedTransformFps>
+      <!-- hand IK target offset -->
+      <Position>
+        <X>0.817</X>
+        <Y>-1.0</Y>
+        <Z>-0.646</Z>
+      </Position>
+      <Orientation>
+        <X>0.5215536</X>
+        <Y>0.4426106</Y>
+        <Z>-0.4053448</Z>
+        <W>0.6064432</W>
+      </Orientation>
+    </EquippedTransformFps>
+
+    <EquippedTransform>
+      <Forward y="-1" />
+      <Up z="-1" />
+    </EquippedTransform>
+
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="JackhammerToolBehaviorDefinition" Subtype="Jackhammer" />
+    </StanceToBehavior>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_JackhammerToolBehaviorDefinition">
+    <Id Type="JackhammerToolBehaviorDefinition" Subtype="Jackhammer" />
+  </Definition>
+</Definitions>

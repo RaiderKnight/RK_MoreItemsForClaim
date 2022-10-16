@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_SessionComponentResearchDefinition">
+    <Id Type="MyObjectBuilder_SessionComponentResearchDefinition" Subtype="Default" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_AreaOwnershipSystemDefinition">
+    <Id Type="MyObjectBuilder_AreaOwnershipSystemDefinition" Subtype="Default" />
+    <ContestedTimeInMinutes>0.5</ContestedTimeInMinutes>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_FastTravelSystemDefinition">
+    <Id Type="MyObjectBuilder_FastTravelSystemDefinition" Subtype="Default" />
+    <FoodCostMultiplier>0.5</FoodCostMultiplier>
+  	<FoodStat>Food</FoodStat>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_KeychainSystemDefinition">
+    <Id Type="MyObjectBuilder_KeychainSystemDefinition" Subtype="Default" />
+    <ListsPerPlayer>3</ListsPerPlayer>
+  </Definition>
+
+  <!--Definition for Clipboard Component (Copy/Paste functionality)-->
+  <Definition xsi:type="MyObjectBuilder_ClipboardDefinition">
+    <Id Type="MyObjectBuilder_ClipboardDefinition" Subtype="ClipboardBase" />
+
+    <!--Pasting settings-->
+    <PastingSettings>
+      <StaticGridAlignToCenter>false</StaticGridAlignToCenter>
+      <SmallStaticGrid>
+        <SnapMode>OneFreeAxis</SnapMode>
+        <CanAnchorToStaticGrid>true</CanAnchorToStaticGrid>
+        <EnablePreciseRotationWhenSnapped>false</EnablePreciseRotationWhenSnapped>
+        <!--Voxel Placement Settings: Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <VoxelPlacement>
+          <PlacementMode>Both</PlacementMode>
+        </VoxelPlacement>
+      </SmallStaticGrid>
+      <SmallGrid>
+        <SnapMode>OneFreeAxis</SnapMode>
+        <CanAnchorToStaticGrid>true</CanAnchorToStaticGrid>
+        <EnablePreciseRotationWhenSnapped>false</EnablePreciseRotationWhenSnapped>
+        <VoxelPlacement>
+          <PlacementMode>Both</PlacementMode>
+        </VoxelPlacement>
+      </SmallGrid>
+      <LargeStaticGrid>
+        <SnapMode>Base6Directions</SnapMode>
+        <CanAnchorToStaticGrid>true</CanAnchorToStaticGrid>
+        <SearchHalfExtentsDeltaRatio>0.01</SearchHalfExtentsDeltaRatio>
+        <EnablePreciseRotationWhenSnapped>false</EnablePreciseRotationWhenSnapped>
+        <VoxelPlacement>
+          <PlacementMode>InVoxel</PlacementMode>
+        </VoxelPlacement>
+      </LargeStaticGrid>
+      <LargeGrid>
+        <SnapMode>OneFreeAxis</SnapMode>
+        <CanAnchorToStaticGrid>false</CanAnchorToStaticGrid>
+        <EnablePreciseRotationWhenSnapped>false</EnablePreciseRotationWhenSnapped>
+        <VoxelPlacement>
+          <PlacementMode>InVoxel</PlacementMode>
+        </VoxelPlacement>
+      </LargeGrid>
+    </PastingSettings>
+  </Definition>
+
+  <!--Definition for Local Coordinate System-->
+  <Definition xsi:type="MyObjectBuilder_CoordinateSystemDefinition">
+    <Id Type="MyObjectBuilder_CoordinateSystemDefinition" Subtype="CoordinateSystem" />
+    <!--Angle tolerance (in deg) used for deciding if block is aligned to coord system for static grids merging.-->
+    <AngleToleranceStatic>0.82</AngleToleranceStatic>
+    
+    <!--Angle tolerance (in deg) used for deciding if block is aligned to coord system for dynamic/unspecified grids merging.-->
+    <AngleToleranceDynamic>15</AngleToleranceDynamic>
+    
+    <!--Position decimal count for tolerance used for deciding if block is aligned to coord system (ex. 3 - 0.001m, 5 - 0.00001m, 1 - 0.1m, etc) for static grids merging.-->
+    <PositionToleranceStatic>3</PositionToleranceStatic>
+
+    <!--Position decimal count for tolerance used for deciding if block is aligned to coord system (ex. 3 - 0.001m, 5 - 0.00001m, 1 - 0.1m, etc) for dynamic/unspecified grids merging.-->
+    <PositionToleranceDynamic>3</PositionToleranceDynamic>
+    
+    <!--Local coordinate system size (in meters)-->
+    <CoordSystemSize>500</CoordSystemSize>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_DecaySystemDefinition">
+    <Id Type="MyObjectBuilder_DecaySystemDefinition" Subtype="Default" />
+    <DecayLimitsList>
+      <MaxCountEntry>
+        <Id Type="MyObjectBuilder_FracturePieceDecayComponent" Subtype="Default" />
+        <MaxCount>100</MaxCount>
+      </MaxCountEntry>
+      <MaxCountEntry>
+        <Id Type="MyObjectBuilder_SimpleDecayComponent" Subtype="Default" />
+        <MaxCount>200</MaxCount>
+      </MaxCountEntry>
+    </DecayLimitsList>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_AreaUpkeepSystemDefinition">
+    <Id Type="MyObjectBuilder_AreaUpkeepSystemDefinition" Subtype="Default" />
+    <TimeUnitInMinutes>1</TimeUnitInMinutes>
+    <PointsPerTimeUnit>1</PointsPerTimeUnit>
+    <!-- <MaxPayableTimeUnits>10080</MaxPayableTimeUnits> -->
+	<MaxPayableTimeUnits>35791</MaxPayableTimeUnits>
+    <NotifyOwner>true</NotifyOwner>
+    <NotifyOwnersAllies>true</NotifyOwnersAllies>
+    <NotifyAtPercentage>0.00595238095</NotifyAtPercentage>
+    <PointsPerResource>
+      <!-- Items used to pay taxes-->
+      <!-- Consumables -->
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Berries" Value="30" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Pumpkin" Value="40" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Mushrooms" Value="30" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Herbs" Value="30" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Bandage" Value="100" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Roots" Value="10" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="MeatRoasted" Value="200" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Meat" Value="200" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Goulash" Value="500" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="SoupWithBread" Value="200" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Salad" Value="50" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="HodgePodge" Value="50" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Cabbage" Value="40" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Bread" Value="50" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="FruitsOpuntia" Value="30" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="BreadSpiced" Value="100" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="BreadSweetened" Value="100" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Tea" Value="70" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="JuiceFruit" Value="70" />
+      
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="SteakWithMushrooms" Value="210" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="RootsWithShrooms" Value="100" />
+      <Entry TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="SoupMushroom" Value="100" />
+      <!-- Components -->
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="JarClayWithLinseedOil" Value="150" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="ScrapWood" Value="10" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="BranchesConiferous" Value="10" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="BranchesPalmtree" Value="10" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="BranchesBroadleaf" Value="10" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Sticks" Value="4" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Charcoal" Value="50" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="JarClay" Value="40" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="RoofTileStack" Value="35" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Ink" Value="110" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Vellum" Value="50" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="OreCopper" Value="20" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="IngotCopper" Value="120" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="OreTin" Value="20" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="IngotTin" Value="120" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="IngotBronze" Value="260" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="OreIron" Value="40" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="IngotIron" Value="240" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="IngotSteel" Value="400" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="OreSilver" Value="80" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="IngotSilver" Value="480" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="OreGold" Value="100" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="IngotGold" Value="600" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="StoneSmall" Value="5" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="StoneLarge" Value="20" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Log" Value="60" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="LogPalmtree" Value="60" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="LogOakBranch" Value="60" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="LogOakHalf" Value="60" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="LogOakQuarter" Value="60" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="PartsMetal" Value="29" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="StrawsFlax" Value="20" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="StringLinen" Value="48" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Cloth" Value="150" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="FlourWheat" Value="96" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="StrawsWheat" Value="20" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Rope" Value="105" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Antlers" Value="200" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="StripsLeather" Value="40" />
+      
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Timber10" Value="15" />
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="Timber10" Value="15" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TimberRound10" Value="15" />
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="TimberRound10" Value="15" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TimberDiagonal10" Value="15" />
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="TimberDiagonal10" Value="15" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Plank10" Value="5" />
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="Plank10" Value="5" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="PeltDeer" Value="130" />
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="PeltDeer" Value="130" />
+	  
+	  <!-- My extras Items to pay taxes with BlockItem-->
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Dirt" Value="1" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Sand" Value="1" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Skull" Value="5" />
+	  <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="Skull" Value="5" />
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="HandTorchItem" Value="5" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="CarvedPumpkin" Value="1" />
+	  <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="SeedBagPumpkin" Value="10" />
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="SeedBagCabbage" Value="10" />
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="SeedBagFlax" Value="10" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TableCrafting" Value="100" />
+	  <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="TableCrafting" Value="100" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TrainingDummy" Value="100" />
+	  <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="TrainingDummy" Value="100" />
+      <!-- Items forbidden to pay taxes with -->
+      <!-- Schematics-->
+      <Entry TypeId="MyObjectBuilder_SchematicItem" Value="0" />
+      <!-- Tools-->
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="PickAxe" Value="0" />
+      <!-- <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="HandTorchItem" Value="0" /> -->
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="Hammer" Value="0" />
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="WoodenMallet" Value="0" />
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="Mace" Value="0" />
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="Axe" Value="0" />
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="Crossbow" Value="0" />
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="Sword" Value="0" />
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="StoneAxe" Value="0" />
+      <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="Plow" Value="0" />
+      <!-- <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="SeedBagPumpkin" Value="0" /> -->
+      <!-- <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="SeedBagCabbage" Value="0" /> -->
+      <!-- <Entry TypeId="MyObjectBuilder_HandItem" SubtypeId="SeedBagFlax" Value="0" /> -->
+      <Entry TypeId="MyObjectBuilder_ProjectileItem" SubtypeId="CrossbowBolt" Value="0" />
+      <!-- Small Grid Blocks-->
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Timber2" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Timber3" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Timber4" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Timber5" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Timber6" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Timber7" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Timber8" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Timber9" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TimberRound" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TimberRound2" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TimberRound3" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TimberRound4" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TimberRound5" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TimberRound6" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TimberRound7" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TimberRound8" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TimberRound9" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TimberDiagonal5" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="BedWood" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="WoodBarrel" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="WoodTable" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="WoodChest" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="WoodChestLarge" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TorchStand" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="FireBucket" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="WheelMediumSmall" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TurnCrossSmall" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="RopeEndingSmall" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="RopeReleaseSmall" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="WindMillBlade" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="CatapultProjectileM" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="CatapultProjectile" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="RopeDrumAloneSmall" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Weight" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="CatchBlockSmall2" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="LockGearBox2" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="LockableDrumSmall" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="LockableDrumSmall" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="RopePowerSmall" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="WoodChair" Value="0" />
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="Flag10x10" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Flag10x10" Value="0" />
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="FlagRed10x10" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="FlagRed10x10" Value="0" />
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="HarvesterBlock" Value="0" />
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="SeederBlock" Value="0" />
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="PlowBlock" Value="0" />
+      
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="TorchOfTheAncestors" Value="0" />
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="TorchOfTheAncestors" Value="0" />
+      <!-- <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="Skull" Value="0" /> -->
+      <Entry TypeId="MyObjectBuilder_CubeBlock" SubtypeId="ImpaledSkull" Value="0" />
+      <!-- <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="CarvedPumpkin" Value="0" /> -->
+    </PointsPerResource>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_BannerComponentDefinition">
+    <Id Type="MyObjectBuilder_BannerComponentDefinition" Subtype="Default" />
+    <Banner FactionTag="ENGI">
+      <BackgroundColor x="0" y="0.0156862754" z="0.0235294122" />
+      <Layers>
+        <BannerLayer ModId="" Pattern="None">
+          <Color x="0.003921569" y="0.0235294122" z="0" />
+        </BannerLayer>
+        <BannerLayer ModId="" Pattern="Character">
+          <Color x="1" y="0.882352948" z="0" />
+        </BannerLayer>
+      </Layers>
+    </Banner>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_FarmingSystemDefinition">
+    <Id Type="MyObjectBuilder_FarmingSystemDefinition" Subtype="Default" />
+    <VoxelChangeRadius>2</VoxelChangeRadius>
+    <MinFarmDistance>1</MinFarmDistance>
+    <MaxFarmSlope>45</MaxFarmSlope>
+    <MaxPlantingDistance>2</MaxPlantingDistance>
+    <FarmableItemType>Farmable</FarmableItemType>
+    <PlowedMaterial>PlowedSoil</PlowedMaterial>
+    <PlantedMaterial>PlantedSoil</PlantedMaterial>
+    <ExhaustedMaterial>ExhaustedSoil</ExhaustedMaterial>
+    <PlowableMaterials>
+      <Material>Grass</Material>
+      <Material>SteppeYellowGrass</Material>
+      <Material>Woods_needles</Material>
+      <Material>Woods_grass</Material>
+      <Material>Woods</Material>
+      <Material>Soil</Material>
+      <Material>DirtSteppe</Material>
+      <Material>PlowedSoil</Material>
+      <Material>PlantedSoil</Material>
+      <Material>ExhaustedSoil</Material>
+    </PlowableMaterials>
+    <PlantableMaterials>
+      <Material>PlowedSoil</Material>
+      <Material>PlantedSoil</Material>
+    </PlantableMaterials>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRulesSystemDefinition">
+    <Id Type="MyObjectBuilder_EnvironmentRulesSystemDefinition" Subtype="Default" />
+    <ObservationInterval Seconds="1" />
+    <CombatRange>50</CombatRange>
+    <CombatTimeout Seconds="15" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_AmbienceComponentDefinition">
+    <Id Type="MyObjectBuilder_AmbienceComponentDefinition" Subtype="Default" />
+    <MinimumCrossfadeDuration Seconds="5" />
+    <AudioFxInterpolationTime Seconds="1" />
+    <AmbienceVolumeInterpolationTime Seconds="1" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_SceneComponentDefinition">
+    <Id Type="SceneComponentDefinition" Subtype="Default" />
+    <Persist>Planet</Persist>
+    <Persist>Player</Persist>
+    <Persist>Marker</Persist>
+
+    <Default>false</Default>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_PersistenceViewersDefinition">
+    <Id Type="PersistenceViewersDefinition" Subtype="Default" />
+    
+    <Tag>Grid</Tag>
+
+    <MinBallisticSpeed>10</MinBallisticSpeed>
+    <ExtensionTime>1</ExtensionTime>
+
+    <RemoveViewOnSleep>true</RemoveViewOnSleep>
+
+    <CameraRange0>5</CameraRange0>
+    <CameraRange>2</CameraRange>
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_InfiniteWorldPersistenceDefinition">
+    <Id Type="InfiniteWorldPersistenceDefinition" Subtype="Default" />
+    <GridSize>32</GridSize>
+    <MaxLod>3</MaxLod>
+    <LodSizeThreshold>6</LodSizeThreshold>
+  </Definition>
+</Definitions>
