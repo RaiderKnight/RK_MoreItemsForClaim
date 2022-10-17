@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <Definition xsi:type="MyObjectBuilder_AreaUpkeepSystemDefinition" Merge="Append">
+    <Id Type="MyObjectBuilder_AreaUpkeepSystemDefinition" Subtype="Default" />
+	<MaxPayableTimeUnits>35791</MaxPayableTimeUnits>
+	<NotifyAtPercentage>0.006</NotifyAtPercentage>
+    <PointsPerResource>
+      <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Dirt" Value="1" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Sand" Value="1" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="SandstoneLarge" Value="20" />
+	  <Entry TypeId="InventoryItem" SubtypeId="LimestoneLarge" Value="20" />
+	  <Entry TypeId="InventoryItem" SubtypeId="BambooLog" Value="60" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="ArrowheadMold" Value="100" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Arrowhead" Value="100" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="DefenderRecruit" Value="200" />
+	  <Entry TypeId="Block" SubtypeId="RookieRangedDefenderCrossbow" Value="250" />
+	  <Entry TypeId="InventoryItem" SubtypeId="EmptyPotion" Value="80" />
+	  <Entry TypeId="InventoryItem" SubtypeId="ClayBrewCup" Value="5" />
+	  <Entry TypeId="InventoryItem" SubtypeId="BullHornCupEmpty" Value="15" />
+	  <Entry TypeId="InventoryItem" SubtypeId="WineGlassEmpty" Value="60" />
+	  <Entry TypeId="InventoryItem" SubtypeId="BeerMug" Value="10" />
+	  <Entry TypeId="InventoryItem" SubtypeId="WoodenCup" Value="5" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="GrapeJuice" Value="5" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Wine" Value="30" />
+	  <Entry TypeId="MyObjectBuilder_InventoryItem" SubtypeId="Beer" Value="50" />
+	  <Entry TypeId="Block" SubtypeId="OreCleaner" Value="100" />
+	  <Entry TypeId="InventoryItem" SubtypeId="Rice" Value="30" />
+	  <Entry TypeId="InventoryItem" SubtypeId="RicePaper" Value="80" />
+	  <Entry TypeId="Block" SubtypeId="TableCrafting" Value="100" />
+      <Entry TypeId="Block" SubtypeId="TrainingDummy" Value="100" />
+	  <Entry TypeId="Block" SubtypeId="Skull" Value="5" />
+    </PointsPerResource>
+  </Definition>
+
+</Definitions>
