@@ -22,7 +22,7 @@ It will be displayed as not compatible because it hasn't been published on Steam
 <p>I hope you will enjoy. </p>
 <p>Please report any bugs here on this disussion or come join my Discord Channel</p>
 <p>https://discord.gg/d3U9E2wb4Y (Careful adult content)</p>
-<p>My forum: https://lifeplay.site/ (Careful adult content)</p>
+<p>My forum: https://forums.raiderknight.com/ (Careful adult content)</p>
 <br>
 <p>Donations are always appreciated. Editing, maintaining and offering support for my mods is very time consuming and can cost money as well!</p>
 <p>https://www.patreon.com/raiderknight</p>
